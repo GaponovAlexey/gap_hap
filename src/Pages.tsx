@@ -1,13 +1,13 @@
 import { Route, Routes } from "@solidjs/router";
-import Main from "./component/Main";
 import PageOne from "./component/PageOne";
 import PageTwo from "./component/PageTwo";
 
 const Pages = () => {
+  const data = () => {return { count: 4 }}
   return (
-    <Routes >
+    <Routes>
       <Route path={"/"} element={PageOne} />
-      <Route path={"/two"} element={PageTwo} />
+      <Route path={"/two"} element={PageTwo} data={data} />
     </Routes>
   );
 };
