@@ -1,5 +1,6 @@
+import { Component } from "solid-js";
 
-function App() {
+const App: Component = () => {
   return (
     <div class="text-3xl font-bold underline bg-blue-200 flex justify-center">start</div>
   );
