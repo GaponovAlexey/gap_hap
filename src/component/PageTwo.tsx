@@ -1,10 +1,10 @@
 import { useRouteData } from "@solidjs/router";
 
 const PageTwo = () => {
-  const datas = useRouteData();
-  console.log("datas",datas)
-  
-  return <div>Two Page{datas.count}</div>;
+  const data: {} = useRouteData();
+  console.log("datas", data);
+
+  return <div>Two Page{data?.count}</div>;
 };
 
 export default PageTwo;
