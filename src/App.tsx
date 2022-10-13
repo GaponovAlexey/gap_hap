@@ -1,9 +1,8 @@
 import { Component } from "solid-js";
+import Page from "./Page";
 
 const App: Component = () => {
-  return (
-    <div class="text-3xl font-bold underline bg-blue-200 flex justify-center">start</div>
-  );
-}
+  return <Page />;
+};
 
 export default App;
