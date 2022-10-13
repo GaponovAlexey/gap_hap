@@ -3,16 +3,16 @@ import PageOne from "./component/PageOne";
 import PageTwo from "./component/PageTwo";
 
 interface CounterData {
-  count: Array<string | number>;
-};
+  count: number
+}
 const Pages = () => {
-  const data: CounterData = () => {
+  const data = (): CounterData => {
     return { count: 4 };
   };
   return (
     <Routes>
       <Route path={"/"} element={PageOne} />
-      <Route path={"/two"} element={PageTwo} data={data} as CounterData />
+      <Route path={"/two"} element={PageTwo} data={data} />
     </Routes>
   );
 };
