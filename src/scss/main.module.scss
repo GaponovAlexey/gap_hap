@@ -13,3 +13,13 @@
     @apply text-xl;
   }
 }
+
+.container_main_three {
+  @apply h-screen grid grid-cols-2;
+  .img {
+    background: url("../assets/ebout1.jpg") center center / cover;
+  }
+  div {
+    @apply text-xl;
+  }
+}

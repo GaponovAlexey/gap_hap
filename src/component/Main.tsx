@@ -5,6 +5,7 @@ const Main = () => {
     <div>
       <MainPageOne />
       <MainPageTwo />
+      <MainPageThree/>
     </div>
   );
 };
@@ -24,9 +25,22 @@ const MainPageTwo = () => {
   return (
     <div class={s.container_main_two}>
       <div class={s.img}>s</div>
-      <div>about us</div>
+      <div>
+        <div>lending</div>
+        <div>web Services</div>
+        <div>Marketing</div>
+      </div>
     </div>
   );
 };
+
+const MainPageThree = () => {
+  return (
+    <div class={s.container_main_three} >
+       <div class={s.img}>s</div>
+       <div>three</div>
+    </div>
+  )
+}
 
 export default Main;
