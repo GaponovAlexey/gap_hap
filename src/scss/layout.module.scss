@@ -1,0 +1,6 @@
+.header_main {  
+  @apply flex justify-between;
+  div, ul {
+    @apply flex justify-around;
+  }
+}
