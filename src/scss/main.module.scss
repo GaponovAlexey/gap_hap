@@ -30,7 +30,7 @@
       @apply text-center text-2xl pt-14;
     }
     .skills_element {
-      @apply pt-20 grid grid-cols-3 cursor-pointer   ;
+      @apply pt-20 grid grid-cols-3 cursor-pointer text-xs  ;
     }
     .one {
       @apply text-center p-14 hover:animate-pulse hover:shadow-2xl 	;

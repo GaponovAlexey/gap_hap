@@ -53,16 +53,16 @@ const MainPageFour = () => {
         <div class={s.skills}>
           <div>
             <h2>Benefits</h2>
-            <ul class={s.skills_element} >
-              <li class={s.one}>one</li>
-              <li class={s.two}>two</li>
-              <li class={s.three}>three</li>
-              <li class={s.four}>four</li>
-              <li class={s.five}>five</li>
-              <li class={s.six}>six</li>
-              <li class={s.seven}>seven</li>
-              <li class={s.eight}>eight</li>
-              <li class={s.nine}>nine</li>
+            <ul class={s.skills_element}>
+              <li class={s.one}>High level of performance</li>
+              <li class={s.two}>We guarantee the quality of work</li>
+              <li class={s.three}>Get job quickly</li>
+              <li class={s.four}>We will ensure the flow of applications</li>
+              <li class={s.five}>We automate work</li>
+              <li class={s.six}>We will develop a unique design</li>
+              <li class={s.seven}>Let's write a clean the code</li>
+              <li class={s.eight}>Contextual advertising</li>
+              <li class={s.nine}>Treated advertising</li>
             </ul>
           </div>
           <div></div>
