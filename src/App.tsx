@@ -7,7 +7,6 @@ const App: Component = () => {
   return (
     <>
       <Layout>
-        <Main />
         <Pages />
       </Layout>
     </>

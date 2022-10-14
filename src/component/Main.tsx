@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import s from "../scss/main.module.scss";
 
 const Main = () => {

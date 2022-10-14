@@ -3,7 +3,7 @@ import Header from "./header";
 
 const Layout = ({ children }: any) => {
   return (
-    <div>
+    <div class="max-w-[1025px] m-auto">
       <Header />
       {children}
       <Footer />

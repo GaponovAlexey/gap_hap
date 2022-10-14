@@ -1,5 +1,5 @@
 .header_main {
-  @apply flex justify-between p-2;
+  @apply flex justify-between p-2 bg-sky-400;
   div,
   ul {
     @apply flex justify-around;
@@ -10,5 +10,5 @@
 }
 
 .footer_main {
-  @apply flex justify-center;
+  @apply  flex justify-center;
 }

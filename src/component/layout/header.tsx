@@ -3,7 +3,7 @@ import s from "../../scss/layout.module.scss";
 const Header = () => {
   return (
     <div class={s.header_main}>
-      <h1>gap_hap</h1>
+      <h1><A href='/'>gap_hap</A></h1>
       <h2>We help businesses turn ideas into effective products</h2>
       <div>
         <ul>
