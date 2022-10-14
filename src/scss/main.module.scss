@@ -3,7 +3,6 @@
   background: url("../assets/world.jpg") center center / cover;
 }
 
-
 .container_main_two {
   @apply h-screen grid grid-cols-2;
   .img {
@@ -20,6 +19,20 @@
     background: url("../assets/ebout1.jpg") center center / cover;
   }
   div {
-    @apply text-xl;
+    @apply text-2xl;
+  }
+}
+
+.container_main_four {
+  .img {
+    @apply h-screen;
+    background: url("../assets/lamps.jpg") center center / cover black;
+  }
+}
+
+.container_main_five {
+  .img {
+    @apply h-screen;
+    background: url("../assets/lamp.jpg") center center / cover;
   }
 }
