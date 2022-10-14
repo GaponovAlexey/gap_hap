@@ -3,8 +3,8 @@ import s from "../../scss/layout.module.scss";
 const Header = () => {
   return (
     <div class={s.header_main}>
-      <div class="" >
-        <A href="/" class="text-xl">THE GAP_HAP DEV</A>
+      <div class="bg-black bg-opacity-25 text-white" >
+        <A href="/">"{"YOUR SUCCESS"}"</A>
         <h2 class="text-xs p-1" >We help businesses turn ideas into effective products</h2>
         <ul>
           <A href="/Lending">Lending</A>
