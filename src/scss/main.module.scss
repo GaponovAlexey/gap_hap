@@ -24,6 +24,51 @@
 }
 
 .container_main_four {
+  .skills {
+    @apply grid grid-cols-2 text-white ;
+    h2 {
+      @apply text-center text-2xl pt-14;
+    }
+    .skills_element {
+      @apply pt-20 grid grid-cols-3 cursor-pointer   ;
+    }
+    .one {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl 	;
+      background: url("../assets/1.svg") no-repeat center 1%;
+    }
+    .two {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl ;
+      background: url("../assets/2.svg") no-repeat center 1%;
+    }
+    .three {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/3.svg") no-repeat center 1%;
+    }
+    .four {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/4.svg") no-repeat center 1%;
+    }
+    .five {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl ;
+      background: url("../assets/5.svg") no-repeat center 1%;
+    }
+    .six {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/6.svg") no-repeat center 1%;
+    }
+    .seven {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/7.svg") no-repeat center 1%;
+    }
+    .eight {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/8.svg") no-repeat center 1%;
+    }
+    .nine {
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/9.svg") no-repeat center 1%;
+    }
+  }
   .img {
     @apply h-screen;
     background: url("../assets/lamps.jpg") center center / cover black;
