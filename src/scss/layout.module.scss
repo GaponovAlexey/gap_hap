@@ -1,7 +1,7 @@
 .header_main {
   @apply fixed top-0 left-0 right-0;
   div {
-    @apply  flex justify-between p-2  bg-orange-300;
+    @apply flex justify-between p-2;
   }
   A {
     @apply pl-2 cursor-pointer hover:text-sky-500;

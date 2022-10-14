@@ -3,9 +3,9 @@ import Header from "./header";
 
 const Layout = ({ children }: any) => {
   return (
-    <div class="max-w-[1025px] m-auto">
+    <div class="m-auto">
       <Header />
-      <div class="mt-10">{children}</div>
+      <div class="">{children}</div>
       <Footer />
     </div>
   );
