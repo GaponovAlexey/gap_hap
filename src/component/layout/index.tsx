@@ -5,7 +5,7 @@ const Layout = ({ children }: any) => {
   return (
     <div class="max-w-[1025px] m-auto">
       <Header />
-      {children}
+      <div class="mt-10">{children}</div>
       <Footer />
     </div>
   );

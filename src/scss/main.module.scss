@@ -1,5 +1,4 @@
 .container_main {
-  @apply text-3xl font-bold h-screen bg-blue-200 flex justify-center;
-  background:  url("../assets/home1.jpg") center center no-repeat scroll;
-  
+  @apply h-screen w-[100%];
+  background: url("../assets/home1.jpg") center center / cover;
 }

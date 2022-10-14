@@ -1,14 +1,13 @@
 .header_main {
-  @apply flex justify-between p-2 bg-sky-400;
-  div,
-  ul {
-    @apply flex justify-around;
-    li {
-      @apply pl-2 cursor-pointer hover:text-sky-500;
-    }
+  @apply fixed top-0 left-0 right-0;
+  div {
+    @apply  flex justify-between p-2  bg-orange-300;
+  }
+  A {
+    @apply pl-2 cursor-pointer hover:text-sky-500;
   }
 }
 
 .footer_main {
-  @apply  flex justify-center;
+  @apply flex justify-center;
 }
