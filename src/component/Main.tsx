@@ -76,7 +76,9 @@ const MainPageFive = () => {
   return (
     <div class={s.container_main_five}>
       <div class={s.img}>
-        <div>our </div>
+        <div class={s.wrap} >
+          <h2>Our advantages</h2>
+        </div>
       </div>
     </div>
   );
