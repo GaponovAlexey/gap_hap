@@ -1,7 +1,6 @@
-
+import s from  '../../scss/layout.module.scss'
 const Footer = () => {
-return (
-<div>footer</div>
-)}
+  return <div class={s.footer_main} >footer</div>;
+};
 
-export default Footer
+export default Footer;
