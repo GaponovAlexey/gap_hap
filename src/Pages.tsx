@@ -5,7 +5,7 @@ import PageTwo from "./component/PageTwo";
 interface CounterData {
   count: number
 }
-const Pages = () => {
+export const Pages = () => {
   const data = (): CounterData => {
     return { count: 4 };
   };
