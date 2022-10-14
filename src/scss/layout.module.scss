@@ -1,6 +1,9 @@
 .header_main {  
-  @apply flex justify-between;
+  @apply flex justify-between p-2;
   div, ul {
     @apply flex justify-around;
+    li {
+      @apply pl-2 cursor-pointer hover:text-sky-500;
+    }
   }
 }

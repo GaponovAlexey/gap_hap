@@ -3,12 +3,14 @@ const Header = () => {
   return (
     <div class={s.header_main}>
       <h1>gap_hap</h1>
+      <h2>We help businesses turn ideas into effective products</h2>
       <div>
         <ul>
-          <li>home</li>
-          <li>project</li>
+          <li>Lending</li>
+          <li>Web Services</li>
+          <li>Internet Marketing</li>
+          <li>about us</li>
           <li>contacts</li>
-          <li>about</li>
         </ul>
       </div>
     </div>
