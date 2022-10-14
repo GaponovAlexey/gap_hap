@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import s from "../../scss/layout.module.scss";
 const Header = () => {
   return (
@@ -6,10 +7,10 @@ const Header = () => {
       <h2>We help businesses turn ideas into effective products</h2>
       <div>
         <ul>
-          <li>Lending</li>
-          <li>Web Services</li>
-          <li>Internet Marketing</li>
-          <li>about us</li>
+          <li><A href='/Lending'>Lending</A></li>
+          <li><A href='/Services'>Web Services</A></li>
+          <li><A href='/Marketing'>Internet Marketing</A></li>
+          <li><A href='/about'>about us</A></li>
         </ul>
       </div>
     </div>

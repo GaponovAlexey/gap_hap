@@ -7,8 +7,6 @@ const Main = () => {
       <div>
         <div>Tools for any task</div>
         <div class="flex justify-around text-blue-700">
-          <A href="/">one</A>
-          <A href="/two">two</A>
         </div>
       </div>
     </section>
