@@ -1,5 +1,5 @@
 .header_main {
-  @apply invisible sm:visible   fixed top-0 left-0 right-0;
+  @apply sm:invisible  fixed top-0 left-0 right-0;
   div {
     @apply flex justify-between p-2;
   }
