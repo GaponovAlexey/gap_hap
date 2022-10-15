@@ -87,22 +87,22 @@
         @apply my-5;
       }
       .one {
-        @apply pl-[92px];
-        background: url("../assets/c1.svg")  no-repeat top/14% ;
+        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
+        background: url("../assets/c1.svg") no-repeat top/14%;
         background-position: 0%;
       }
       .two {
-        @apply pl-[92px];
+        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
         background: url("../assets/c2.svg") no-repeat center/14% auto;
         background-position: 0%;
       }
       .three {
-        @apply pl-[92px];
+        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
         background: url("../assets/c3.svg") no-repeat center/14% auto;
         background-position: 0%;
       }
       .four {
-        @apply pl-[92px];
+        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
         background: url("../assets/c4.svg") no-repeat center/14% auto;
         background-position: 0%;
       }
