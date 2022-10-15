@@ -1,5 +1,5 @@
 .header_main {
-  @apply fixed top-0 left-0 right-0 text-red-400;
+  @apply invisible sm:visible   fixed top-0 left-0 right-0;
   div {
     @apply flex justify-between p-2;
   }
@@ -13,7 +13,7 @@
   ul {
     @apply flex justify-center m-0;
     li {
-      @apply pl-4 ;
+      @apply pl-4;
     }
   }
 }

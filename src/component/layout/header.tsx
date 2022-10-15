@@ -1,5 +1,6 @@
 import { A } from "@solidjs/router";
 import s from "../../scss/layout.module.scss";
+import Burger from "../utils/burger";
 const Header = () => {
   return (
     <div class={s.header_main}>
@@ -12,6 +13,7 @@ const Header = () => {
           <A href="/Marketing">Internet Marketing</A>
           <A href="/about">about us</A>
         </ul>
+        <Burger />
       </div>
     </div>
   );

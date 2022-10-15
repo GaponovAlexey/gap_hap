@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div>
       <MainPageOne />
-      {/* <MainPageTwo /> */}
+      <MainPageTwo />
       {/* <MainPageThree /> */}
       <MainPageFour />
       <MainPageFive />
