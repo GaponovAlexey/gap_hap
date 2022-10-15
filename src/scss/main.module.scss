@@ -82,12 +82,12 @@
       @apply text-center font-serif text-2xl;
     }
     .wrap_advantages {
-      @apply grid grid-cols-2 gap-10 pt-5;
+      @apply grid grid-cols-2 gap-10 ;
       li {
         @apply my-5;
       }
       .one {
-        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
+        @apply lg:pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
         background: url("../assets/c1.svg") no-repeat top/14%;
         background-position: 0%;
       }
