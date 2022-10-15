@@ -4,8 +4,8 @@ const Main = () => {
   return (
     <div>
       <MainPageOne />
-      <MainPageTwo />
-      <MainPageThree />
+      {/* <MainPageTwo /> */}
+      {/* <MainPageThree /> */}
       <MainPageFour />
       <MainPageFive />
     </div>
@@ -76,8 +76,26 @@ const MainPageFive = () => {
   return (
     <div class={s.container_main_five}>
       <div class={s.img}>
-        <div class={s.wrap} >
+        <div class={s.wrap}>
           <h2>Our advantages</h2>
+          <ul class={s.wrap_advantages}>
+            <li class={s.one}>
+              We will make an adaptive design for any type of device
+            </li>
+            <li class={s.two}>
+              We will install analytics counters on the site and set up the
+              ability to track the results directly from your mobile phone
+            </li>
+            <li class={s.three}>
+              Set up all possible feedback methods. Applications for mail,
+              connect an online consultant, set up a phone call from the site,
+              connect Whatsapp to the site
+            </li>
+            <li class={s.four}>
+              We will analyze your industry and competitors, offer the best
+              tools for promotion on the Internet
+            </li>
+          </ul>
         </div>
       </div>
     </div>

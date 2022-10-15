@@ -25,19 +25,19 @@
 
 .container_main_four {
   .skills {
-    @apply grid grid-cols-2 text-white ;
+    @apply grid grid-cols-2 text-white;
     h2 {
       @apply text-center text-2xl font-bold  pt-14;
     }
     .skills_element {
-      @apply pt-20 grid grid-cols-3 cursor-pointer text-xs  ;
+      @apply pt-20 grid grid-cols-3 cursor-pointer text-xs;
     }
     .one {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl 	;
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/1.svg") no-repeat center 1%;
     }
     .two {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl ;
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/2.svg") no-repeat center 1%;
     }
     .three {
@@ -49,7 +49,7 @@
       background: url("../assets/4.svg") no-repeat center 1%;
     }
     .five {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl ;
+      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/5.svg") no-repeat center 1%;
     }
     .six {
@@ -77,7 +77,36 @@
 
 .container_main_five {
   .wrap {
-    @apply px-[32vh] py-[35vh] text-2xl font-bold text-gray-800;
+    @apply px-[20vh] py-[30vh] text-xl  text-gray-800;
+    h2 {
+      @apply text-center font-serif text-2xl;
+    }
+    .wrap_advantages {
+      @apply grid grid-cols-2 gap-10 pt-5;
+      li {
+        @apply my-5;
+      }
+      .one {
+        @apply pl-[92px];
+        background: url("../assets/c1.svg")  no-repeat top/14% ;
+        background-position: 0%;
+      }
+      .two {
+        @apply pl-[92px];
+        background: url("../assets/c2.svg") no-repeat center/14% auto;
+        background-position: 0%;
+      }
+      .three {
+        @apply pl-[92px];
+        background: url("../assets/c3.svg") no-repeat center/14% auto;
+        background-position: 0%;
+      }
+      .four {
+        @apply pl-[92px];
+        background: url("../assets/c4.svg") no-repeat center/14% auto;
+        background-position: 0%;
+      }
+    }
   }
   .img {
     @apply h-screen;
