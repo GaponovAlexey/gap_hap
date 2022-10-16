@@ -78,34 +78,30 @@
 
 .container_main_five {
   .wrap {
-    @apply px-[20vh] py-[30vh] text-xl  text-gray-800;
+    @apply  text-gray-800;
     h2 {
-      @apply text-center font-serif text-2xl;
+      @apply text-center font-serif text-2xl pt-56;
     }
     .wrap_advantages {
-      @apply grid grid-cols-2 gap-10;
+      @apply grid lg:pt-6 md:px-10 lg:px-10 lg:grid-cols-2 lg:gap-10 sm:text-sm;
       li {
-        @apply my-5;
+        @apply pl-16  my-6 m-1 min-h-full;
       }
       .one {
-        @apply lg:pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c1.svg") no-repeat top/14%;
-        background-position: 0%;
+        @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
+        background: url("../assets/c1.svg") no-repeat;
       }
       .two {
-        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c2.svg") no-repeat center/14% auto;
-        background-position: 0%;
+        @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
+        background: url("../assets/c2.svg") no-repeat;
       }
       .three {
-        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c3.svg") no-repeat center/14% auto;
-        background-position: 0%;
+        @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
+        background: url("../assets/c3.svg") no-repeat;
       }
       .four {
-        @apply pl-[92px] hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c4.svg") no-repeat center/14% auto;
-        background-position: 0%;
+        @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
+        background: url("../assets/c4.svg") no-repeat;
       }
     }
   }
