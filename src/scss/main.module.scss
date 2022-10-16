@@ -26,12 +26,12 @@
 
 .container_main_four {
   .skills {
-    @apply grid sm:grid-cols-1 grid-cols-2 text-white;
+    @apply grid min-h-full sm:grid-cols-1 grid-cols-2 text-white;
     h2 {
       @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
     .skills_element {
-      @apply sm:pt-10 absolute pt-20 mx-2 grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
+      @apply sm:pt-10 sm:absolute md:absolute pt-20  grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
