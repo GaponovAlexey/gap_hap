@@ -31,7 +31,7 @@
       @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
     .skills_element {
-      @apply sm:pt-10 pt-20 mx-2 grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
+      @apply sm:pt-10 absolute pt-20 mx-2 grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
@@ -66,8 +66,8 @@
       background: url("../assets/8.svg") no-repeat center 1%;
     }
     .nine {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/9.svg") no-repeat center 1%;
+      @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../assets/9.svg") no-repeat center 0%;
     }
   }
   .img {
@@ -78,14 +78,14 @@
 
 .container_main_five {
   .wrap {
-    @apply  text-gray-800;
+    @apply text-gray-800;
     h2 {
       @apply text-center font-serif text-2xl pt-56;
     }
     .wrap_advantages {
       @apply grid lg:pt-6 md:px-10 lg:px-10 lg:grid-cols-2 lg:gap-10 sm:text-sm;
       li {
-        @apply pl-16  my-6 m-1 min-h-full;
+        @apply pl-16 my-6 m-1 min-h-full sm:mx-2;
       }
       .one {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
@@ -93,7 +93,7 @@
       }
       .two {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c2.svg") no-repeat;
+        background: url("../assets/c2.svg") no-repeat -2% 0%;
       }
       .three {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
