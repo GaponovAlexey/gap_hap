@@ -4,8 +4,9 @@
 }
 
 .container_main_two {
-  @apply h-screen grid grid-cols-2;
+  @apply md:h-screen grid sm:grid-cols-1  grid-cols-2;
   .img {
+    @apply sm:hidden;
     background: url("../assets/ebout1.jpg") center center / cover;
   }
   div {
@@ -25,47 +26,47 @@
 
 .container_main_four {
   .skills {
-    @apply grid grid-cols-2 text-white;
+    @apply grid sm:grid-cols-1 grid-cols-2 text-white;
     h2 {
-      @apply text-center text-2xl font-bold  pt-14;
+      @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
     .skills_element {
-      @apply pt-20 grid grid-cols-3 cursor-pointer text-xs;
+      @apply sm:pt-10 pt-20 mx-2 grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
     }
     .one {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/1.svg") no-repeat center 1%;
     }
     .two {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/2.svg") no-repeat center 1%;
     }
     .three {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/3.svg") no-repeat center 1%;
     }
     .four {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/4.svg") no-repeat center 1%;
     }
     .five {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/5.svg") no-repeat center 1%;
     }
     .six {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/6.svg") no-repeat center 1%;
     }
     .seven {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/7.svg") no-repeat center 1%;
     }
     .eight {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/8.svg") no-repeat center 1%;
     }
     .nine {
-      @apply text-center p-14 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
       background: url("../assets/9.svg") no-repeat center 1%;
     }
   }
@@ -77,12 +78,12 @@
 
 .container_main_five {
   .wrap {
-    @apply  px-[20vh] py-[30vh] text-xl  text-gray-800;
+    @apply px-[20vh] py-[30vh] text-xl  text-gray-800;
     h2 {
       @apply text-center font-serif text-2xl;
     }
     .wrap_advantages {
-      @apply grid grid-cols-2 gap-10 ;
+      @apply grid grid-cols-2 gap-10;
       li {
         @apply my-5;
       }

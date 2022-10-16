@@ -1,21 +1,21 @@
 .header_main {
-  @apply sm:invisible  fixed top-0 left-0 right-0;
+  @apply sm:invisible md:invisible  fixed top-0 left-0 right-0;
   h2 {
     @apply text-xs p-1 text-center md:text-[10px];
   }
   div {
-    @apply flex justify-between md:p-1 p-2 ;
+    @apply flex justify-between md:p-1 p-2;
   }
   A {
     @apply md:pl-1 pl-2 cursor-pointer md:text-[12px] flex-wrap hover:text-sky-500;
   }
   .burger {
-    @apply fixed top-5 right-5 sm:visible invisible bg-red-200;
+    @apply fixed top-5 right-5 sm:visible md:visible invisible bg-red-200;
   }
 }
 
 .footer_main {
-  @apply h-[200px] pt-10 bg-black text-white text-center;
+  @apply h-auto py-14 bg-black text-white text-center;
   ul {
     @apply flex justify-center m-0;
     li {

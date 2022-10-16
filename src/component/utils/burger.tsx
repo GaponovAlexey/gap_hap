@@ -1,5 +1,3 @@
-import { createEffect, Show } from "solid-js";
-
 function Burger({ children, open, setIsOpen }: any) {
   return (
     <div
@@ -16,6 +14,9 @@ function Burger({ children, open, setIsOpen }: any) {
           (open ? " translate-x-0 " : " translate-x-full ")
         }
       >
+        <button onClick={() => setIsOpen(false)} class=" text-black">
+          close
+        </button>
         <article class="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
           <header class="p-4 pt-5 font-bold text-lg">Header</header>
           {children}
