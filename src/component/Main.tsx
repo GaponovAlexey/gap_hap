@@ -87,9 +87,9 @@ const MainPageFive = () => {
               ability to track the results directly from your mobile phone
             </li>
             <li class={s.three}>
-              We will set up all possible feedback methods: mail,
-              online consultant, phone call from the site,
-               Whatsapp connected to the site
+              We will set up all possible feedback methods: mail, online
+              consultant, phone call from the site, Whatsapp connected to the
+              site
             </li>
             <li class={s.four}>
               We will analyze your industry and competitors, offer the best
