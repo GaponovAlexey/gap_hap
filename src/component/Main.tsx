@@ -18,7 +18,9 @@ const MainPageOne = () => {
     <section class={s.container_main}>
       <div>
         <div class="pt-10 text-2xl">Tools for any task</div>
-        <div class="flex justify-around text-blue-700"></div>
+        <div class="flex justify-around text-blue-700">
+          Your website is costing you customers
+        </div>
       </div>
     </section>
   );
@@ -28,11 +30,14 @@ const MainPageTwo = () => {
   return (
     <div class={s.container_main_two}>
       <div class={s.img} />
-      <div>
-        <div>lending</div>
-        <div>web Services</div>
-        <div>Marketing</div>
-      </div>
+      <span>
+        <h2>Your website is costing you customers</h2>
+        <ul>
+          <li>landing</li>
+          <li>web Services</li>
+          <li>Marketing</li>
+        </ul>
+      </span>
     </div>
   );
 };

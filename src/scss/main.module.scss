@@ -4,13 +4,18 @@
 }
 
 .container_main_two {
-  @apply md:h-screen grid sm:grid-cols-1  grid-cols-2;
+  @apply h-screen grid sm:grid-cols-1  grid-cols-2;
   .img {
     @apply sm:hidden;
     background: url("../assets/ebout1.jpg") center center / cover;
   }
-  div {
-    @apply text-xl;
+  span {
+    h2 {
+      @apply text-center;
+    }
+    ul {
+      @apply text-xl text-center self-center bg-red-900;
+    }
   }
 }
 
@@ -26,7 +31,7 @@
 
 .container_main_four {
   .skills {
-    @apply  grid min-h-full sm:grid-cols-1 grid-cols-2 text-white;
+    @apply grid min-h-full sm:grid-cols-1 grid-cols-2 text-white;
     h2 {
       @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
@@ -71,8 +76,8 @@
     }
   }
   .img {
-    @apply h-screen sm:object-left ;
-    background: url("../assets/lamps.jpg") 30% 100%  / cover ;
+    @apply h-screen sm:object-left;
+    background: url("../assets/lamps.jpg") 30% 100% / cover;
   }
 }
 
