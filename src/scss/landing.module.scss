@@ -1,3 +1,7 @@
 .landing_main {
-  @apply h-screen flex justify-center items-center;
+  @apply min-h-screen text-white;
+  background: no-repeat url("../assets/long2.jpg") 100% / cover;
+  .landing_top {
+    @apply h-screen  ;
+  }
 }

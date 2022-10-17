@@ -4,7 +4,7 @@ const Footer = () => {
     <div class={s.footer_main}>
       <h3>YOUR SUCCESS</h3>
       <ul>
-        <li>Lending</li>
+        <li>Landing</li>
         <li>Web Services</li>
         <li>Marketing</li>
       </ul>

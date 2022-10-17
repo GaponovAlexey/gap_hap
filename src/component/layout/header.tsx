@@ -18,8 +18,8 @@ const Header: Component = () => {
           We help businesses turn ideas into effective products
         </h2>
         <ul>
-          <A href="/Lending">
-            <span class={green}>#</span>Lending
+          <A href="/Landing">
+            <span class={green}>#</span>Landing
           </A>
           <A href="/Services">
             <span class={orange}>#</span>Web Services
