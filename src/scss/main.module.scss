@@ -10,11 +10,15 @@
     background: url("../assets/ebout1.jpg") center center / cover;
   }
   span {
+    background: url("../assets/cover_all_4.webp") no-repeat 0% / cover;
     h2 {
-      @apply text-center;
+      @apply text-center mt-10;
     }
     ul {
-      @apply text-xl text-center self-center bg-red-900;
+      @apply text-center mt-10  -space-x-px text-xs;
+      button {
+        @apply border px-5 py-3 font-medium hover:z-10 hover:bg-gray-50 focus:z-10 focus:border-indigo-600 focus:outline-none active:opacity-75;
+      }
     }
   }
 }

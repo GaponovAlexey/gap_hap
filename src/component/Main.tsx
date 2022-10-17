@@ -33,9 +33,9 @@ const MainPageTwo = () => {
       <span>
         <h2>Your website is costing you customers</h2>
         <ul>
-          <li>landing</li>
-          <li>web Services</li>
-          <li>Marketing</li>
+          <button>landing</button>
+          <button>Web Services</button>
+          <button>Marketing</button>
         </ul>
       </span>
     </div>
