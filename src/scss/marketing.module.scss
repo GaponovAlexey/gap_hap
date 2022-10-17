@@ -1,3 +1,7 @@
 .main_marketing {
-  @apply flex h-screen justify-center items-center ;
+  @apply min-h-screen ;
+  background: no-repeat url("../assets/long3.jpg") center center / cover;
+  .marketing_page {
+    @apply h-screen text-white;
+  }
 }
