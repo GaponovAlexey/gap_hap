@@ -34,8 +34,11 @@
   p {
     @apply mt-4 pl-8 mx-11 text-xs ;
   }
-  button {
-    @apply flex font-bold text-left;
+  .but {
+    @apply flex sm:block sm:py-5 justify-between;
+    A {
+      @apply my-3;
+    }
   }
 }
 

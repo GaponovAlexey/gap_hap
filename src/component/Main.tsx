@@ -77,8 +77,8 @@ const Landing = () => (
       the conversion rates of your marketing campaigns and lowering your cost of
       acquiring a lead or sale.
     </p>
-    <p class="flex justify-between ">
-      <CustomBut name="Detail info Loading" path='landing'/>
+    <p class={s.but}>
+      <CustomBut name="Detail info" path='landing'/>
       <CustomBut name="Contact manager" path='landing'/>
       {/* <button>Detail info landing</button> */}
       {/* <button>Contact manager</button> */}
