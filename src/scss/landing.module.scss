@@ -1,6 +1,7 @@
 .landing_main {
   @apply min-h-screen text-white;
-  background: no-repeat url("../assets/long2.jpg") 100% / cover;
+  background: no-repeat url("../assets/img/long/5.jpg") center center / cover;
+  /* background: no-repeat url("../assets/img/long/2.png") 100% / cover; */
   .landing_top {
     @apply h-screen  ;
   }
