@@ -2,7 +2,7 @@ const CustomBut = () => {
   return (
     <div>
       <a
-        class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+        class="group  inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
         href="/download"
       >
         <span class="absolute left-0 -translate-x-full transition-transform group-hover:translate-x-4">
