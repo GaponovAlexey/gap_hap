@@ -1,5 +1,7 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
+import ButDB from "./utils/butDB";
+import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
@@ -35,6 +37,7 @@ const MainPageTwo = () => {
       <div class={s.img} />
       <span>
         <h2>Your website is costing you customers</h2>
+        <h3>Better product, Better price</h3>
         <ul>
           <a href="#landing">landing</a>
           <a href="#webServices">Web Services</a>
@@ -57,11 +60,29 @@ const MainPageTwo = () => {
     </div>
   );
 };
+
 const Landing = () => (
-  <p>
-    Landing pages keep visitors focused on the specific thing you want them to
-    do, getting you better results with the same campaign budget.
-  </p>
+  <div class={s.landing}>
+    <p>
+      Landing pages keep visitors focused on the specific thing you want them to
+      do, getting you better results with the same campaign budget.
+    </p>
+    <p>
+      Unlike web pages, which typically have many goals and encourage
+      exploration, landing pages are designed with a single focus or goal, known
+      as a call to action (or CTA, for short)
+    </p>
+    <p>
+      It’s this focus that makes landing pages the best option for increasing
+      the conversion rates of your marketing campaigns and lowering your cost of
+      acquiring a lead or sale.
+    </p>
+    <p>
+      <CustomBut />
+      {/* <button>Detail info landing</button> */}
+      <button>Contact manager</button>
+    </p>
+  </div>
 );
 
 const WebServices = () => <p>WebServices</p>;
