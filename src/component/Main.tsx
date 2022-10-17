@@ -1,5 +1,8 @@
+import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
+import { createRouteHandler } from "./utils/matches";
 
+const matches = createRouteHandler();
 const Main = () => {
   return (
     <div>
@@ -33,14 +36,38 @@ const MainPageTwo = () => {
       <span>
         <h2>Your website is costing you customers</h2>
         <ul>
-          <button>landing</button>
-          <button>Web Services</button>
-          <button>Marketing</button>
+          <a href="#landing">landing</a>
+          <a href="#webServices">Web Services</a>
+          <a href="#marketing">Marketing</a>
         </ul>
+        <div class={s.services}>
+          <Switch fallback={<Landing />}>
+            <Match when={matches("landing")}>
+              <Landing />
+            </Match>
+            <Match when={matches("webServices")}>
+              <WebServices />
+            </Match>
+            <Match when={matches("marketing")}>
+              <Marketing />
+            </Match>
+          </Switch>
+        </div>
       </span>
     </div>
   );
 };
+const Landing = () => (
+  <p>
+    Landing pages keep visitors focused on the specific thing you want them to
+    do, getting you better results with the same campaign budget.
+  </p>
+);
+
+const WebServices = () => <p>WebServices</p>;
+
+const Marketing = () => <p>Marketing</p>;
+
 //3
 const MainPageThree = () => {
   return (

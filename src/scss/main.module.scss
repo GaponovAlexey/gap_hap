@@ -15,10 +15,13 @@
       @apply text-center mt-10;
     }
     ul {
-      @apply text-center mt-10  -space-x-px text-xs;
-      button {
+      @apply text-center mt-10 mb-10 -space-x-px text-xs;
+      a {
         @apply border px-5 py-3 font-medium hover:z-10 hover:bg-gray-50 focus:z-10 focus:border-indigo-600 focus:outline-none active:opacity-75;
       }
+    }
+    .services {
+      @apply p-10 ;
     }
   }
 }
