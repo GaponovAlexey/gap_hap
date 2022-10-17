@@ -1,6 +1,5 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
-import ButDB from "./utils/butDB";
 import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
 
@@ -41,7 +40,7 @@ const MainPageTwo = () => {
         <ul>
           <a href="#landing">landing</a>
           <a href="#webServices">Web Services</a>
-          <a href="#marketing">Marketing</a>
+          <a href="#marketing">Digital</a>
         </ul>
         <div class={s.services}>
           <Switch fallback={<Landing />}>
@@ -62,7 +61,7 @@ const MainPageTwo = () => {
 };
 
 const Landing = () => (
-  <div class={s.landing}>
+  <div class={s.two_text_services}>
     <p>
       Landing pages keep visitors focused on the specific thing you want them to
       do, getting you better results with the same campaign budget.
@@ -78,17 +77,54 @@ const Landing = () => (
       acquiring a lead or sale.
     </p>
     <p class={s.but}>
-      <CustomBut name="Detail info" path='landing'/>
-      <CustomBut name="Contact manager" path='landing'/>
-      {/* <button>Detail info landing</button> */}
-      {/* <button>Contact manager</button> */}
+      <CustomBut name="Detail info" path="landing" />
+      <CustomBut name="Contact manager" path="landing" />
     </p>
   </div>
 );
 
-const WebServices = () => <p>WebServices</p>;
+const WebServices = () => (
+  <div class={s.two_text_services}>
+    <p>
+      A Web service is any software, application or cloud technology system
+      built for interoperable machine-to-machine or application-to-application
+      interaction over a network. They allow different applications to
+      seamlessly communicate and share data with each other.
+    </p>
+    <p>
+      Web services provide a common platform that allows multiple applications
+      built on various programming languages to have the ability to communicate
+      with each other.
+    </p>
+    <p>We will advise you and find the best solution for you</p>
+    <p class={s.but}>
+      <CustomBut name="Detail info" path="Services" />
+      <CustomBut name="Contact manager" path="Services" />
+    </p>
+  </div>
+);
 
-const Marketing = () => <p>Marketing</p>;
+const Marketing = () => (
+  <div class={s.two_text_services}>
+    <p>
+      Digital marketing is the promotion of a company and its products or
+      services through online tools that generate leads, drive traffic, and
+      boost sales.
+    </p>
+    <p>
+      Now, businesses can target their audience with pinpoint accuracy and
+      provide useful information that resonates.
+    </p>
+    <p>
+      This is perfect because that’s exactly what today’s consumers want. People
+      don’t want to hear about products and services that don’t interest them.
+    </p>
+    <p class={s.but}>
+      <CustomBut name="Detail info" path="Marketing" />
+      <CustomBut name="Contact manager" path="Marketing" />
+    </p>
+  </div>
+);
 
 //3
 const MainPageThree = () => {
