@@ -64,7 +64,9 @@ const Marketing = () => {
             </section>
           </div>
           <div class={s.info_marketing_services}>
-            <Switch fallback={<p>Hello who you need</p>}>
+            <Switch
+              fallback={<p class={s.list_services}>Hello who you need</p>}
+            >
               <Match when={matches("FacebookAds")}>
                 <div class={s.list_services}>Facebook Ads</div>
               </Match>
@@ -72,10 +74,7 @@ const Marketing = () => {
                 <div class={s.list_services}>Bind Ads</div>
               </Match>
               <Match when={matches("GoogleAds")}>
-                <div class={s.list_services}>Google Ads</div>
-              </Match>
-              <Match when={matches("BindAds")}>
-                <div class={s.list_services}>page three</div>
+                <div  class={s.list_services}>Google Ads</div>
               </Match>
               <Match when={matches("Website")}>
                 <div class={s.list_services}>Website</div>
