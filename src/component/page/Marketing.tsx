@@ -15,12 +15,15 @@ const Marketing = () => {
               <h3>Paid Search</h3>
               <ul>
                 <li>
+                  <span class="text-orange-400"># </span>
                   <a href="#FacebookAds"> Facebook Ads</a>
                 </li>
                 <li>
+                  <span class="text-orange-400"># </span>
                   <a href="#BindAds">Bind Ads</a>
                 </li>
                 <li>
+                  <span class="text-orange-400"># </span>
                   <a href="#GoogleAds">Google Ads</a>
                 </li>
               </ul>
@@ -28,48 +31,69 @@ const Marketing = () => {
             <section>
               <h3>Content Marketing</h3>
               <ul>
-                <li>Website</li>
-                <li>Magazine</li>
-                <li>Video</li>
+                <li>
+                  <span class="text-green-400"># </span>
+                  <a href="#Website">Website</a>
+                </li>
+                <li>
+                  <span class="text-green-400"># </span>
+                  <a href="#Magazine">Magazine</a>
+                </li>
+                <li>
+                  <span class="text-green-400"># </span>
+                  <a href="#Video">Video</a>
+                </li>
               </ul>
             </section>
             <section>
               <h3>SEO</h3>
               <ul>
-                <li>SSR</li>
-                <li>Technical SEO</li>
-                <li>Links</li>
-                <li>Content Marketing</li>
-                <li>Conversion Rate Optimization</li>
-                <li>On-Page Optimization</li>
+                <li>
+                  <span class="text-blue-400"># </span>
+                  <a href="#SSR">SSR</a>
+                </li>
+                <li>
+                  <span class="text-blue-400"># </span>
+                  <a href="#TechnicalSEO">Technical SEO</a>
+                </li>
+                <li>
+                  <span class="text-blue-400"># </span>
+                  <a href="#Links">Link building</a>
+                </li>
               </ul>
             </section>
           </div>
           <div class={s.info_marketing_services}>
-            <Switch fallback={<p>start</p>}>
+            <Switch fallback={<p>Hello who you need</p>}>
               <Match when={matches("FacebookAds")}>
-                <div>Facebook Ads</div>
+                <div class={s.list_services}>Facebook Ads</div>
               </Match>
               <Match when={matches("BindAds")}>
-                <div>Bind Ads</div>
+                <div class={s.list_services}>Bind Ads</div>
               </Match>
               <Match when={matches("GoogleAds")}>
-                <div>Google Ads</div>
+                <div class={s.list_services}>Google Ads</div>
               </Match>
               <Match when={matches("BindAds")}>
-                <div>page three</div>
+                <div class={s.list_services}>page three</div>
               </Match>
-              <Match when={matches("marketing")}>
-                <div>page three</div>
+              <Match when={matches("Website")}>
+                <div class={s.list_services}>Website</div>
               </Match>
-              <Match when={matches("marketing")}>
-                <div>page three</div>
+              <Match when={matches("Magazine")}>
+                <div class={s.list_services}>Magazine</div>
               </Match>
-              <Match when={matches("marketing")}>
-                <div>page three</div>
+              <Match when={matches("Video")}>
+                <div class={s.list_services}>Video</div>
               </Match>
-              <Match when={matches("marketing")}>
-                <div>page three</div>
+              <Match when={matches("SSR")}>
+                <div class={s.list_services}>SSR</div>
+              </Match>
+              <Match when={matches("TechnicalSEO")}>
+                <div class={s.list_services}>TechnicalSEO</div>
+              </Match>
+              <Match when={matches("Links")}>
+                <div class={s.list_services}>Links</div>
               </Match>
             </Switch>
           </div>

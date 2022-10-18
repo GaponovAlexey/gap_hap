@@ -11,6 +11,9 @@
     }
     .info_marketing_services {
       @apply px-12 text-2xl;
+      .list_services {
+        @apply text-center mt-10;
+      }
     }
   }
   .marketing_map {

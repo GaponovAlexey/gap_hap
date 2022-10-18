@@ -22,10 +22,10 @@ const Header: Component = () => {
             <span class={green}>#</span>Landing
           </A>
           <A href="/Services">
-            <span class={orange}>#</span>Web Services
+            <span class={orange}>#</span>Web_Services
           </A>
           <A href="/Marketing">
-            <span class={blue}>#</span>Internet Marketing
+            <span class={blue}>#</span>Internet_Marketing
           </A>
           {/* <A href="/about">about us</A> */}
         <span class={s.burger}>
