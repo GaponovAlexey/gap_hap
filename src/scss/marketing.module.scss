@@ -6,16 +6,19 @@
     .marketing_top_page {
       @apply pt-20 flex justify-around;
       h3 {
-        @apply text-2xl ;
+        @apply text-3xl;
       }
-    }  
+    }
+    .info_marketing_services {
+      @apply px-12 text-2xl;
+    }
   }
   .marketing_map {
     @apply h-screen;
-    background: no-repeat url("../assets/img/any/m2.svg")  center / contain;
-    
+    background: no-repeat url("../assets/img/any/m2.svg") center / contain;
+
     .marketing_bot_content {
-      @apply flex justify-center  ;
+      @apply flex justify-center;
       p {
         @apply text-2xl pt-32 font-bold text-sky-500;
       }
