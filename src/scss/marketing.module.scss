@@ -1,7 +1,16 @@
 .main_marketing {
-  @apply min-h-screen ;
-  background: no-repeat url("../assets/long3.jpg") center center / cover;
+  @apply min-h-screen  text-white;
+  background: no-repeat url("../assets/img/any/a1.png") center center / cover;
   .marketing_page {
-    @apply h-screen text-white;
+    @apply h-screen;
+  }
+  .marketing_map {
+    @apply h-screen  object-[14%];
+    background: no-repeat url("../assets/img/any/m2.svg")  center / contain;
+    img {
+    }
+    .marketing_top_content {
+      @apply flex justify-center  ;
+    }
   }
 }
