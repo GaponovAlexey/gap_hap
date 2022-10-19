@@ -89,7 +89,7 @@ const Marketing = () => {
                 <div class={s.list_services}>SSR</div>
               </Match>
               <Match when={matches("TechnicalSEO")}>
-                <div class={s.list_services}>TechnicalSEO</div>
+                <div class={s.list_services}>Technical SEO</div>
               </Match>
               <Match when={matches("Links")}>
                 <div class={s.list_services}>Links</div>

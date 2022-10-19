@@ -1,7 +1,6 @@
 import { Route, Routes } from "@solidjs/router";
 import Main from "./component/Main";
-import About from "./component/page/About";
-import Landing from "./component/page/Landing";
+import Landing from "./component/page/landing/Landing";
 import Marketing from "./component/page/Marketing";
 import Services from "./component/page/WebServices";
 
@@ -18,7 +17,6 @@ export const Pages = () => {
       <Route path={"/landing"} element={Landing} />
       <Route path={"/Services"} element={Services} />
       <Route path={"/Marketing"} element={Marketing} />
-      <Route path={"/about"} element={About} />
     </Routes>
   );
 };

@@ -1,0 +1,10 @@
+.main_services {
+  @apply min-h-screen  text-white;
+  background: no-repeat url("../assets/img/long/2.jpg") center center / cover;
+  .services_page {
+    @apply h-screen;
+    h3 {
+      @apply text-center text-5xl font-bold text-opacity-90 tracking-tight  uppercase text-white ;
+    }
+  }
+}
