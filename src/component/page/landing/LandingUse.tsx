@@ -3,7 +3,7 @@ const LandingUse = () => {
     <section class="text-gray-400 body-font ">
       <div class=" px-5 py-14 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
-          <h2 class="text-xs text-indigo-400 tracking-widest font-medium  mb-1">
+          <h2 class="text-xl text-indigo-400 tracking-widest font-medium  mb-1">
             Why you need a website for your small business
           </h2>
           <h1 class="sm:text-3xl text-2xl font-medium title-font  mb-4 text-white">
