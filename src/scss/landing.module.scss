@@ -2,9 +2,7 @@
   @apply min-h-screen text-white;
   background: no-repeat url("../assets/img/long/8.jpg") center center / cover;
   /* background: no-repeat url("../assets/img/long/2.png") 100% / cover; */
-  h2 {
-    @apply pt-20 text-center text-2xl;
-  }
+  
   .landing_top {
     @apply h-screen;
   }
