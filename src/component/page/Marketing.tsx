@@ -10,6 +10,22 @@ const Marketing = () => {
     <>
       <div class={s.main_marketing}>
         <div class={s.marketing_page}>
+          <div class={s.marketing_info}>
+            <h2>
+              Your website can attract new customers through Google
+            </h2>
+            <p>
+              You may be happy with the current size of your business, but every
+              company experiences customer turnover. To encourage continued
+              success, you need to attract new customers, and one of the best
+              ways to do it is by making yourself more visible on Google. Social
+              media networks are indexed on Google, and social media posts can
+              be found with the search engine, but a website gives you access to
+              many more tools and strategies for Search Engine Optimization
+              (SEO). And SEO is the key to making your business appear on the
+              front page of Google.
+            </p>
+          </div>
           <div class={s.marketing_top_page}>
             <section>
               <h3>Paid Search</h3>
@@ -74,7 +90,7 @@ const Marketing = () => {
                 <div class={s.list_services}>Bind Ads</div>
               </Match>
               <Match when={matches("GoogleAds")}>
-                <div  class={s.list_services}>Google Ads</div>
+                <div class={s.list_services}>Google Ads</div>
               </Match>
               <Match when={matches("Website")}>
                 <div class={s.list_services}>Website</div>
@@ -97,6 +113,7 @@ const Marketing = () => {
             </Switch>
           </div>
         </div>
+        <div class={s.marketing_page}>marketing</div>
         <div class={s.marketing_page}>marketing</div>
         <div class={s.marketing_map}>
           <div class={s.marketing_bot_content}>

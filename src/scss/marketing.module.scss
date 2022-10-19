@@ -3,6 +3,15 @@
   background: no-repeat url("../assets/img/any/a1.png") center center / cover;
   .marketing_page {
     @apply h-screen;
+    .marketing_info {
+      @apply pt-16 px-5 leading-relaxed ;
+      h2 {
+        @apply pb-10 text-lg sm:text-xl text-indigo-400 text-center;
+      }
+      p {
+        @apply lg:w-2/3 mx-auto leading-relaxed text-base;
+      }
+    }
     .marketing_top_page {
       @apply pt-20 flex justify-around;
       h3 {
