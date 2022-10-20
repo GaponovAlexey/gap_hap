@@ -4,13 +4,9 @@ const LandingUse = () => {
     <section class={s.landing_use}>
       <div>
         <div class={s.landing_use_top}>
-          <h2 class="text-xl text-indigo-400 tracking-widest font-medium  mb-1">
-            Why you need a website for your small business
-          </h2>
-          <h1 class="sm:text-3xl text-2xl font-medium title-font  mb-4 text-white">
-            A website makes you look professional
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed ">
+          <h2>Why you need a website for your small business</h2>
+          <h1>A website makes you look professional</h1>
+          <p>
             84% of today’s consumers think a website makes your business more
             credible than companies who only have social media profiles. Your
             website is also the perfect place to show off any professional
@@ -18,48 +14,61 @@ const LandingUse = () => {
           </p>
         </div>
         <div class={s.landing_use_bottom}>
+          {/* 1 */}
           <div>
-            {/* 2 */}
-            <h2>Your website can attract new customers through Google</h2>
-            <p>
-              You may be happy with the current size of your business, but every
-              company experiences customer turnover. To encourage continued
-              success, you need to attract new customers, and one of the best
-              ways to do it is by making yourself more visible on Google. Social
-              media networks are indexed on Google, and social media posts can
-              be found with the search engine, but a website gives you access to
-              many more tools and strategies for Search Engine Optimization
-              (SEO). And SEO is the key to making your business appear on the
-              front page of Google.
-            </p>
-          </div>
-          <div>
-            {/* 3 */}
             <h2>You can clearly showcase your products and services</h2>
             <p>
               You can show potential customers what they’ll get when they work
-              with you by displaying high-quality photography on your website.{" "}
-              <br />
-              You can also use your website design, along with the featured
-              images, to give people a sense of what it feels like to enter your
-              physical location. This works particularly well if your brand is
-              closely tied to the “feel” of your location, like the Canadian
-              restaurant
+              with you by displaying high-quality photography on your website.
             </p>
           </div>
+          {/* 2 */}
           <div>
-            {/* 4 */}
-            <h2>Neptune</h2>
+            <h2>
+              You can display your best reviews and testimonials prominently on
+              your website
+            </h2>
             <p>
-              Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-              hexagon disrupt edison bulbche.
+              Displaying your best reviews and/or testimonials prominently on
+              your website is a great way to establish social proof. This might
+              come in the form of personal customer testimonials
             </p>
           </div>
+          {/* 3 */}
           <div>
-            <h2>Melanchole</h2>
+            <h2>A website can encourage customers to contact you</h2>
             <p>
-              Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-              hexagon disrupt edison bulbche.
+              A website is a great place to make your contact information easily
+              available to potential customers.
+            </p>
+          </div>
+          {/* 4 */}
+          <div>
+            <h2>
+              You can integrate your website with Google Maps so people can find
+              you more easily
+            </h2>
+            <p>A website lets you embed maps directly into your content.</p>
+          </div>
+          {/* 5 */}
+          <div>
+            <h2>Your website establishes your place in your industry</h2>
+            <p>
+              As of 2022, 71% of small businesses have websites and 81% of
+              customers research things online before they buy them. In other
+              words, if your competitors are online and you’re not, those
+              competitors get the first interactions with customers.
+            </p>
+          </div>
+          {/* 6 */}
+          <div>
+            <h2>Having a website will end up saving you time.</h2>
+            <p>
+              Whether you’re trading emails, taking calls, or sending out
+              proposals – communicating with potential customers takes time.
+              Your website can save you that time by providing answers to common
+              customer questions and inquiries. What does this mean for you? You
+              can spend your time doing more valuable things.
             </p>
           </div>
         </div>
