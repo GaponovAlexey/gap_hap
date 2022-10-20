@@ -1,7 +1,7 @@
 .landing_main {
   @apply min-h-screen text-white;
-  background: no-repeat url("../assets/img/long/long1.png") center center / cover;
-  /* background: no-repeat url("../assets/img/long/2.png") 100% / cover; */
+  background: no-repeat url("../assets/img/long/long2.jpg") center center /
+    cover;
   .landing_top {
     @apply h-screen;
   }
@@ -19,7 +19,7 @@
         @apply sm:text-3xl text-2xl  mb-4 text-white;
       }
       p {
-        @apply  lg:w-2/3 mx-auto leading-relaxed;
+        @apply lg:w-2/3 mx-auto leading-relaxed;
       }
     }
     .landing_use_bottom {
@@ -30,7 +30,7 @@
           @apply sm:text-xl text-white text-lg mb-2;
         }
         p {
-          @apply sm:text-xs leading-relaxed text-base mb-4;
+          @apply sm:text-xl leading-relaxed text-base mb-4;
         }
       }
     }
