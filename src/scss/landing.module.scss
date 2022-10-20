@@ -2,8 +2,28 @@
   @apply min-h-screen text-white;
   background: no-repeat url("../assets/img/long/8.jpg") center center / cover;
   /* background: no-repeat url("../assets/img/long/2.png") 100% / cover; */
-  
   .landing_top {
     @apply h-screen;
+  }
+  .landing_use {
+    @apply text-gray-400;
+    div {
+      @apply px-5 py-14 mx-auto;
+    }
+    .landing_use_top {
+      @apply flex flex-col text-center w-full mb-10;
+    }
+    .landing_use_bottom {
+      @apply flex flex-wrap;
+      div {
+        @apply lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800;
+        h2 {
+          @apply text-lg sm:text-xl text-white font-medium mb-2;
+        }
+        p {
+          @apply leading-relaxed text-base mb-4;
+        }
+      }
+    }
   }
 }

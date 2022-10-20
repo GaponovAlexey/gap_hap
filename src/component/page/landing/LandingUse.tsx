@@ -1,8 +1,9 @@
+import s from "../../../scss/landing.module.scss";
 const LandingUse = () => {
   return (
-    <section class="text-gray-400 body-font ">
-      <div class=" px-5 py-14 mx-auto">
-        <div class="flex flex-col text-center w-full mb-10">
+    <section class={s.landing_use}>
+      <div>
+        <div class={s.landing_use_top}>
           <h2 class="text-xl text-indigo-400 tracking-widest font-medium  mb-1">
             Why you need a website for your small business
           </h2>
@@ -16,13 +17,11 @@ const LandingUse = () => {
             certifications or awards your business has.
           </p>
         </div>
-        <div class="flex flex-wrap">
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 sm py-6 border-l-2 border-gray-800">
+        <div class={s.landing_use_bottom}>
+          <div>
             {/* 2 */}
-            <h2 class="text-lg sm:text-xl text-white">
-              Your website can attract new customers through Google
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <h2>Your website can attract new customers through Google</h2>
+            <p>
               You may be happy with the current size of your business, but every
               company experiences customer turnover. To encourage continued
               success, you need to attract new customers, and one of the best
@@ -34,32 +33,31 @@ const LandingUse = () => {
               front page of Google.
             </p>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+          <div>
             {/* 3 */}
-            <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">
-              You can clearly showcase your products and services
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <h2>You can clearly showcase your products and services</h2>
+            <p>
               You can show potential customers what they’ll get when they work
-              with you by displaying high-quality photography on your website. <br />
-              You can also use your website design, along with the featured images, to give people a sense of what it feels like to enter your physical location. This works particularly well if your brand is closely tied to the “feel” of your location, like the Canadian restaurant
+              with you by displaying high-quality photography on your website.{" "}
+              <br />
+              You can also use your website design, along with the featured
+              images, to give people a sense of what it feels like to enter your
+              physical location. This works particularly well if your brand is
+              closely tied to the “feel” of your location, like the Canadian
+              restaurant
             </p>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+          <div>
             {/* 4 */}
-            <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">
-              Neptune
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
+            <h2>Neptune</h2>
+            <p>
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>
           </div>
-          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
-            <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">
-              Melanchole
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
+          <div>
+            <h2>Melanchole</h2>
+            <p>
               Fingerstache flexitarian street art 8-bit waistcoat. Distillery
               hexagon disrupt edison bulbche.
             </p>
