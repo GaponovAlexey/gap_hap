@@ -1,4 +1,5 @@
 import s from "../../../scss/landing.module.scss";
+import CreateTask from "../../utils/Createtask";
 import LandingUse from "./LandingUse";
 
 const Lending = () => {
@@ -6,7 +7,9 @@ const Lending = () => {
     <div class={s.landing_main}>
       <LandingUse />
       <div class={s.landing_top}></div>
-      <div class={s.landing_top}>da</div>
+      <div class={s.landing_top}>
+        <CreateTask />
+      </div>
     </div>
   );
 };

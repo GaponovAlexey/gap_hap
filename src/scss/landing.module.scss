@@ -3,7 +3,7 @@
   background: no-repeat url("../assets/img/long/long2.jpg") center center /
     cover;
   .landing_top {
-    @apply h-screen;
+    @apply h-full;
   }
   .landing_use {
     @apply text-gray-400;
