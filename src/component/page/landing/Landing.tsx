@@ -8,7 +8,7 @@ const Lending = () => {
       <div class={s.landing_top}>
         <div></div>
       </div>
-      {/* <div class={s.landing_top}>da</div> */}
+      <div class={s.landing_top}>da</div>
     </div>
   );
 };
