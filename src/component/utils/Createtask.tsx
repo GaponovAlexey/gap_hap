@@ -1,5 +1,5 @@
 const CreateTask = () => {
-  return <div>Create task</div>;
+  return <div>Create form</div>;
 };
 
 export default CreateTask;
