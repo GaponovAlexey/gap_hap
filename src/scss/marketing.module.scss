@@ -1,6 +1,6 @@
 .main_marketing {
   @apply min-h-screen  text-white;
-  background: no-repeat url("../assets/img/any/a1.png") center center / cover;
+  background: no-repeat url("../assets/yes/long-m.png") center center / cover;
   .marketing_page {
     @apply h-screen;
     .marketing_info {
@@ -27,7 +27,7 @@
   }
   .marketing_map {
     @apply h-screen;
-    background: no-repeat url("../assets/img/any/m2.svg") center / contain;
+    background: no-repeat url("../assets/svg/m2.svg") center / contain;
 
     .marketing_bot_content {
       @apply flex justify-center;
