@@ -1,6 +1,6 @@
 .landing_main {
   @apply min-h-screen text-white;
-  background: no-repeat black url("../assets/yes/fa3.png") center center  /
+  background: no-repeat black url("../assets/yes/fa4.png") center center  /
     cover;
   .landing_top {
     @apply h-full;
@@ -25,9 +25,9 @@
     .landing_use_bottom {
       @apply flex flex-wrap;
       div {
-        @apply lg:w-1/2 md:w-full px-8 py-4 border-l-2 border-gray-800;
+        @apply lg:w-1/2 md:w-full px-8 py-4  sm:border-l-2 md:border-l-2 border-gray-800;
         h2 {
-          @apply sm:text-xl text-white text-lg mb-2;
+          @apply sm:text-xl text-white text-[16px] mb-2;
         }
         p {
           @apply sm:text-xl leading-relaxed text-base mb-4;
