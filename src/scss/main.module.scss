@@ -1,13 +1,13 @@
 .container_main {
   @apply h-screen;
-  background: url("../assets/world.jpg") center center / cover;
+  background: url("../assets/yes/world.jpg") center center / cover;
 }
 
 .container_main_two {
   @apply h-screen grid sm:grid-cols-1    grid-cols-2;
   .img {
     @apply sm:hidden overflow-hidden z-[-1];
-    background: url("../assets/ebout1.jpg") center center / cover;
+    background: url("../assets/yes/ebout1.jpg") center center / cover;
   }
   span {
     background: url("../assets/cover_all_4.webp") no-repeat 0% / cover;
@@ -45,7 +45,7 @@
 .container_main_three {
   @apply h-screen grid grid-cols-2;
   .img {
-    background: url("../assets/ebout1.jpg") center center / cover;
+    background: url("../assets/yes/ebout1.jpg") center center / cover;
   }
   div {
     @apply text-2xl;
@@ -63,44 +63,44 @@
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/1.svg") no-repeat center 1%;
+      background: url("../assets/svg/1.svg") no-repeat center 1%;
     }
     .two {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/2.svg") no-repeat center 1%;
+      background: url("../assets/svg/2.svg") no-repeat center 1%;
     }
     .three {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/3.svg") no-repeat center 1%;
+      background: url("../assets/svg/3.svg") no-repeat center 1%;
     }
     .four {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/4.svg") no-repeat center 1%;
+      background: url("../assets/svg/4.svg") no-repeat center 1%;
     }
     .five {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/5.svg") no-repeat center 1%;
+      background: url("../assets/svg/5.svg") no-repeat center 1%;
     }
     .six {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/6.svg") no-repeat center 1%;
+      background: url("../assets/svg/6.svg") no-repeat center 1%;
     }
     .seven {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/7.svg") no-repeat center 1%;
+      background: url("../assets/svg/7.svg") no-repeat center 1%;
     }
     .eight {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/8.svg") no-repeat center 1%;
+      background: url("../assets/svg/8.svg") no-repeat center 1%;
     }
     .nine {
       @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../assets/9.svg") no-repeat center 0%;
+      background: url("../assets/svg/9.svg") no-repeat center 0%;
     }
   }
   .img {
     @apply h-screen sm:object-left;
-    background: url("../assets/lamps.jpg") 30% 100% / cover;
+    background: url("../assets/yes/lamps.jpg") 30% 100% / cover;
   }
 }
 
@@ -117,24 +117,24 @@
       }
       .one {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c1.svg") no-repeat;
+        background: url("../assets/svg/c1.svg") no-repeat;
       }
       .two {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c2.svg") no-repeat -2% 0%;
+        background: url("../assets/svg/c2.svg") no-repeat ;
       }
       .three {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c3.svg") no-repeat;
+        background: url("../assets/svg/c3.svg") no-repeat;
       }
       .four {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/c4.svg") no-repeat;
+        background: url("../assets/svg/c4.svg") no-repeat;
       }
     }
   }
   .img {
     @apply h-screen;
-    background: url("../assets/lamp.jpg") center center / cover;
+    background: url("../assets/yes/lamp.jpg") center center / cover;
   }
 }
