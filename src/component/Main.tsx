@@ -1,5 +1,6 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
+import Application from "./utils/Application";
 import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
 
@@ -12,6 +13,7 @@ const Main = () => {
       {/* <MainPageThree /> */}
       <MainPageFour />
       <MainPageFive />
+      <Application />
     </div>
   );
 };
