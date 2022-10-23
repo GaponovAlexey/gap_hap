@@ -3,7 +3,7 @@ import Main from "./component/Main";
 import Landing from "./component/page/landing/Landing";
 import Marketing from "./component/page/Marketing";
 import Services from "./component/page/WebServices";
-import Login from "./component/utils/Login";
+import Login from "./Login";
 
 interface CounterData {
   count: number;
