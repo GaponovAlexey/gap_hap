@@ -7,14 +7,14 @@ import { createRouteHandler } from "./utils/matches";
 const matches = createRouteHandler();
 const Main = () => {
   return (
-    <div>
+    <>
       <MainPageOne />
+      <Application />
       <MainPageTwo />
       {/* <MainPageThree /> */}
       <MainPageFour />
       <MainPageFive />
-      <Application />
-    </div>
+    </>
   );
 };
 
