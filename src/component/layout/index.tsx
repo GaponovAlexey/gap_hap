@@ -5,10 +5,9 @@ const Layout = ({ children }: any) => {
   return (
     <div class="m-auto">
       <Header />
-      <div>{children}</div>
+      {children}
       <Footer />
     </div>
   );
 };
-
 export default Layout;

@@ -14,11 +14,9 @@ const Header: Component = () => {
     <div class={s.header_main}>
       <div class="bg-black bg-opacity-25 text-white">
         <A href="/">"{"YOUR SUCCESS"}"</A>
-        <h2>
-          We help businesses turn ideas into effective products
-        </h2>
+        <h2>We help businesses turn ideas into effective products</h2>
         <ul>
-          <A href="/Landing">
+          {/* <A href="/Landing">
             <span class={green}>#</span>Landing
           </A>
           <A href="/Services">
@@ -26,23 +24,29 @@ const Header: Component = () => {
           </A>
           <A href="/Marketing">
             <span class={blue}>#</span>Internet_Marketing
+          </A> */}
+          <A href="/login">
+            <span class={green}>#</span>Login
+          </A>
+          <A href="/register">
+            <span class={blue}>#</span>Create Account
           </A>
           {/* <A href="/about">about us</A> */}
-        <span class={s.burger}>
-          <Show_
-            when={open()}
-            fallback={
-              <button onClick={() => setOpen((p) => (p = !p))}>open</button>
-            }
+          <span class={s.burger}>
+            <Show_
+              when={open()}
+              fallback={
+                <button onClick={() => setOpen((p) => (p = !p))}>open</button>
+              }
             >
-            <button onClick={() => setOpen((p) => (p = !p))}>closed</button>
-            <Burger open={open()} setIsOpen={setOpen}>
-              <Card />
-              <Card />
-            </Burger>
-          </Show_>
-        </span>
-            </ul>
+              <button onClick={() => setOpen((p) => (p = !p))}>closed</button>
+              <Burger open={open()} setIsOpen={setOpen}>
+                <Card />
+                <Card />
+              </Burger>
+            </Show_>
+          </span>
+        </ul>
       </div>
     </div>
   );

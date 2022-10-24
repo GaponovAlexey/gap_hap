@@ -1,12 +1,26 @@
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import { setCookie } from "nookies";
 import { createSignal } from "solid-js";
 
-const SignUp = ({ handleRegister }: any) => {
+const SignUp = () => {
+  
+  const handleRegister = (email: string, password: string) => {
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(({ user }: any) => {
+        console.log(user);
+        setCookie(null, "token", user.accessToken, {});
+        setCookie(null, "email", user.email, {});
+      })
+      .catch(console.error);
+  };
+
   const [email, setEmail] = createSignal("");
   const [password, setPassword] = createSignal("");
 
   const SendData = () => {
-    if (password.length > 5 && email.length > 5) {
-      handleRegister(email, password);
+    if (password().length > 5 && email().length > 5) {
+      handleRegister(email(), password());
     }
   };
 
