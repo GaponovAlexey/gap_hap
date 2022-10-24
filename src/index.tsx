@@ -5,12 +5,15 @@ import "./index.css";
 import "./assets/font/index.css";
 import App from "./App";
 import "./firebase.ts";
+import { Provide } from "./context";
 
 render(
   () => (
-    <Router>
-      <App />
-    </Router>
+    <Provide>
+      <Router>
+        <App />
+      </Router>
+    </Provide>
   ),
   document.getElementById("root") as HTMLElement
 );

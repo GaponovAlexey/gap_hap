@@ -1,17 +1,21 @@
+import { parseCookies } from "nookies";
 import { createContext, useContext } from "solid-js";
 import { createStore } from "solid-js/store";
-const CounterContext = createContext([{ count: 1 }, {}]);
+
+const CounterContext = createContext([{ user: false }, {}]);
+
+const t = parseCookies();
 
 export const Provide = (props: any) => {
-  const [state, setState] = createStore<any>({ count:  0 }),
+  const [state, setState] = createStore<any>({ user: Boolean(t.email) || false }),
     store = [
       state,
       {
-        increment() {
-          setState("count", (c: any) => c + 1);
+        sigIn() {
+          setState("user", (c: any) => (c = true));
         },
-        decrement() {
-          setState("count", (c: any) => c - 1);
+        logOut() {
+          setState("user", (c: any) => (c = false));
         },
       },
     ];
@@ -23,7 +27,6 @@ export const Provide = (props: any) => {
   );
 };
 
-export function useCounter() {
+export function useContextUser() {
   return useContext(CounterContext);
 }
-

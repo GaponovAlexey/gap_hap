@@ -2,18 +2,24 @@ import { useNavigate } from "@solidjs/router";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { setCookie } from "nookies";
 import { createSignal } from "solid-js";
+import { useContextUser } from "../../context";
+// import { useContextUser } from "../../context";
 
 const SignIn = () => {
   const nav = useNavigate();
+  
   const handeLLogin = (email: string, password: string) => {
+    const [_, { sigIn  }] = useContextUser();
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then(({ user }: any) => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
         setCookie(null, "email", user.email, {});
+
         nav("/");
       })
+      .then(sigIn)
       .catch(console.error);
   };
 
