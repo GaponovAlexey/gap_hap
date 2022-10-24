@@ -12,10 +12,6 @@ const Application = () => {
   const [name, setUser] = createSignal("da");
   const [user, setName] = createSignal("das");
 
-  createEffect(() => {
-    console.log("application", ...application());
-  }, [application]);
-
   const addApplication = (e: any) => {
     e.preventDefault();
     const newData = { name: "222", user: "dsad" };
