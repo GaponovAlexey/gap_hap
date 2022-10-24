@@ -1,4 +1,5 @@
 import { Match, Switch } from "solid-js";
+import { useCounter } from "../context";
 import s from "../scss/main.module.scss";
 import Application from "./utils/Application";
 import CustomBut from "./utils/CustomBut";
@@ -20,11 +21,13 @@ const Main = () => {
 
 //one
 const MainPageOne = () => {
+  const [count] = useCounter();
   return (
     <section class={s.container_main}>
       <div>
         <div class="pt-10 text-2xl">Tools for any task</div>
         <div class="flex justify-around text-blue-700">
+        {count.count}
           Your website is costing you customers
         </div>
       </div>

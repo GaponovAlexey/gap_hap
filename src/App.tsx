@@ -1,13 +1,16 @@
 import { Component } from "solid-js";
 import Layout from "./component/layout";
+import { Provide } from "./context";
 import Pages from "./Pages";
 
 const App: Component = () => {
   return (
     <>
-      <Layout>
-        <Pages />
-      </Layout>
+      <Provide>
+        <Layout>
+          <Pages />
+        </Layout>
+      </Provide>
     </>
   );
 };
