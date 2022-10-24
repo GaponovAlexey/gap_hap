@@ -1,6 +1,7 @@
 import { A, useNavigate } from "@solidjs/router";
 import { parseCookies, destroyCookie } from "nookies";
 import { Component, createEffect, createSignal, Show } from "solid-js";
+import { useContextUser } from "../../context";
 import s from "../../scss/layout.module.scss";
 import Burger from "../utils/burger";
 import Card from "../utils/Card";
@@ -12,18 +13,11 @@ const Header: Component = () => {
   const green = "text-green-400";
   const orange = "text-orange-400";
   const blue = "text-blue-400";
-  const t = parseCookies();
-
+  const [user, { logOut }] = useContextUser() as any;
   const dest = () => {
     destroyCookie(null, "token"), destroyCookie(null, "email");
-    nav("/");
+    logOut();
   };
-
-  createEffect(() => {
-    console.log("da");
-
-    nav("/");
-  }, [t]);
 
   return (
     <div class={s.header_main}>
@@ -31,7 +25,8 @@ const Header: Component = () => {
         <A href="/">"{"YOUR SUCCESS"}"</A>
         <h2>We help businesses turn ideas into effective products</h2>
         <ul>
-          {t.email ? (
+          {}
+          {user?.user ? (
             <button onClick={dest}>Sign Out</button>
           ) : (
             <>
