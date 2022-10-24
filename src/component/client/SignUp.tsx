@@ -1,9 +1,10 @@
+import { useNavigate } from "@solidjs/router";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { setCookie } from "nookies";
 import { createSignal } from "solid-js";
 
 const SignUp = () => {
-  
+  const nav = useNavigate();
   const handleRegister = (email: string, password: string) => {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
@@ -11,6 +12,7 @@ const SignUp = () => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
         setCookie(null, "email", user.email, {});
+        nav("/");
       })
       .catch(console.error);
   };

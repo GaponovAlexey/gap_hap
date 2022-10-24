@@ -12,7 +12,6 @@ const Login = ({ children }: any) => {
   const t = parseCookies();
   console.log("em", t.email);
   const location = useNavigate();
-  console.log("location", location);
 
   if (!t.email) {
     return children;

@@ -1,9 +1,10 @@
+import { useNavigate } from "@solidjs/router";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { setCookie } from "nookies";
 import { createSignal } from "solid-js";
 
 const SignIn = () => {
-  
+  const nav = useNavigate();
   const handeLLogin = (email: string, password: string) => {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
@@ -11,6 +12,7 @@ const SignIn = () => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
         setCookie(null, "email", user.email, {});
+        nav("/");
       })
       .catch(console.error);
   };
@@ -63,7 +65,7 @@ const SignIn = () => {
               <input
                 value={password()}
                 onInput={(e) => setPassword(e.currentTarget.value)}
-                type="text"
+                type="password"
                 id="Password"
                 name="Password"
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
