@@ -13,10 +13,18 @@ const Header: Component = () => {
   const orange = "text-orange-400";
   const blue = "text-blue-400";
   const t = parseCookies();
+
   const dest = () => {
     destroyCookie(null, "token"), destroyCookie(null, "email");
     nav("/");
   };
+
+  createEffect(() => {
+    console.log("da");
+
+    nav("/");
+  }, [t]);
+
   return (
     <div class={s.header_main}>
       <div class="bg-black bg-opacity-25 text-white">
@@ -35,17 +43,7 @@ const Header: Component = () => {
               </A>
             </>
           )}
-          {/* <A href="/Landing">
-            <span class={green}>#</span>Landing
-          </A>
-          <A href="/Services">
-            <span class={orange}>#</span>Web_Services
-          </A>
-          <A href="/Marketing">
-            <span class={blue}>#</span>Internet_Marketing
-          </A> */}
 
-          {/* <A href="/about">about us</A> */}
           <span class={s.burger}>
             <Show_
               when={open()}

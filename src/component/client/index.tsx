@@ -1,12 +1,5 @@
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  getAuth,
-} from "firebase/auth";
-import SignUp from "./SignUp";
-import { setCookie, parseCookies } from "nookies";
-import SignIn from "./SignIn";
 import { useNavigate } from "@solidjs/router";
+import { parseCookies } from "nookies";
 
 const Login = ({ children }: any) => {
   const t = parseCookies();
