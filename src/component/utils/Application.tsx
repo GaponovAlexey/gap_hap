@@ -30,6 +30,7 @@ const Application = () => {
           <h2>let's go discuss your task</h2>
           <p>talk about the project</p>
         </div>
+        {/* ADD */}
         <form>
           <input
             placeholder="name"
@@ -60,11 +61,12 @@ const Application = () => {
             Add
           </button>
         </form>
+        {/* VIE */}
         <For each={application.todos}>
           {(todo: any, i) => (
             <div>
               <input
-                value={todo.name }
+                value={todo.name}
                 onChange={(e) =>
                   setApplication("name", i(), {
                     name: e.currentTarget.value,
