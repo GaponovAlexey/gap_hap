@@ -7,14 +7,13 @@ type ApplicationType = {
 };
 const Application = () => {
   const [application, setApplication] = createLocalStore([]);
-  const [name, setUser] = createSignal("");
-  const [user, setName] = createSignal("");
+  const [user, setUser] = createSignal({ name: "", email: "" });
 
   const addApplication = (e: any) => {
     e.preventDefault();
-    setApplication(application.length, {
-      name: name(),
-      user: user(),
+    setApplication({
+      user: user()?.name,
+      email: user()?.email,
     });
   };
 
@@ -27,22 +26,27 @@ const Application = () => {
           <p>talk about the project</p>
         </div>
         <div class="text-black">
-          <For each={application()}>
-            {(ap: any) => (
-              <>
-                <div> name:{ap?.name}</div>
-                <div> user:{ap?.user}</div>
-              </>
-            )}
-          </For>
+          <form onSubmit={addApplication}>
+            <input
+              placeholder="user"
+              value={user().name}
+              onInput={(e: any) => setUser(e.currentTarget.value)}
+            />
+            <input
+              placeholder="name"
+              value={user().email}
+              onInput={(e: any) => setUser(e.currentTarget.value)}
+            />
+            <button>+</button>
+          </form>
         </div>
-        <For each={application}>
-          {(application, i) => (
+        {/* <For each={application}>
+          {(application: ApplicationType, i) => (
             <>
               <input
                 type="text"
                 placeholder="name"
-                value={name()}
+                value={application.name}
                 onInput={(e: any) =>
                   setApplication(i(), "name", e.currentTarget.value)
                 }
@@ -50,7 +54,7 @@ const Application = () => {
               <input
                 type="text"
                 placeholder="user"
-                value={user()}
+                value={application.user}
                 onInput={(e: any) =>
                   setApplication(i(), "user", e.currentTarget.value)
                 }
@@ -67,7 +71,7 @@ const Application = () => {
               </button>
             </>
           )}
-        </For>
+        </For> */}
       </section>
     </div>
   );
