@@ -1,22 +1,27 @@
-import { createSignal, For } from "solid-js";
-import { createLocalStore } from "../../context/localStorage";
+import { createEffect, createSignal, For } from "solid-js";
+import { createStore, SetStoreFunction, Store } from "solid-js/store";
+import { Form } from "./Form";
 
-type ApplicationType = {
-  name: "string";
-  user: "string";
-};
+// type Todo = {
+//   name: string;
+//   user: string;
+// };
+
+// type State = { todos: Todo[]; newTitle: string };
+// type SetterAndGetter = [get: Store<State>, set: SetStoreFunction<State>];
+
 const Application = () => {
-  const [application, setApplication] = createLocalStore([]);
-  const [user, setUser] = createSignal({ name: "", email: "" });
-  
+  const initialState: any = { todos: [], newTitle: "" };
+  const [application, setApplication] = createStore(initialState);
 
-  const addApplication = (e: any) => {
-    e.preventDefault();
+  createEffect(() => {
     setApplication({
-      user: user()?.name,
-      email: user()?.email,
+      newTitle: "",
     });
-  };
+  });
+  createEffect(() => {
+    console.log("ap", application.todos);
+  }, [setApplication]);
 
   return (
     <div>
@@ -26,53 +31,62 @@ const Application = () => {
           <h2>let's go discuss your task</h2>
           <p>talk about the project</p>
         </div>
-        <div class="text-black">
-          <form onSubmit={addApplication}>
-            <input
-              placeholder="user"
-              value={user().name}
-              onInput={(e: any) => setUser(e.currentTarget.value)}
-            />
-            <input
-              placeholder="name"
-              value={user().email}
-              onInput={(e: any) => setUser(e.currentTarget.value)}
-            />
-            <button>+</button>
-          </form>
-        </div>
-        {/* <For each={application}>
-          {(application: ApplicationType, i) => (
-            <>
+        {/* <Form state={application} setState={setApplication} /> */}
+        <form>
+          <input
+            placeholder="name"
+            value={application.newTitle}
+            onInput={(e) => setApplication({ newTitle: e.currentTarget.value })}
+          />
+          <button
+            disabled={!application.newTitle.length}
+            onClick={() =>
+              setApplication({
+                todos: [
+                  ...application.todos,
+                  {
+                    name: application.newTitle,
+                    user: application.newTitle,
+                  },
+                ],
+                newTitle: "",
+              })
+            }
+          >
+            Add
+          </button>
+        </form>
+        F
+        <For each={application.todos}>
+          {(todo, i) => (
+            <div>
               <input
-                type="text"
-                placeholder="name"
-                value={application.name}
-                onInput={(e: any) =>
-                  setApplication(i(), "name", e.currentTarget.value)
+                value={todo.name || "please enter a title"}
+                onChange={
+                  (e) =>
+                    setState("todos", i(), { title: e.currentTarget.value }) // <- Weird TS error. If anyone knows how to solve it please lmk.
                 }
               />
               <input
-                type="text"
-                placeholder="user"
-                value={application.user}
-                onInput={(e: any) =>
-                  setApplication(i(), "user", e.currentTarget.value)
+                type="checkbox"
+                checked={todo.title ? todo.done : false}
+                onInput={(e) =>
+                  setState("todos", i(), { done: e.currentTarget.value })
                 }
               />
               <button
                 onClick={() =>
-                  setApplication((t: any) => [
-                    ...t.slice(0, i()),
-                    ...t.slice(i() + 1),
+                  setState("todos", (todo) => [
+                    ...todo.slice(0, i()),
+                    ...todo.slice(i() + 1),
                   ])
                 }
               >
-                add
+                Delete
               </button>
-            </>
+            </div>
           )}
-        </For> */}
+        </For>
       </section>
     </div>
   );
