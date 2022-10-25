@@ -1,5 +1,5 @@
 import s from "../../../scss/landing.module.scss";
-import CreateTask from "../../utils/Application";
+import CreateTask from "../../Aplication/Application";
 import LandingUse from "./LandingUse";
 
 const Lending = () => {
