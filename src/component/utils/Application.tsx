@@ -1,21 +1,21 @@
-import { createEffect, createSignal, For, Show } from "solid-js";
+import { createSignal, For } from "solid-js";
+import { createLocalStore } from "../../context/localStorage";
 
 type ApplicationType = {
   name: "string";
   user: "string";
 };
 const Application = () => {
-  const [application, setApplication] = createSignal([
-    { name: "111", user: "sda" },
-  ]);
-
-  const [name, setUser] = createSignal("da");
-  const [user, setName] = createSignal("das");
+  const [application, setApplication] = createLocalStore([]);
+  const [name, setUser] = createSignal("");
+  const [user, setName] = createSignal("");
 
   const addApplication = (e: any) => {
     e.preventDefault();
-    const newData = { name: "222", user: "dsad" };
-    setApplication((e) => e.concat(newData as ApplicationType));
+    setApplication(application.length, {
+      name: name(),
+      user: user(),
+    });
   };
 
   return (
@@ -27,21 +27,47 @@ const Application = () => {
           <p>talk about the project</p>
         </div>
         <div class="text-black">
-          <For each={application()}>{(ap: any) => <>{ap?.name}</>}</For>
+          <For each={application()}>
+            {(ap: any) => (
+              <>
+                <div> name:{ap?.name}</div>
+                <div> user:{ap?.user}</div>
+              </>
+            )}
+          </For>
         </div>
-        <input
-          type="text"
-          placeholder="here"
-          value={name()}
-          onChange={(e: any) => setName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="here"
-          value={user()}
-          onChange={(e: any) => setUser(e.target.value)}
-        />
-        <button onClick={addApplication}>add</button>
+        <For each={application}>
+          {(application, i) => (
+            <>
+              <input
+                type="text"
+                placeholder="name"
+                value={name()}
+                onInput={(e: any) =>
+                  setApplication(i(), "name", e.currentTarget.value)
+                }
+              />
+              <input
+                type="text"
+                placeholder="user"
+                value={user()}
+                onInput={(e: any) =>
+                  setApplication(i(), "user", e.currentTarget.value)
+                }
+              />
+              <button
+                onClick={() =>
+                  setApplication((t: any) => [
+                    ...t.slice(0, i()),
+                    ...t.slice(i() + 1),
+                  ])
+                }
+              >
+                add
+              </button>
+            </>
+          )}
+        </For>
       </section>
     </div>
   );
