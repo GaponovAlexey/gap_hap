@@ -8,6 +8,7 @@ type ApplicationType = {
 const Application = () => {
   const [application, setApplication] = createLocalStore([]);
   const [user, setUser] = createSignal({ name: "", email: "" });
+  
 
   const addApplication = (e: any) => {
     e.preventDefault();
