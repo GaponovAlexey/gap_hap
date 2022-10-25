@@ -36,20 +36,10 @@ const Application = () => {
         <For each={application.todos}>
           {(todo: any, i) => (
             <div>
-              <input
-                value={todo.name}
-                onChange={(e) =>
-                  setApplication("name", i(), {
-                    name: e.currentTarget.value,
-                  })
-                }
-              />
-              <input
-                value={todo.user}
-                onInput={(e) =>
-                  setApplication("user", i(), { user: e.currentTarget.value })
-                }
-              />
+              <div class="flex px-12">
+                <div>{todo.name}</div>
+                <div>{todo.user}</div>
+              </div>
               <button
                 onClick={() =>
                   setApplication("todos", (todo: any) => [

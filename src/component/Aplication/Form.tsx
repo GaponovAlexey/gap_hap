@@ -1,4 +1,17 @@
 export const Form = ({ application, setApplication }: any) => {
+  const add = (e: any) => {
+    setApplication({
+      todos: [
+        ...application.todos,
+        {
+          name: application.name,
+          user: application.user,
+        },
+      ],
+      name: "",
+      user: "",
+    });
+  };
   return (
     <form>
       <input
@@ -11,22 +24,7 @@ export const Form = ({ application, setApplication }: any) => {
         value={application.user}
         onInput={(e) => setApplication({ user: e.currentTarget.value })}
       />
-      <button
-        disabled={!application.user.length}
-        onClick={() =>
-          setApplication({
-            todos: [
-              ...application.todos,
-              {
-                name: application.name,
-                user: application.user,
-              },
-            ],
-            name: "",
-            user: "",
-          })
-        }
-      >
+      <button disabled={!application.user.length} onClick={add}>
         Add
       </button>
     </form>
