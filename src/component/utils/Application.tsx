@@ -11,17 +11,16 @@ import { Form } from "./Form";
 // type SetterAndGetter = [get: Store<State>, set: SetStoreFunction<State>];
 
 const Application = () => {
-  const initialState: any = { todos: [], newTitle: "" };
+  const initialState: any = { todos: [], name: "", user: "" };
   const [application, setApplication] = createStore(initialState);
 
   createEffect(() => {
     setApplication({
-      newTitle: "",
+      name: "",
+      user: "",
     });
+    console.log("el", application.todos);
   });
-  createEffect(() => {
-    console.log("ap", application.todos);
-  }, [setApplication]);
 
   return (
     <div>
@@ -31,52 +30,56 @@ const Application = () => {
           <h2>let's go discuss your task</h2>
           <p>talk about the project</p>
         </div>
-        {/* <Form state={application} setState={setApplication} /> */}
         <form>
           <input
             placeholder="name"
-            value={application.newTitle}
-            onInput={(e) => setApplication({ newTitle: e.currentTarget.value })}
+            value={application.name}
+            onInput={(e) => setApplication({ name: e.currentTarget.value })}
+          />
+          <input
+            placeholder="user"
+            value={application.user}
+            onInput={(e) => setApplication({ user: e.currentTarget.value })}
           />
           <button
-            disabled={!application.newTitle.length}
+            disabled={!application.user.length}
             onClick={() =>
               setApplication({
                 todos: [
                   ...application.todos,
                   {
-                    name: application.newTitle,
-                    user: application.newTitle,
+                    name: application.name,
+                    user: application.user,
                   },
                 ],
-                newTitle: "",
+                name: "",
+                user: "",
               })
             }
           >
             Add
           </button>
         </form>
-        F
         <For each={application.todos}>
-          {(todo, i) => (
+          {(todo: any, i) => (
             <div>
               <input
-                value={todo.name || "please enter a title"}
-                onChange={
-                  (e) =>
-                    setState("todos", i(), { title: e.currentTarget.value }) // <- Weird TS error. If anyone knows how to solve it please lmk.
+                value={todo.name }
+                onChange={(e) =>
+                  setApplication("name", i(), {
+                    name: e.currentTarget.value,
+                  })
                 }
               />
               <input
-                type="checkbox"
-                checked={todo.title ? todo.done : false}
+                value={todo.user}
                 onInput={(e) =>
-                  setState("todos", i(), { done: e.currentTarget.value })
+                  setApplication("user", i(), { user: e.currentTarget.value })
                 }
               />
               <button
                 onClick={() =>
-                  setState("todos", (todo) => [
+                  setApplication("todos", (todo: any) => [
                     ...todo.slice(0, i()),
                     ...todo.slice(i() + 1),
                   ])
