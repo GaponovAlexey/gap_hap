@@ -21,15 +21,12 @@ const Main = () => {
 
 //one
 const MainPageOne = () => {
-  const [user, {}] = useContextUser();
-  console.log("user", user.user);
-
   return (
     <section class={s.container_main}>
       <div>
         <div class="pt-10 text-2xl">Tools for any task</div>
         <div class="flex justify-around text-blue-700">
-          {user.user?.toString()} Your website is costing you customers
+          Your website is costing you customers
         </div>
       </div>
     </section>
