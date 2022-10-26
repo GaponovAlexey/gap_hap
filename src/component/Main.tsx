@@ -1,5 +1,4 @@
 import { Match, Switch } from "solid-js";
-import { useContextUser } from "../context";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
 import CustomBut from "./utils/CustomBut";

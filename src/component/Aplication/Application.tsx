@@ -21,7 +21,7 @@ const Application = () => {
     name: "",
     user: "",
   });
-
+  const [count, setCount] = createSignal(0);
   //fetch
   const [userName, setUserName] = createSignal(),
     [user] = createResource(userName, fetchUser);
