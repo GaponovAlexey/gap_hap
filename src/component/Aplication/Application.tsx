@@ -16,21 +16,11 @@ const fetchUser: any = async (name: string) =>
   ).json();
 
 const Application = () => {
-  const initialState: State = { todos: [], name: "", user: "" };
-  const [application, setApplication] = createStore(initialState);
-
-  //st
-  const [object, setObject] = createSignal({ count: 0 }, { equals: false });
-
-  console.log("st", object());
-
-  setObject((current: any) => {
-    current.count += 1;
-    current.updated = new Date();
-    return current
+  const [application, setApplication] = createStore({
+    todos: [],
+    name: "",
+    user: "",
   });
-
-  console.log("st", object());
 
   //fetch
   const [userName, setUserName] = createSignal(),
