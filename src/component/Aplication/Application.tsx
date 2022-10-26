@@ -1,4 +1,4 @@
-import { createResource, createSignal, For } from "solid-js";
+import { createResource, createSignal, For, Show } from "solid-js";
 import { Form } from "./Form";
 import { createStore } from "solid-js/store";
 
@@ -11,9 +11,7 @@ type State = { todos: Todo[]; name: string; user: string };
 // type SetterAndGetter = [get: Store<State>, set: SetStoreFunction<State>];
 
 const fetchUser: any = async (name: string) =>
-  (
-    await fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${name}`)
-  ).json();
+  (await fetch(`https://jsonplaceholder.typicode.com/todos/1`)).json();
 
 const Application = () => {
   const [application, setApplication] = createStore({
@@ -21,20 +19,18 @@ const Application = () => {
     name: "",
     user: "",
   });
-  const [count, setCount] = createSignal(0);
-  //fetch
-  const [userName, setUserName] = createSignal(),
-    [user] = createResource(userName, fetchUser);
+  const [data, { mutate, refetch }] = createResource(fetchUser);
 
+  //fetch
   return (
     <div>
+     <Show when={data}>{<div>{data()}</div>}</Show> 
       <section>
         <input
           type="text"
           placeholder="Enter Numeric Id"
-          onInput={(e) => setUserName(e.currentTarget.value)}
         />
-        <span>{user.loading && "Loading..."}</span>
+        <span>{data.loading && "Loading..."}</span>
       </section>
       <section>
         <div class="text-center">Create Application</div>
