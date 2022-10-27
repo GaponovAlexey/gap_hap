@@ -2,6 +2,7 @@ import { useNavigate } from "@solidjs/router";
 import {
   FacebookAuthProvider,
   getAuth,
+  GithubAuthProvider,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -29,7 +30,7 @@ const SignIn = () => {
   };
   const handeLLoginGoogle = () => {
     const auth = getAuth();
-    signInWithPopup(auth, new FacebookAuthProvider())
+    signInWithPopup(auth, new GoogleAuthProvider())
       .then(({ user }: any) => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
@@ -41,8 +42,7 @@ const SignIn = () => {
   };
   const handeLLoginGithub = () => {
     const auth = getAuth();
-    firebase;
-    signInWithPopup(auth)
+    signInWithPopup(auth, new GithubAuthProvider())
       .then(({ user }: any) => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
