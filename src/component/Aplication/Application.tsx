@@ -1,4 +1,4 @@
-import { createResource, createSignal, For, Show } from "solid-js";
+import { createResource, createSignal, For, Show, Suspense } from "solid-js";
 import { Form } from "./Form";
 import { createStore } from "solid-js/store";
 
@@ -24,12 +24,11 @@ const Application = () => {
   //fetch
   return (
     <div>
-     <Show when={data}>{<div>{data()}</div>}</Show> 
+      <Suspense fallback={<span>{data.loading && "Loading..."}</span>}>
+        <div>{data()?.title}</div>
+      </Suspense>
       <section>
-        <input
-          type="text"
-          placeholder="Enter Numeric Id"
-        />
+        <input type="text" placeholder="Enter Numeric Id" />
         <span>{data.loading && "Loading..."}</span>
       </section>
       <section>

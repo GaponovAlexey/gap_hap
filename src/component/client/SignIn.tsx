@@ -1,5 +1,10 @@
 import { useNavigate } from "@solidjs/router";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
 import { setCookie } from "nookies";
 import { createSignal } from "solid-js";
 import { useContextUser } from "../../context";
@@ -12,6 +17,31 @@ const SignIn = () => {
   const handeLLogin = (email: string, password: string) => {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
+      .then(({ user }: any) => {
+        console.log(user);
+        setCookie(null, "token", user.accessToken, {});
+        setCookie(null, "email", user.email, {});
+        nav("/");
+        sigIn();
+      })
+      .catch(console.error);
+  };
+  const handeLLoginGoogle = () => {
+    const auth = getAuth();
+    signInWithPopup(auth, new GoogleAuthProvider())
+      .then(({ user }: any) => {
+        console.log(user);
+        setCookie(null, "token", user.accessToken, {});
+        setCookie(null, "email", user.email, {});
+        nav("/");
+        sigIn();
+      })
+      .catch(console.error);
+  };
+  const handeLLoginGithub = () => {
+    const auth = getAuth();
+    firebase;
+    signInWithPopup(auth)
       .then(({ user }: any) => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
@@ -82,6 +112,8 @@ const SignIn = () => {
             >
               Button
             </button>
+            <button onClick={handeLLoginGoogle}>google</button>
+            <button onClick={handeLLoginGithub}>Git</button>
             <p class="text-xs text-gray-500 mt-3">
               Literally you probably haven't heard of them jean shorts.
             </p>
