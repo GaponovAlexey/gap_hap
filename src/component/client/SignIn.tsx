@@ -1,5 +1,6 @@
 import { useNavigate } from "@solidjs/router";
 import {
+  FacebookAuthProvider,
   getAuth,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
@@ -28,7 +29,7 @@ const SignIn = () => {
   };
   const handeLLoginGoogle = () => {
     const auth = getAuth();
-    signInWithPopup(auth, new GoogleAuthProvider())
+    signInWithPopup(auth, new FacebookAuthProvider())
       .then(({ user }: any) => {
         console.log(user);
         setCookie(null, "token", user.accessToken, {});
