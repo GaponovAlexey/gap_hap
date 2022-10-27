@@ -52,6 +52,18 @@ const SignIn = () => {
       })
       .catch(console.error);
   };
+  const handeLLoginFaceBook = () => {
+    const auth = getAuth();
+    signInWithPopup(auth, new FacebookAuthProvider())
+      .then(({ user }: any) => {
+        console.log(user);
+        setCookie(null, "token", user.accessToken, {});
+        setCookie(null, "email", user.email, {});
+        nav("/");
+        sigIn();
+      })
+      .catch(console.error);
+  };
 
   const [email, setEmail] = createSignal("");
   const [password, setPassword] = createSignal("");
@@ -115,6 +127,7 @@ const SignIn = () => {
             </button>
             <button onClick={handeLLoginGoogle}>google</button>
             <button onClick={handeLLoginGithub}>Git</button>
+            <button onClick={handeLLoginFaceBook}>Facebook</button>
             <p class="text-xs text-gray-500 mt-3">
               Literally you probably haven't heard of them jean shorts.
             </p>
