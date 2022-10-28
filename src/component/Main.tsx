@@ -20,7 +20,6 @@ const Main = () => {
 
 //one
 const MainPageOne = () => {
-  
   return (
     <section class={s.container_main}>
       <div>

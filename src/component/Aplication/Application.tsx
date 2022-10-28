@@ -1,66 +1,49 @@
 import { createResource, createSignal, For, Show, Suspense } from "solid-js";
 import { Form } from "./Form";
 import { createStore } from "solid-js/store";
-
-type Todo = {
-  name: string;
-  user: string;
-};
-
-type State = { todos: Todo[]; name: string; user: string };
-// type SetterAndGetter = [get: Store<State>, set: SetStoreFunction<State>];
+import { collection, doc, getDocs } from "firebase/firestore";
+import { db } from "../../../firebase";
 
 const fetchUser: any = async (name: string) =>
   (await fetch(`https://jsonplaceholder.typicode.com/todos/1`)).json();
 
 const Application = () => {
-  const [application, setApplication] = createStore({
-    todos: [],
-    name: "",
-    user: "",
-  });
-  const [data, { mutate, refetch }] = createResource(fetchUser);
+  const [state, setSta] = createStore();
+
+  const getUsers = async () => {
+    const usersColRef = collection(db, "users");
+    const data = await getDocs(usersColRef);
+    setSta(data.docs.map((e: any) => ({ ...e.data(), id: e.id })));
+    console.log(
+      "data2",
+      data.docs.map((e: any) => ({ ...e.data(), id: e.id }))
+    );
+  };
+  getUsers();
+
+  //db
+  // const [application, setApplication] = createStore({
+  //   todos: [],
+  //   name: "",
+  //   user: "",
+  // });
+  // const [data, { mutate, refetch }] = createResource(fetchUser);
 
   //fetch
   return (
     <div>
-      <Suspense fallback={<span>{data.loading && "Loading..."}</span>}>
-        <div>{data()?.title}</div>
+      <Suspense fallback={<div>not</div>}>
+        <div>{state[0]?.name}</div>
+        {/* {state?.map((el: any) => { */}
+          {/* return <>{el?.name}</>; */}
+        {/* })} */}
       </Suspense>
-      <section>
-        <input type="text" placeholder="Enter Numeric Id" />
-        <span>{data.loading && "Loading..."}</span>
-      </section>
       <section>
         <div class="text-center">Create Application</div>
         <div class="flex justify-between">
           <h2>let's go discuss your task</h2>
           <p>talk about the project</p>
         </div>
-        {/* ADD */}
-        <Form application={application} setApplication={setApplication} />
-        {/* VIE */}
-
-        <For each={application.todos}>
-          {(todo: any, i) => (
-            <div>
-              <div class="flex px-12">
-                <div>{todo.name}</div>
-                <div>{todo.user}</div>
-              </div>
-              {/* <button
-                onClick={() =>
-                  setApplication("todos", (ap: any) => [
-                    ...ap.slice(0, i()),
-                    ...ap.slice(i() + 1),
-                  ])
-                }
-              >
-                Delete
-              </button> */}
-            </div>
-          )}
-        </For>
       </section>
     </div>
   );

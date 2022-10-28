@@ -15,9 +15,9 @@ import { useContextUser } from "../../context";
 const SignIn = () => {
   const nav = useNavigate();
   const [_, { sigIn }] = useContextUser() as any;
+  const auth = getAuth();
 
   const handeLLogin = (email: string, password: string) => {
-    const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then(({ user }: any) => {
         console.log(user);
@@ -29,7 +29,6 @@ const SignIn = () => {
       .catch(console.error);
   };
   const handeLLoginGoogle = () => {
-    const auth = getAuth();
     signInWithPopup(auth, new GoogleAuthProvider())
       .then(({ user }: any) => {
         console.log(user);
@@ -41,7 +40,6 @@ const SignIn = () => {
       .catch(console.error);
   };
   const handeLLoginGithub = () => {
-    const auth = getAuth();
     signInWithPopup(auth, new GithubAuthProvider())
       .then(({ user }: any) => {
         console.log(user);
@@ -52,19 +50,7 @@ const SignIn = () => {
       })
       .catch(console.error);
   };
-  //facebook login
-  // const fbProvider = new FacebookAuthProvider();
-  // const auth = getAuth();
-  // const handeLLoginFaceBook = async () => {
-  //   try {
-  //     const result = await signInWithPopup(auth, fbProvider);
-  //     const cred = await FacebookAuthProvider.credentialFromResult(result);
-  //     console.log("credantial", cred);
-  //     console.log("result", result);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+
   const handeLLoginFaceBook = () => {
     const auth = getAuth();
     signInWithPopup(auth, new FacebookAuthProvider())

@@ -7,8 +7,10 @@ import { useContextUser } from "../../context";
 const SignUp = () => {
   const nav = useNavigate();
   const [_, { sigIn }] = useContextUser() as any;
+  const auth = getAuth();
   const handleRegister = (email: string, password: string) => {
-    const auth = getAuth();
+    console.log("reg")
+    
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }: any) => {
         console.log(user);
