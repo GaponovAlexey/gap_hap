@@ -53,16 +53,29 @@ const SignIn = () => {
       .catch(console.error);
   };
   //facebook login
-  const fbProvider = new FacebookAuthProvider();
-  const auth = getAuth();
-  const handeLLoginFaceBook = async () => {
-    try {
-      const result = await signInWithPopup(auth, fbProvider);
-      const cred = await  FacebookAuthProvider.credentialFromResult(result);
-      console.log("credantial", cred);
-    } catch (error) {
-      console.log(error);
-    }
+  // const fbProvider = new FacebookAuthProvider();
+  // const auth = getAuth();
+  // const handeLLoginFaceBook = async () => {
+  //   try {
+  //     const result = await signInWithPopup(auth, fbProvider);
+  //     const cred = await FacebookAuthProvider.credentialFromResult(result);
+  //     console.log("credantial", cred);
+  //     console.log("result", result);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  const handeLLoginFaceBook = () => {
+    const auth = getAuth();
+    signInWithPopup(auth, new FacebookAuthProvider())
+      .then(({ user }: any) => {
+        console.log(user);
+        setCookie(null, "token", user.accessToken, {});
+        setCookie(null, "email", user.email, {});
+        nav("/");
+        sigIn();
+      })
+      .catch(console.error);
   };
 
   const [email, setEmail] = createSignal("");
