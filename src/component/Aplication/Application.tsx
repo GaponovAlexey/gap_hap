@@ -34,8 +34,8 @@ const Application = () => {
     setName("");
   };
   const update = async (name: any, id: any) => {
-    const userDoc = doc(db, "users", id);
-    await updateDoc(userDoc, { name: name });
+    const userDoc = doc(db, "users", id)
+    await updateDoc(userDoc, { name: name })
   };
   const deleteName = async (id: any) => {
     const userDoc = doc(db, "users", id);
