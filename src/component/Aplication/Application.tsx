@@ -33,6 +33,7 @@ const Application = () => {
     await addDoc(usersColRef, { name: name() });
     setName("");
   };
+  
   //PUT
   const update = async (name: any, id: any) => {
     const userDoc = doc(db, "users", id)
