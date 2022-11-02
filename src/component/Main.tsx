@@ -23,9 +23,13 @@ const MainPageOne = () => {
   return (
     <section class={s.container_main}>
       <div>
-        <div class="pt-10 text-2xl">Tools for any task</div>
+        <div class="pt-10 text-2xl">
+          We Know You Are Passionate About Your Small Businessk
+        </div>
         <div class="flex justify-around text-blue-700">
-          Your website is costing you customers
+          But, sometimes it may feel like you are doing it alone. Good news,
+          you’re not! we are here to help you with all those things you may not
+          be able to do yourself, such as web development and marketing
         </div>
       </div>
     </section>
