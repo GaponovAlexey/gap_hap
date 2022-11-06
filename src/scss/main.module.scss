@@ -24,7 +24,7 @@
       }
     }
     .services {
-      @apply   mx-auto   lg:px-10 ;
+      @apply mx-auto   lg:px-10;
     }
   }
 }
@@ -32,7 +32,7 @@
 .two_text_services {
   @apply pt-4;
   p {
-    @apply mt-4 pl-8 mx-11 text-xs ;
+    @apply mt-4 pl-8 mx-11 text-xs;
   }
   .but {
     @apply flex sm:block sm:py-5 justify-between;
@@ -121,7 +121,7 @@
       }
       .two {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
-        background: url("../assets/svg/c2.svg") no-repeat ;
+        background: url("../assets/svg/c2.svg") no-repeat;
       }
       .three {
         @apply hover:animate-pulse hover:shadow-sm cursor-pointer;
@@ -136,5 +136,12 @@
   .img {
     @apply h-screen;
     background: url("../assets/yes/lamp.jpg") center center / cover;
+  }
+}
+
+.applications {
+  @apply h-screen flex justify-between ;
+  .application_img {
+    background: url("../assets/appli1.png") no-repeat 0%  / contain ;
   }
 }
