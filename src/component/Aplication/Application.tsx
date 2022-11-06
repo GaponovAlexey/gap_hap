@@ -79,7 +79,7 @@ const Application = () => {
           </form>
         </section>
       </div>
-      <div class={s.application_img} />
+      <div class={s.application_img}></div>
     </div>
   );
 };

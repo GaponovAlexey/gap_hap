@@ -140,8 +140,9 @@
 }
 
 .applications {
-  @apply h-screen flex justify-between ;
+  @apply h-screen grid grid-cols-2;
   .application_img {
-    background: url("../assets/appli1.png") no-repeat 0%  / contain ;
+    @apply  m-10;
+    background: url("../assets/appli1.png") center center / cover;
   }
 }
