@@ -41,6 +41,7 @@ const Application = () => {
     const userDoc = doc(db, "users", id);
     await deleteDoc(userDoc);
   };
+  
   return (
     <div class={s.applications}>
       <div>
