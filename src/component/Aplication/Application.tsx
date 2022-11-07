@@ -63,7 +63,7 @@ const Application = () => {
             </div>
           )}
         </For> */}
-        <div class="pt-20 pb-6 text-center">
+        <div class={s.text_logo} >
           <div class="text-2xl ">Create Application</div>
           <div>Fll out the form and we will contact you</div>
         </div>
@@ -72,6 +72,7 @@ const Application = () => {
             <input
               type="text"
               placeholder="your name"
+              style='text-center'
               value={name()}
               onInput={(e: any) => setName(e.currentTarget.value)}
             />
