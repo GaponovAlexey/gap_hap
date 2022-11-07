@@ -140,9 +140,21 @@
 }
 
 .applications {
-  @apply h-screen grid grid-cols-2 sm:grid-cols-1;
+  @apply h-screen px-10 grid grid-cols-2 sm:grid-cols-1;
+  .ap_form {
+    /* @apply px-10; */
+    div {
+      @apply flex;
+      input {
+        @apply h-10 mr-4;
+      }
+    }
+    .ap_question {
+      @apply mt-10 h-10 w-1/2 border-none;
+    }
+  }
   .application_img {
-    @apply  sm:m-0 m-10;
+    @apply sm:m-0 m-10;
     background: url("../assets/h2.png") no-repeat center center / contain;
   }
 }

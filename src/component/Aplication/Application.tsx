@@ -6,7 +6,7 @@ import {
   getDocs,
   updateDoc,
 } from "firebase/firestore";
-import { createEffect, createSignal, For } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 import { db } from "../../../firebase";
 import s from "../../scss/main.module.scss";
 
@@ -41,11 +41,11 @@ const Application = () => {
     const userDoc = doc(db, "users", id);
     await deleteDoc(userDoc);
   };
-  
+
   return (
     <div class={s.applications}>
       <div>
-        <For each={state()}>
+        {/* <For each={state()}>
           {(e: any) => (
             <div class="text-center">
               {e.name}
@@ -62,23 +62,34 @@ const Application = () => {
               </span>
             </div>
           )}
-        </For>
-        <section>
-          <div class="text-center">Create Application</div>
-          <div class="flex justify-between">
-            <h2>let's go discuss your task</h2>
-            <p>talk about the project</p>
-          </div>
-          <form onSubmit={add}>
+        </For> */}
+        <div class="pt-20 pb-6 text-center">
+          <div class="text-2xl ">Create Application</div>
+          <div>Fll out the form and we will contact you</div>
+        </div>
+        <form class={s.ap_form} onSubmit={add}>
+          <div>
             <input
-              type="name"
-              placeholder="name"
+              type="text"
+              placeholder="your name"
               value={name()}
               onInput={(e: any) => setName(e.currentTarget.value)}
             />
-            {name()}
-          </form>
-        </section>
+            <input
+              type="text"
+              placeholder="mobile phone"
+              value={name()}
+              onInput={(e: any) => setName(e.currentTarget.value)}
+            />
+          </div>
+          <input
+          class={s.ap_question}
+            type="text"
+            placeholder="your question"
+            value={name()}
+            onInput={(e: any) => setName(e.currentTarget.value)}
+          />
+        </form>
       </div>
       <div class={s.application_img}></div>
     </div>
