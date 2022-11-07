@@ -140,9 +140,9 @@
 }
 
 .applications {
-  @apply h-screen grid grid-cols-2;
+  @apply h-screen grid grid-cols-2 sm:grid-cols-1;
   .application_img {
-    @apply  m-10;
-    background: url("../assets/appli1.png") center center / cover;
+    @apply  sm:m-0 m-10;
+    background: url("../assets/h2.png") no-repeat center center / contain;
   }
 }
