@@ -71,14 +71,14 @@ const Application = () => {
           <div>
             <input
               type="text"
-              placeholder="your name"
+              placeholder="your name..."
               style='text-center'
               value={name()}
               onInput={(e: any) => setName(e.currentTarget.value)}
             />
             <input
               type="text"
-              placeholder="mobile phone"
+              placeholder="mobile phone..."
               value={name()}
               onInput={(e: any) => setName(e.currentTarget.value)}
             />
@@ -86,7 +86,7 @@ const Application = () => {
           <input
           class={s.ap_question}
             type="text"
-            placeholder="your question"
+            placeholder="your question..."
             value={name()}
             onInput={(e: any) => setName(e.currentTarget.value)}
           />

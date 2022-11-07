@@ -145,14 +145,15 @@
     @apply mt-32 text-center  mb-10 text-2xl;
   }
   .ap_form {
+    @apply px-2;
     div {
       @apply flex flex-wrap;
       input {
-        @apply h-10 mr-4;
+        @apply h-10 mr-4 placeholder:pl-4 outline-none border-b-2 placeholder:text-sky-400;
       }
     }
     .ap_question {
-      @apply mt-2 w-full border-none placeholder:pl-4;
+      @apply mt-2 w-full h-10 border-b-2 flex-wrap outline-none placeholder:pl-4 placeholder:text-sky-400;
     }
   }
   .application_img {
