@@ -144,13 +144,22 @@
   .text_logo {
     @apply mt-32 text-center  mb-10 text-2xl;
   }
+  span {
+    @apply text-xs text-gray-400;
+  }
+  .ap_checkbox {
+    @apply ml-4 mt-4;
+  }
   .ap_form {
-    @apply px-2;
+    @apply px-2 block;
     div {
       @apply flex flex-wrap;
       input {
         @apply h-10 mr-4 placeholder:pl-4 outline-none border-b-2 placeholder:text-sky-400;
       }
+    }
+    .ap_button {
+      @apply ml-4 mt-2  bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded;
     }
     .ap_question {
       @apply mt-2 w-full h-10 border-b-2 flex-wrap outline-none placeholder:pl-4 placeholder:text-sky-400;

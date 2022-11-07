@@ -13,7 +13,10 @@ import s from "../../scss/main.module.scss";
 const Application = () => {
   const [state, setState] = createSignal<any>();
   const usersColRef = collection(db, "users");
-  const [name, setName] = createSignal<any>("");
+  const [name, setName] = createSignal<string>("");
+  const [numbers, setNumber] = createSignal<any | null>(null);
+  const [message, setMessage] = createSignal<string>("");
+  const [check, setCheck] = createSignal<any>(true);
 
   //GET
   createEffect(() => {
@@ -27,8 +30,14 @@ const Application = () => {
   //POST
   const add = async (e: any) => {
     e.preventDefault();
-    await addDoc(usersColRef, { name: name() });
+    await addDoc(usersColRef, {
+      name: name(),
+      number: numbers(),
+      message: message(),
+    });
     setName("");
+    setNumber(null);
+    setMessage("");
   };
 
   //PUT
@@ -63,7 +72,7 @@ const Application = () => {
             </div>
           )}
         </For> */}
-        <div class={s.text_logo} >
+        <div class={s.text_logo}>
           <div class="text-2xl ">Create Application</div>
           <div>Fll out the form and we will contact you</div>
         </div>
@@ -72,24 +81,47 @@ const Application = () => {
             <input
               type="text"
               placeholder="your name..."
-              style='text-center'
+              style="text-center"
+              required
               value={name()}
               onInput={(e: any) => setName(e.currentTarget.value)}
             />
             <input
-              type="text"
+              type="tel"
+              required
               placeholder="mobile phone..."
-              value={name()}
-              onInput={(e: any) => setName(e.currentTarget.value)}
+              value={numbers()}
+              onInput={(e: any) => setNumber(e.currentTarget.value)}
             />
           </div>
           <input
-          class={s.ap_question}
+            class={s.ap_question}
             type="text"
+            required
             placeholder="your question..."
-            value={name()}
-            onInput={(e: any) => setName(e.currentTarget.value)}
+            value={message()}
+            onInput={(e: any) => setMessage(e.currentTarget.value)}
           />
+          <input
+            class={s.ap_checkbox}
+            type="checkbox"
+            placeholder=""
+            name="da"
+            value={check()}
+            onInput={() => setCheck(!check())}
+          />
+          <span class="sl:text-sm">
+            "I have read and agree to the Privacy Policy
+          </span>
+          <br />
+          <button
+            class={`${
+              check() ? `${s.ap_button} opacity-50` : `${s.ap_button}`
+            }`}
+            disabled={check()}
+          >
+            send application
+          </button>
         </form>
       </div>
       <div class={s.application_img}></div>
