@@ -54,13 +54,14 @@
 }
 
 .container_main_four {
+  /* @apply min-h-screen; */
   .skills {
-    @apply grid min-h-full pb-32 sm:grid-cols-1 grid-cols-2 text-white;
+    @apply grid pb-32 sm:grid-cols-1 grid-cols-2 text-white;
     h2 {
       @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
     .skills_element {
-      @apply sm:pt-10 sm:absolute md:absolute pt-20  grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
+      @apply sm:pt-10  pt-20  grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
@@ -100,8 +101,8 @@
     }
   }
   .img {
-    @apply min-h-full sm:object-left;
-    background: url("../assets/yes/lamps.jpg") 30% 100% / cover;
+    @apply  sm:object-left;
+    background: url("../assets/yes/lamps.jpg") 100% / cover;
   }
 }
 
