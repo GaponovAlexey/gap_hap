@@ -9,6 +9,8 @@ const Main = () => {
   return (
     <>
       <MainPageOne />
+      <PageWhite />
+      <PageWorld />
       <MainPageTwo />
       <MainPageFour />
       <Application />
@@ -21,20 +23,27 @@ const Main = () => {
 const MainPageOne = () => {
   return (
     <section class={s.container_main}>
-      <div class="px-5">
-        <div class="pt-20 text-sky-500 font-bold sm:text-3xl text-[52px] shadow-2xl">
-          We Know You Are Passionate About Your Small Business
-        </div>
-        <div class="flex justify-around text-red-700 bg-sky-300 text-2xl leading-relaxed">
-          But, sometimes it may feel like you are doing it alone. Good news,
-          you’re not! we are here to help you with all those things you may not
-          be able to do yourself, such as web development and marketing
-        </div>
+      <div>
+        <h1>We Know You Are Passionate About Your Small Business</h1>
+       
       </div>
+      <div class={s.main_img}></div>
     </section>
   );
 };
 //2
+const PageWhite = () => {
+  return (
+    <div class={s.main_white}>
+      <h3>
+        But, sometimes it may feel like you are doing it alone. Good news,
+        you’re not! we are here to help you with all those things you may not be
+        able to do yourself, such as web development and marketing
+      </h3>
+    </div>
+  );
+};
+
 const MainPageTwo = () => {
   return (
     <div class={s.container_main_two}>
@@ -132,11 +141,10 @@ const Marketing = () => (
 );
 
 //3
-const MainPageThree = () => {
+const PageWorld = () => {
   return (
-    <div class={s.container_main_three}>
+    <div class={s.pageWorld}>
       <div class={s.img} />
-      <div>three s</div>
     </div>
   );
 };

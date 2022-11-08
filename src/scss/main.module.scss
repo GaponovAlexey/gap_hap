@@ -1,10 +1,20 @@
 .container_main {
-  @apply min-h-full;
-  background: url("../assets/yes/world.jpg") center center / cover;
+  @apply min-h-screen;
+  div {
+    @apply px-10;
+    h1 {
+      @apply pt-52 text-center tracking-widest font-bold sm:text-3xl text-[32px];
+    }
+    
+  }
+  /* .main_img { */
+  /* background: url("../assets/yes/world.jpg") center / cover; */
+  background: url("../assets/bg2.jpg") center / cover;
+  /* } */
 }
 
 .container_main_two {
-  @apply min-h-full grid sm:grid-cols-1 grid-cols-2;
+  @apply h-screen grid sm:grid-cols-1 grid-cols-2;
   .img {
     @apply sm:hidden overflow-hidden z-[-1];
     background: url("../assets/yes/ebout1.jpg") center center / cover;
@@ -42,12 +52,15 @@
     }
   }
 }
-
-.container_main_three {
-  @apply min-h-full grid grid-cols-2;
-  .img {
-    background: url("../assets/yes/ebout1.jpg") center center / cover;
+.main_white {
+  @apply  h-screen;
+  h3 {
+    @apply text-2xl pt-24 sm:px-2 px-32 leading-relaxed tracking-widest;
   }
+}
+.pageWorld {
+  @apply h-screen;
+  background: url("../assets/yes/world.jpg") center center / cover;
   div {
     @apply text-2xl;
   }
@@ -106,7 +119,6 @@
 }
 
 .container_main_five {
- 
   .wrap {
     @apply text-gray-800;
     h2 {
