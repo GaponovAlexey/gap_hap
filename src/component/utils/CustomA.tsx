@@ -7,7 +7,6 @@ const CustomA = ({ name, path }: { name: string; path: string }) => {
       href={`${path}`}
     >
       <div class="absolute block inset-y-0 left-0 w-[2px] bg-yellow-600 transition-all group-hover:w-full  group-active:bg-yellow-600"></div>
-
       <div class="relative block text-sm font-medium text-black transition-colors  group-hover:text-white">
         {name}
       </div>
