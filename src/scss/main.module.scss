@@ -7,14 +7,11 @@
     }
     
   }
-  /* .main_img { */
-  /* background: url("../assets/yes/world.jpg") center / cover; */
   background: url("../assets/bg2.jpg") center / cover;
-  /* } */
 }
 
 .container_main_two {
-  @apply h-screen grid sm:grid-cols-1 grid-cols-2;
+  @apply min-h-screen grid sm:grid-cols-1 grid-cols-2;
   .img {
     @apply sm:hidden overflow-hidden z-[-1];
     background: url("../assets/yes/ebout1.jpg") center center / cover;
@@ -53,13 +50,13 @@
   }
 }
 .main_white {
-  @apply  h-screen;
+  @apply  h-auto;
   h3 {
-    @apply text-2xl pt-24 sm:px-2 px-32 leading-relaxed tracking-widest;
+    @apply text-2xl pt-24 pb-24 sm:px-2 px-32 leading-relaxed tracking-widest;
   }
 }
 .pageWorld {
-  @apply h-screen;
+  @apply min-h-screen;
   background: url("../assets/yes/world.jpg") center center / cover;
   div {
     @apply text-2xl;
