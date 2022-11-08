@@ -73,14 +73,14 @@ const Application = () => {
           )}
         </For> */}
         <div class={s.text_logo}>
-          <div class="text-2xl ">Create Application</div>
+          <h2>Create Application</h2>
           <div>Fll out the form and we will contact you</div>
         </div>
         <form class={s.ap_form} onSubmit={add}>
           <div>
             <input
               type="text"
-              placeholder="your name..."
+              placeholder="name..."
               style="text-center"
               required
               value={name()}
@@ -111,6 +111,7 @@ const Application = () => {
             onInput={() => setCheck(!check())}
           />
           <span class="sl:text-sm">
+            {" "}
             "I have read and agree to the Privacy Policy
           </span>
           <br />

@@ -8,11 +8,11 @@ const matches = createRouteHandler();
 const Main = () => {
   return (
     <>
-      {/* <MainPageOne /> */}
+      <MainPageOne />
       <Application />
-      {/* <MainPageTwo /> */}
-      {/* <MainPageFour /> */}
-      {/* <MainPageFive /> */}
+      <MainPageTwo />
+      <MainPageFour />
+      <MainPageFive />
     </>
   );
 };
