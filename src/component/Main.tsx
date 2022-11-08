@@ -10,8 +10,8 @@ const Main = () => {
     <>
       <MainPageOne />
       <MainPageTwo />
-      <Application />
       <MainPageFour />
+      <Application />
       <MainPageFive />
     </>
   );
@@ -183,8 +183,9 @@ const MainPageFive = () => {
             </li>
             <li class={s.three}>
               We will set up all possible feedback methods: mail, online
-              consultant, phone call from the site, Whatsapp connected to the
-              site
+              consultant, phone call from the site,{" "}
+              <span class="text-[#48C857]">WhatsApp</span>,
+              <span class="text-[#29A9EB]">Telegram</span> connected to the site
             </li>
             <li class={s.four}>
               We will analyze your industry and competitors, offer the best
