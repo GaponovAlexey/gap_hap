@@ -1,7 +1,7 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
-import CustomBut from "./utils/CustomBut";
+import CustomA from "./utils/CustomA";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
@@ -40,8 +40,8 @@ const MainPageTwo = () => {
     <div class={s.container_main_two}>
       <div class={s.img} />
       <span>
-        <h2>Your website is costing you customers</h2>
-        <h3>Better product, Better price</h3>
+        <h2>Better product, Better price</h2>
+        <h3>Your website is costing you customers</h3>
         <ul>
           <a href="#landing">landing</a>
           <a href="#webServices">Web Services</a>
@@ -82,8 +82,8 @@ const Landing = () => (
       acquiring a lead or sale.
     </p>
     <p class={s.but}>
-      <CustomBut name="Detail info" path="landing" />
-      <CustomBut name="Contact manager" path="landing" />
+      <CustomA name="Detail info" path="landing" />
+      <CustomA name="Contact manager" path="landing" />
     </p>
   </div>
 );
@@ -103,8 +103,8 @@ const WebServices = () => (
     </p>
     <p>We will advise you and find the best solution for you</p>
     <p class={s.but}>
-      <CustomBut name="Detail info" path="Services" />
-      <CustomBut name="Contact manager" path="Services" />
+      <CustomA name="Detail info" path="Services" />
+      <CustomA name="Contact manager" path="Services" />
     </p>
   </div>
 );
@@ -125,8 +125,8 @@ const Marketing = () => (
       don’t want to hear about products and services that don’t interest them.
     </p>
     <p class={s.but}>
-      <CustomBut name="Detail info" path="Marketing" />
-      <CustomBut name="Contact manager" path="Marketing" />
+      <CustomA name="Detail info" path="Marketing" />
+      <CustomA name="Contact manager" path="Marketing" />
     </p>
   </div>
 );

@@ -9,6 +9,7 @@ import {
 import { createEffect, createSignal } from "solid-js";
 import { db } from "../../../firebase";
 import s from "../../scss/main.module.scss";
+import CustomBut from "../utils/CustomBut";
 
 const Application = () => {
   const [state, setState] = createSignal<any>();
@@ -115,13 +116,8 @@ const Application = () => {
             "I have read and agree to the Privacy Policy
           </span>
           <br />
-          <button
-            class={`${
-              check() ? `${s.ap_button} opacity-50` : `${s.ap_button}`
-            }`}
-            disabled={check()}
-          >
-            send application
+          <button class={`${check() && `opacity-50`}`} disabled={check()}>
+            <CustomBut name="send application" />
           </button>
         </form>
       </div>
