@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <>
       <MainPageOne />
-      <Application />
       <MainPageTwo />
+      <Application />
       <MainPageFour />
       <MainPageFive />
     </>
