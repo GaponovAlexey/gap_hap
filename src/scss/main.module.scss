@@ -1,21 +1,22 @@
 .container_main {
-  @apply h-screen;
+  @apply min-h-screen;
   background: url("../assets/yes/world.jpg") center center / cover;
 }
 
 .container_main_two {
-  @apply h-screen grid sm:grid-cols-1    grid-cols-2;
+  @apply min-h-full grid sm:grid-cols-1 grid-cols-2;
   .img {
     @apply sm:hidden overflow-hidden z-[-1];
     background: url("../assets/yes/ebout1.jpg") center center / cover;
   }
   span {
+    @apply mb-32;
     background: url("../assets/cover_all_4.webp") no-repeat 0% / cover;
     h2 {
       @apply leading-relaxed mt-32 text-xl text-indigo-400 text-center tracking-widest;
     }
     h3 {
-      @apply text-center text-[14px] mt-1 tracking-widest text-gray-500 ;
+      @apply text-center text-[14px] mt-1 tracking-widest text-gray-500;
     }
     ul {
       @apply text-center mt-8  text-xs;
@@ -140,7 +141,7 @@
 }
 
 .applications {
-  @apply h-screen  grid grid-cols-2 sm:grid-cols-1;
+  @apply min-h-full  grid grid-cols-2 sm:grid-cols-1;
   .text_logo {
     @apply mt-32 text-center mb-10;
     h2 {
@@ -157,7 +158,7 @@
     @apply ml-2 mt-8 mb-4;
   }
   .ap_form {
-    @apply px-2 ml-4  block;
+    @apply px-2 ml-4 mb-32  block;
     div {
       @apply flex flex-wrap;
       input {
