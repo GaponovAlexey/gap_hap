@@ -53,7 +53,7 @@ const Application = () => {
   };
 
   return (
-    <div class={s.applications}>
+    <div id="application" class={s.applications}>
       <div>
         {/* <For each={state()}>
           {(e: any) => (
