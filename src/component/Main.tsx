@@ -28,6 +28,7 @@ const MainPageOne = () => {
         <h3>The development company</h3>
         <h1>Sitesess.ca</h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
+        <h4>We help businesses turn ideas into effective products</h4>
         <div class="text-center pt-10 hover:scroll-auto">
           <a href="#application">Connect project manager</a>
         </div>

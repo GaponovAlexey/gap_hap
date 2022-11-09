@@ -8,10 +8,9 @@ import Card from "../utils/Card";
 
 const Header: Component = () => {
   const [open, setOpen] = createSignal(false);
-  const nav = useNavigate();
+
   const Show_ = Show as any; // cast as any
   const green = "text-green-400";
-  const orange = "text-orange-400";
   const blue = "text-blue-400";
   const [user, { logOut }] = useContextUser() as any;
   const dest = () => {

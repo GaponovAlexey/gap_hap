@@ -14,6 +14,9 @@
     h2 {
       @apply border-b-2 text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
     }
+    h4 {
+      @apply text-center text-gray-900 font-extrabold ;
+    }
   }
   background: url("../assets/bg2.jpg") center / cover;
 }
