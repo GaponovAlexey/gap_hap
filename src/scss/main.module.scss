@@ -2,8 +2,14 @@
   @apply min-h-screen;
   div {
     @apply px-10;
+    button {
+      @apply bg-transparent hover:bg-[#313F4F] text-black font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded;
+    }
     h1 {
-      @apply pt-52 text-center tracking-widest font-bold sm:text-3xl text-[32px];
+      @apply pt-52 sm:pt-64  text-center tracking-widest font-bold sm:text-3xl text-[32px];
+    }
+    h2 {
+      @apply border-b-2 text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
     }
     
   }

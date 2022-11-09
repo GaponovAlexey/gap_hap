@@ -2,6 +2,7 @@ import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
 import CustomA from "./utils/CustomA";
+import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
@@ -24,8 +25,11 @@ const MainPageOne = () => {
   return (
     <section class={s.container_main}>
       <div>
-        <h1>We Know You Are Passionate About Your Small Business</h1>
-       
+        <h1>Sitesess.ca</h1>
+        <h2>We Know You Are Passionate About Your Small Business</h2>
+        <div class="text-center pt-10">
+          <button>Connect project manager</button>
+        </div>
       </div>
       <div class={s.main_img}></div>
     </section>
