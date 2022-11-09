@@ -54,8 +54,8 @@ const MainPageTwo = () => {
     <div class={s.container_main_two}>
       <div class={s.img} />
       <span>
-        <h2>Better product, Better price</h2>
-        <h3>Your website is costing you customers</h3>
+        <h2>Your website is costing you customers</h2>
+        <h3>We can make you</h3>
         <ul>
           <a href="#landing">landing</a>
           <a href="#webServices">Web Services</a>

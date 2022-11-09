@@ -14,9 +14,18 @@
   }
   background: url("../assets/bg2.jpg") center / cover;
 }
-
+.main_white {
+  @apply h-auto grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
+  h3 {
+    @apply text-[1.30rem] text-gray-500 pt-24 sm:pb-0  pb-24 sm:px-4 px-32 leading-relaxed tracking-widest;
+  }
+  div {
+    @apply sm:shadow-none shadow-sm;
+    background: url("../assets/h1.png") no-repeat 0% / contain;
+  }
+}
 .container_main_two {
-  @apply min-h-screen grid sm:grid-cols-1 grid-cols-2;
+  @apply min-h-full grid sm:grid-cols-1 grid-cols-2;
   .img {
     @apply sm:hidden overflow-hidden z-[-1];
     background: url("../assets/yes/ebout1.jpg") center center / cover;
@@ -25,7 +34,7 @@
     @apply sm:mb-2 mb-32;
     background: url("../assets/cover_all_4.webp") no-repeat 0% / cover;
     h2 {
-      @apply leading-relaxed mt-32 text-xl text-indigo-400 text-center tracking-widest;
+      @apply leading-relaxed px-2 sm:mt-0 mt-32 text-xl text-indigo-400 text-center tracking-widest;
     }
     h3 {
       @apply text-center text-[14px] mt-1 tracking-widest text-gray-500;
@@ -50,20 +59,11 @@
   .but {
     @apply flex sm:block sm:py-5 justify-between;
     A {
-      @apply my-3;
+      @apply my-3 mr-1;
     }
   }
 }
-.main_white {
-  @apply h-auto grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
-  h3 {
-    @apply text-[1.30rem] text-gray-500 pt-24 sm:pb-0  pb-24 sm:px-4 px-32 leading-relaxed tracking-widest;
-  }
-  div {
-    @apply sm:shadow-none shadow-sm;
-    background: url("../assets/h1.png") no-repeat 0% / contain ;
-  }
-}
+
 .pageWorld {
   @apply min-h-screen;
   background: url("../assets/yes/world.jpg") center center / cover;
