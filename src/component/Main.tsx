@@ -8,7 +8,7 @@ import { createRouteHandler } from "./utils/matches";
 const matches = createRouteHandler();
 const Main = () => {
   return (
-    <>
+    <div>
       <MainPageOne />
       <PageWhite />
       {/* <PageWorld /> */}
@@ -16,7 +16,7 @@ const Main = () => {
       <MainPageFour />
       <Application />
       <MainPageFive />
-    </>
+    </div>
   );
 };
 
@@ -24,7 +24,8 @@ const Main = () => {
 const MainPageOne = () => {
   return (
     <section class={s.container_main}>
-      <div>
+      <div class="">
+        <h3>The development company</h3>
         <h1>Sitesess.ca</h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
         <div class="text-center pt-10 hover:scroll-auto">
@@ -44,7 +45,7 @@ const PageWhite = () => {
         you’re not! we are here to help you with all those things you may not be
         able to do yourself, such as web development and marketing
       </h3>
-      <div/>
+      <div />
     </div>
   );
 };

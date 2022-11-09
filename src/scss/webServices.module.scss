@@ -1,5 +1,5 @@
 .main_services {
-  @apply min-h-screen  text-white;
+  @apply min-h-screen  text-white scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-32 overflow-y-scroll;
   background: no-repeat url("../assets/yes/long-s.jpg") center center / cover;
   .services_page {
     @apply h-screen;
