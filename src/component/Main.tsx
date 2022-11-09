@@ -11,7 +11,7 @@ const Main = () => {
     <>
       <MainPageOne />
       <PageWhite />
-      <PageWorld />
+      {/* <PageWorld /> */}
       <MainPageTwo />
       <MainPageFour />
       <Application />
@@ -44,6 +44,7 @@ const PageWhite = () => {
         you’re not! we are here to help you with all those things you may not be
         able to do yourself, such as web development and marketing
       </h3>
+      <div/>
     </div>
   );
 };
