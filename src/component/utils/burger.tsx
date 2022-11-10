@@ -17,15 +17,17 @@ function Burger({ children, open, setIsOpen }: any) {
           (open ? "translate-x-0 delay-1000" : "translate-x-full delay-1000")
         }
       >
-        <button onClick={() => setIsOpen(false)} class="delay-1000">
-          {/* ico */}
-          <div class={`${open && "open delay-1000"}`} id="nav-icon1">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          {/* ico */}
-        </button>
+        {/* ico */}
+        <div
+          onClick={() => setIsOpen(false)}
+          class={`${open && "open text-left "}`}
+          id="nav-icon1"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        {/* ico */}
         <article class="relative w-screen delay-1000 max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
           {children}
         </article>
