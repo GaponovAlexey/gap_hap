@@ -1,11 +1,11 @@
-import { useNavigate } from "@solidjs/router";
+import { A, useNavigate } from "@solidjs/router";
 
 function Burger({ children, open, setIsOpen }: any) {
   const nav = useNavigate();
   return (
     <div
       class={
-        "fixed overflow-hidden  bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out" +
+        "fixed overflow-hidden bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out" +
         (open
           ? "transition-opacity  opacity-100 duration-500 translate-x-0"
           : "transition-all  opacity-0 translate-x-full")
@@ -13,7 +13,7 @@ function Burger({ children, open, setIsOpen }: any) {
     >
       <section
         class={
-          "w-screen  max-w-lg right-0  absolute bg-white h-full shadow-xl  duration-500 transform" +
+          "w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform" +
           (open ? "translate-x-0 " : "translate-x-full ")
         }
       >
@@ -35,7 +35,11 @@ function Burger({ children, open, setIsOpen }: any) {
         </div>
         {/* ico */}
         <article class="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
-          {children}
+          {/* {children} */}
+          <A href="/">Home</A>
+          <A href="/landing">landing</A>
+          <A href="/Services">Services</A>
+          <A href="/Marketing">Marketing</A>
         </article>
       </section>
       <section
