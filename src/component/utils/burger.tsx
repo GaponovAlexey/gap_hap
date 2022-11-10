@@ -18,14 +18,20 @@ function Burger({ children, open, setIsOpen }: any) {
         }
       >
         {/* ico */}
-        <div
-          onClick={() => setIsOpen(false)}
-          class={`${open && "open text-left "}`}
-          id="nav-icon1"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="animate-spin    " onClick={() => setIsOpen(false)} id="nav-icon1">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="#000"
+            class="w-12 h-12"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
         </div>
         {/* ico */}
         <article class="relative w-screen delay-1000 max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
