@@ -23,7 +23,7 @@
 .main_white {
   @apply h-auto pt-10 grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
   h3 {
-    @apply sm:text-sm text-[1.30rem] text-gray-500  sm:pb-8  pb-24 sm:px-16 px-32 leading-relaxed tracking-widest;
+    @apply sm:text-sm text-[1.30rem] text-gray-500  sm:pb-8  pb-24 sm:px-[4.5rem] px-32 leading-relaxed tracking-widest;
   }
   div {
     @apply sm:border-0 border-b-[0.1px] ;
