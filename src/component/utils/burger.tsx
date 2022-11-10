@@ -34,7 +34,10 @@ function Burger({ children, open, setIsOpen }: any) {
           </svg>
         </div>
         {/* ico */}
-        <article class="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
+        <article
+          onClick={() => setIsOpen(false)}
+          class="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full"
+        >
           {/* {children} */}
           <A href="/">Home</A>
           <A href="/landing">landing</A>
