@@ -13,7 +13,7 @@ function Burger({ children, open, setIsOpen }: any) {
     >
       <section
         class={
-          "w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform" +
+          "w-screen max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform" +
           (open ? "translate-x-0 " : "translate-x-full ")
         }
       >
