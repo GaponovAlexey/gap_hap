@@ -1,7 +1,6 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
-import Convert from "./utils/convert/convert";
 import CustomA from "./utils/CustomA";
 import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
