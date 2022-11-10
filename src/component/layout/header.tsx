@@ -5,28 +5,30 @@ import { useContextUser } from "../../context";
 import s from "../../scss/layout.module.scss";
 import Burger from "../utils/burger";
 import Card from "../utils/Card";
+import Ham2 from "./ham2";
 
 const Header: Component = () => {
   const [open, setOpen] = createSignal(false);
   const Show_ = Show as any; // cast as any
-  const green = "text-green-400";
-  const blue = "text-blue-400";
   const [user, { logOut }] = useContextUser() as any;
+
   const dest = () => {
     destroyCookie(null, "token"), destroyCookie(null, "email");
     logOut();
   };
-
   return (
     <div class={s.header_main}>
       <span class={s.burger}>
-        <Show_
-          when={open()}
-          fallback={
-            <button onClick={() => setOpen((p) => (p = !p))}>open</button>
-          }
+        <div
+          onClick={() => setOpen((p) => (p = !p))}
+          class={`${open() && "open "}`}
+          id="nav-icon1"
         >
-          <button onClick={() => setOpen((p) => (p = !p))}>closed</button>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <Show_ when={open()} class="transition delay-700 duration-300">
           <Burger open={open()} setIsOpen={setOpen}>
             <Card />
             <Card />
