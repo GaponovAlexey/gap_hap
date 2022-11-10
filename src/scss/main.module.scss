@@ -6,10 +6,10 @@
       @apply sm:block delay-300 w-auto bg-transparent hover:bg-[#313F4F] text-black font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded;
     }
     h3 {
-      @apply pt-52 sm:pt-32 text-center;
+      @apply pt-52 sm:pt-44 text-center;
     }
     h1 {
-      @apply text-center tracking-widest font-bold sm:text-3xl text-[32px];
+      @apply   text-center tracking-widest font-bold sm:text-3xl text-[32px];
     }
     h2 {
       @apply border-b-2 text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
@@ -23,7 +23,7 @@
 .main_white {
   @apply h-auto pt-10 grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
   h3 {
-    @apply sm:text-xl text-[1.30rem] text-gray-500  sm:pb-0  pb-24 sm:px-6 px-32 leading-relaxed tracking-widest;
+    @apply sm:text-sm text-[1.30rem] text-gray-500  sm:pb-8  pb-24 sm:px-20 px-32 leading-relaxed tracking-widest;
   }
   div {
     @apply sm:border-0 border-b-[0.1px] ;
