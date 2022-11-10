@@ -1,6 +1,6 @@
 {
   "buildCommand": "next build",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "devCommand": "next dev",
   "framework": "solidjs"
 }
