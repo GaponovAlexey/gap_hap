@@ -32,7 +32,6 @@ function Burger({ children, open, setIsOpen }: any) {
               d="M6 18 18 6M6 6l12 12"
             />
           </svg>
-          
         </div>
         {/* ico */}
         <article
@@ -45,6 +44,7 @@ function Burger({ children, open, setIsOpen }: any) {
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
         </article>
+        {/* ico */}
       </section>
       <section
         class=" w-screen h-full cursor-pointer "
