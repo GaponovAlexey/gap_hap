@@ -1,6 +1,7 @@
 import { A } from "@solidjs/router";
 
 const CustomA = ({ name, path }: { name: string; path: string }) => {
+  
   return (
     <A
       class="group z-2 relative inline-block overflow-hidden border sm:bg-yellow-300 border-yellow-600 px-2 py-3 focus:outline-none focus:ring"
