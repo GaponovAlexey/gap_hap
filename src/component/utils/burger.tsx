@@ -43,6 +43,7 @@ function Burger({ children, open, setIsOpen }: any) {
           <A href="/landing">landing</A>
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
+          <A href="/GaponovAlexey">Owner</A>
         </article>
         {/* ico */}
       </section>

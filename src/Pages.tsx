@@ -6,6 +6,7 @@ import Services from "./component/page/WebServices";
 import Login from "./component/client";
 import SignUp from "./component/client/SignUp";
 import SignIn from "./component/client/SignIn";
+import Gapon from "./person/Gapon";
 
 interface CounterData {
   count: number;
@@ -20,6 +21,7 @@ export const Pages = () => {
       <Route path={"/landing"} element={Landing} />
       <Route path={"/Services"} element={Services} />
       <Route path={"/Marketing"} element={Marketing} />
+      <Route path={"/GaponovAlexey"} element={Gapon} />
       <Route
         path={"/login"}
         element={
