@@ -15,7 +15,7 @@
 }
 
 .footer_main {
-  @apply h-auto py-14 bg-[#111111] border-r-2  text-white text-center;
+  @apply h-auto py-14 bg-[#111111] border-t-[0.2px] border-green-500  text-white text-center;
   ul {
     @apply flex justify-center m-0;
     li {
