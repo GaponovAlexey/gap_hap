@@ -32,8 +32,8 @@ function Burger({ open, setIsOpen }: any) {
       const links = document.querySelectorAll(".js-scroll");
       links.forEach((each: any) => {
         each.addEventListener("click", function () {
-          // const currentTarget = this.getAttribute("href");
-          // smoothScroll(currentTarget, 1000);
+          const currentTarget = this.getAttribute("href");
+          smoothScroll(currentTarget, 1000);
         });
       });
     };
