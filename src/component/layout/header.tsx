@@ -1,9 +1,8 @@
 import { destroyCookie } from "nookies";
-import { Component, createMemo, createSignal, Show } from "solid-js";
+import { Component, createSignal, Show } from "solid-js";
 import { useContextUser } from "../../context";
 import s from "../../scss/layout.module.scss";
 import Burger from "../utils/burger";
-import Card from "../utils/Card";
 
 const Header: Component = () => {
   const [open, setOpen] = createSignal(false);
@@ -19,10 +18,7 @@ const Header: Component = () => {
 
   const Shows = () => (
     <Show_ when={open()}>
-      <Burger open={open()} setIsOpen={setOpen}>
-        <Card />
-        <Card />
-      </Burger>
+      <Burger open={open()} setIsOpen={setOpen}/>
     </Show_>
   );
   return (

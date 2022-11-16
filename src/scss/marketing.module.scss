@@ -21,7 +21,7 @@
       @apply relative cursor-pointer;
     }
     a:after {
-      @apply block absolute left-0 right-0 w-0 h-[1px] bg-sky-400 content-[''] ease-in duration-300;
+      @apply block absolute left-0 right-0 w-0 h-[1px] bg-white content-[''] ease-in duration-300;
     }
     a:hover:after,
     a:focus:after {

@@ -38,7 +38,7 @@ const MainPageOne = () => {
 //2
 const PageWhite = () => {
   return (
-    <div class={s.main_white}>
+    <div  class={s.main_white}>
       <h3>
         But, sometimes it may feel like you are doing it alone. Good news,
         you’re not! we are here to help you with all those things you may not be
@@ -51,7 +51,7 @@ const PageWhite = () => {
 
 const MainPageTwo = () => {
   return (
-    <div class={s.container_main_two}>
+    <div id='products' class={s.container_main_two}>
       <div class={s.img} />
       <span>
         <h2>Your website is costing you customers</h2>

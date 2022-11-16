@@ -108,8 +108,6 @@ const Marketing = () => {
             </Switch>
           </div>
         </div>
-        <div class={s.marketing_page}>marketing</div>
-        <div class={s.marketing_page}>marketing</div>
         <div class={s.marketing_map}>
           <div class={s.marketing_bot_content}>
             <p>We work while you relax</p>

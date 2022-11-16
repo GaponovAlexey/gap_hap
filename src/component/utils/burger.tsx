@@ -1,7 +1,43 @@
 import { A, useNavigate } from "@solidjs/router";
 
-function Burger({ children, open, setIsOpen }: any) {
-  const nav = useNavigate();
+function Burger({ open, setIsOpen }: any) {
+  (function () {
+    const smoothScroll = function (targetEl: any, duration: any) {
+      const headerElHeight =
+        document.querySelector<any>(".header").clientHeight;
+      let target = document.querySelector(targetEl);
+      let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+      let startPosition = window.pageYOffset;
+      let startTime = null as any;
+
+      const ease = function (t: any, b: any, c: any, d: any) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      const animation = function (currentTime: any) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      };
+      requestAnimationFrame(animation);
+    };
+
+    const scrollTo = function () {
+      const links = document.querySelectorAll(".js-scroll");
+      links.forEach((each: any) => {
+        each.addEventListener("click", function () {
+          const currentTarget = this.getAttribute("href");
+          smoothScroll(currentTarget, 1000);
+        });
+      });
+    };
+    scrollTo();
+  })();
   return (
     <div
       class={
@@ -40,6 +76,8 @@ function Burger({ children, open, setIsOpen }: any) {
         >
           {/* {children} */}
           <A href="/">Home</A>
+          <a href="#products">Our Products</a>
+          <a href="#application">Contact the manager</a>
           <A href="/landing">landing</A>
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
