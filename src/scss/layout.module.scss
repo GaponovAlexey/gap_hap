@@ -1,6 +1,6 @@
 .header_main {
   .burger {
-    @apply fixed top-5 right-5  ;
+    @apply fixed top-5 right-5;
   }
 }
 
@@ -8,16 +8,14 @@
   @apply fixed  overflow-hidden bg-gray-900 bg-opacity-80 inset-0  ease-in-out;
   .burger_wrapper {
     @apply w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform;
-  .burger_routs {
-    @apply text-right  text-3xl  px-10  max-w-lg pb-10 flex flex-col ;
-    A {
-      @apply pt-5;
+    .burger_routs {
+      @apply text-right  text-3xl  px-10  max-w-lg pb-10 flex flex-col;
+      A {
+        @apply pt-5;
+      }
     }
   }
-    
-  }
 }
-
 
 .footer_main {
   @apply h-auto py-14 bg-[#111111]  text-white text-center;

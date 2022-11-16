@@ -62,8 +62,8 @@ function Burger({ open, setIsOpen }: any) {
         {/* ico */}
         <div onClick={() => setIsOpen(false)} class={s.burger_routs}>
           <A href="/">Home</A>
-          <a href="#products">Our Products</a>
-          <a href="#application">Contact the manager</a>
+          <a href="/#products">Our Products</a>
+          <a href="/#application">Contact the manager</a>
           <A href="/landing">landing</A>
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
