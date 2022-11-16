@@ -1,6 +1,7 @@
 import { A, useNavigate } from "@solidjs/router";
 
 function Burger({ open, setIsOpen }: any) {
+  
   (function () {
     const smoothScroll = function (targetEl: any, duration: any) {
       const headerElHeight =

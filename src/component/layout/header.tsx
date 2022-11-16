@@ -12,16 +12,14 @@ const Header: Component = () => {
     destroyCookie(null, "token"), destroyCookie(null, "email");
     logOut();
   };
-  const intervalBurger = () => {
-    setOpen((p) => (p = !p));
-  };
+  
 
   return (
     <div class={s.header_main}>
       <span class={s.burger}>
         <div
-          onClick={intervalBurger}
-          class={`${open() && "open "}`}
+          onClick={() => setOpen((p) => (p = !p))}
+          class={`${open() && "open transition-all "}`}
           id="nav-icon1"
         >
           <span></span>
@@ -29,7 +27,7 @@ const Header: Component = () => {
           <span></span>
         </div>
         <Show_ when={open()}>
-          <Burger open={open()} setIsOpen={setOpen} />
+          <Burger setIsOpen={setOpen} />
         </Show_>
       </span>
     </div>
