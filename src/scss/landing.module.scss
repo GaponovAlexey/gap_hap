@@ -1,7 +1,5 @@
 .landing_main {
-  @apply min-h-screen text-white;
-  background: no-repeat black url("../assets/yes/fa44.png") center center  /
-    cover;
+  @apply min-h-screen text-white bg-[#111111];
   .landing_top {
     @apply h-full;
   }

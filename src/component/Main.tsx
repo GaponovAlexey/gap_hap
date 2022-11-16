@@ -97,8 +97,8 @@ const Landing = () => (
       acquiring a lead or sale.
     </p>
     <p class={s.but}>
-      <CustomA name="Detail info" path="landing" />
-      <CustomA name="Contact manager" path="landing" />
+      {/* <CustomA name="Contact manager" path="landing" /> */}
+      <a href="#application">Connect project manager</a>
     </p>
   </div>
 );
@@ -118,8 +118,9 @@ const WebServices = () => (
     </p>
     <p>We will advise you and find the best solution for you</p>
     <p class={s.but}>
-      <CustomA name="Detail info" path="Services" />
-      <CustomA name="Contact manager" path="Services" />
+      {/* <CustomA name="Detail info" path="Services" /> */}
+      {/* <CustomA name="Contact manager" path="Services" /> */}
+      <a href="#application">Connect project manager</a>
     </p>
   </div>
 );
@@ -140,8 +141,9 @@ const Marketing = () => (
       don’t want to hear about products and services that don’t interest them.
     </p>
     <p class={s.but}>
-      <CustomA name="Detail info" path="Marketing" />
-      <CustomA name="Contact manager" path="Marketing" />
+      {/* <CustomA name="Detail info" path="Marketing" /> */}
+      {/* <CustomA name="Contact manager" path="Marketing" /> */}
+      <a href="#application">Connect project manager</a>
     </p>
   </div>
 );

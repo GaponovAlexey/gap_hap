@@ -1,8 +1,9 @@
 import s from "../../scss/webServices.module.scss";
+
 const Services = () => {
   return (
     <div class={s.main_services}>
-      <div class={s.services_page}>Services</div>
+      <div class={s.services_page}>you</div>
       <div class={s.services_page}>Services</div>
       <div class={s.services_page}>
         <h3>
