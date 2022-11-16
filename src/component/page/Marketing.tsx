@@ -11,9 +11,7 @@ const Marketing = () => {
       <div class={s.main_marketing}>
         <div class={s.marketing_page}>
           <div class={s.marketing_info}>
-            <h2>
-              Your website can attract new customers through Google
-            </h2>
+            <h2>Your website can attract new customers through Google</h2>
             <p>
               You may be happy with the current size of your business, but every
               company experiences customer turnover. To encourage continued
@@ -28,52 +26,49 @@ const Marketing = () => {
           </div>
           <div class={s.marketing_top_page}>
             <section>
-              <h3>Paid Search</h3>
-              <ul>
-                <li>
-                  <span class="text-orange-400"># </span>
-                  <a href="#FacebookAds"> Facebook Ads</a>
+              <h3>
+                <span class="text-orange-400">#</span>Paid Search
+              </h3>
+              <ul >
+                <li class="w-4/5 mx-auto" >
+                  <a class="hover:bg-blue-600 transition-all duration-200 delay-200 " href="#FacebookAds"> Facebook Ads</a>
                 </li>
                 <li>
-                  <span class="text-orange-400"># </span>
                   <a href="#BindAds">Bind Ads</a>
                 </li>
                 <li>
-                  <span class="text-orange-400"># </span>
                   <a href="#GoogleAds">Google Ads</a>
                 </li>
               </ul>
             </section>
             <section>
-              <h3>Content Marketing</h3>
+              <h3>
+                <span class="text-green-400">#</span>Content Marketing
+              </h3>
               <ul>
                 <li>
-                  <span class="text-green-400"># </span>
                   <a href="#Website">Website</a>
                 </li>
                 <li>
-                  <span class="text-green-400"># </span>
                   <a href="#Magazine">Magazine</a>
                 </li>
                 <li>
-                  <span class="text-green-400"># </span>
                   <a href="#Video">Video</a>
                 </li>
               </ul>
             </section>
             <section>
-              <h3>SEO</h3>
+              <h3>
+                <span class="text-blue-400">#</span>SEO
+              </h3>
               <ul>
                 <li>
-                  <span class="text-blue-400"># </span>
                   <a href="#SSR">SSR</a>
                 </li>
                 <li>
-                  <span class="text-blue-400"># </span>
                   <a href="#TechnicalSEO">Technical SEO</a>
                 </li>
                 <li>
-                  <span class="text-blue-400"># </span>
                   <a href="#Links">Link building</a>
                 </li>
               </ul>

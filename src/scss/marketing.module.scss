@@ -1,10 +1,9 @@
 .main_marketing {
-  @apply min-h-screen  text-white;
-  background: no-repeat url("../assets/yes/long-m.png") center center / cover;
+  @apply min-h-screen bg-[#111111]  text-white;
   .marketing_page {
     @apply min-h-screen;
     .marketing_info {
-      @apply pt-16 px-5 leading-relaxed ;
+      @apply pt-16 px-5 leading-relaxed;
       h2 {
         @apply pb-10 text-lg sm:text-xl text-indigo-400 text-center;
       }
@@ -13,11 +12,22 @@
       }
     }
     .marketing_top_page {
-      @apply pt-20 flex justify-around;
+      @apply transition-all pt-20 grid grid-cols-3 sm:grid-cols-1 text-center;
       h3 {
-        @apply text-3xl;
+        @apply sm:pt-10 text-3xl;
       }
     }
+    a {
+      @apply relative cursor-pointer;
+    }
+    a:after {
+      @apply block absolute left-0 right-0 w-0 h-[1px] bg-sky-400 content-[''] ease-in duration-300;
+    }
+    a:hover:after,
+    a:focus:after {
+      @apply w-full;
+    }
+    
     .info_marketing_services {
       @apply px-12 text-2xl;
       .list_services {
