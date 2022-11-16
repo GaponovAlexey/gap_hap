@@ -141,21 +141,11 @@ const Marketing = () => (
       don’t want to hear about products and services that don’t interest them.
     </p>
     <p class={s.but}>
-      {/* <CustomA name="Detail info" path="Marketing" /> */}
-      {/* <CustomA name="Contact manager" path="Marketing" /> */}
       <a href="#application">Connect project manager</a>
     </p>
   </div>
 );
 
-//3
-const PageWorld = () => {
-  return (
-    <div class={s.pageWorld}>
-      <div class={s.img} />
-    </div>
-  );
-};
 //4
 const MainPageFour = () => {
   return (

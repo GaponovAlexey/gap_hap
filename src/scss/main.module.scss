@@ -31,9 +31,9 @@
   }
 }
 .container_main_two {
-  @apply min-h-full sm:pt-20 grid sm:grid-cols-1 grid-cols-2;
+  @apply min-h-screen sm:pt-20 grid sm:grid-cols-1 grid-cols-2;
   .img {
-    @apply sm:hidden overflow-hidden z-[-1];
+    @apply sm:hidden overflow-hidden;
     background: url("../assets/yes/ebout1.jpg") center center / cover;
   }
   span {
