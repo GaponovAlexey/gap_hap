@@ -55,24 +55,6 @@ const Application = () => {
   return (
     <div id="application" class={s.applications}>
       <div>
-        {/* <For each={state()}>
-          {(e: any) => (
-            <div class="text-center">
-              {e.name}
-              <span>
-                <button onClick={() => update(name(), e.id)} style="color: red">
-                  update
-                </button>
-                <button
-                  onClick={() => deleteName(e.id)}
-                  style="color: red; padding-left: 10px"
-                >
-                  del
-                </button>
-              </span>
-            </div>
-          )}
-        </For> */}
         <div class={s.text_logo}>
           <h2>Create Application</h2>
           <div>Fll out the form and we will contact you</div>

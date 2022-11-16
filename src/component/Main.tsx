@@ -1,7 +1,6 @@
 import { Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
-import CustomA from "./utils/CustomA";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
