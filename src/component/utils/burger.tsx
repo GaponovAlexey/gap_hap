@@ -31,8 +31,8 @@ function Burger({ open, setIsOpen }: any) {
       const links = document.querySelectorAll(".js-scroll");
       links.forEach((each: any) => {
         each.addEventListener("click", function () {
-          const currentTarget = this.getAttribute("href");
-          smoothScroll(currentTarget, 1000);
+          // const currentTarget = this.getAttribute("href");
+          // smoothScroll(currentTarget, 1000);
         });
       });
     };
@@ -41,17 +41,11 @@ function Burger({ open, setIsOpen }: any) {
   return (
     <div
       class={
-        "fixed overflow-hidden bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out" +
-        (open
-          ? "transition-opacity  opacity-100 duration-500 translate-x-0"
-          : "transition-all  opacity-0 translate-x-full")
-      }
+        "fixed text-2xl overflow-hidden bg-gray-900 bg-opacity-80 inset-0 transform-all ease-in-out"}
     >
       <section
         class={
-          "w-screen max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform" +
-          (open ? "translate-x-0 " : "translate-x-full ")
-        }
+          "w-screen max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform"}
       >
         {/* ico */}
         <div class="" onClick={() => setIsOpen(false)} id="nav-icon1">
@@ -70,9 +64,9 @@ function Burger({ open, setIsOpen }: any) {
           </svg>
         </div>
         {/* ico */}
-        <article
+        <div
           onClick={() => setIsOpen(false)}
-          class="relative w-screen text-right px-10 text-3xl pt-5 max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full"
+          class="text-right px-10 pt-5 max-w-lg pb-10 flex flex-col"
         >
           {/* {children} */}
           <A href="/">Home</A>
@@ -82,7 +76,7 @@ function Burger({ open, setIsOpen }: any) {
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
           <A href="/GaponovAlexey">Owner</A>
-        </article>
+        </div>
         {/* ico */}
       </section>
       <section
