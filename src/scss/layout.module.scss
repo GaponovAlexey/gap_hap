@@ -1,14 +1,4 @@
 .header_main {
-  @apply fixed top-0 left-0 right-0 ;
-  h2 {
-    @apply text-xs p-1 text-center md:text-[10px];
-  }
-  div {
-    @apply flex justify-between md:p-1 p-2;
-  }
-  A {
-    @apply md:pl-1 pl-2 cursor-pointer md:text-[12px] flex-wrap hover:text-sky-500;
-  }
   .burger {
     @apply fixed top-5 right-5  ;
   }

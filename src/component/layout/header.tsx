@@ -16,11 +16,6 @@ const Header: Component = () => {
     setOpen((p) => (p = !p));
   };
 
-  const Shows = () => (
-    <Show_ when={open()}>
-      <Burger open={open()} setIsOpen={setOpen}/>
-    </Show_>
-  );
   return (
     <div class={s.header_main}>
       <span class={s.burger}>
@@ -33,7 +28,9 @@ const Header: Component = () => {
           <span></span>
           <span></span>
         </div>
-        <Shows />
+        <Show_ when={open()}>
+          <Burger open={open()} setIsOpen={setOpen} />
+        </Show_>
       </span>
     </div>
   );
