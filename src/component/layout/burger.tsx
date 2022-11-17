@@ -29,13 +29,26 @@ function Burger({ setIsOpen }: any) {
         </div>
         {/* ico */}
         <div onClick={() => setIsOpen(false)} class={s.burger_routs}>
-          <A href="/">Home</A>
           {loc.pathname == "/" ? (
-            <a href="#products" class="js-scroll">
-              Our Products
+            <a href="#home" class="js-scroll">
+              Home
             </a>
           ) : (
-            <A href="/#products">Our Products</A>
+            <A href="/">Home</A>
+          )}
+          {loc.pathname == "/" ? (
+            <a href="#landing" class="js-scroll">
+              landing
+            </a>
+          ) : (
+            <A href="/#landing">landing</A>
+          )}
+          {loc.pathname == "/" ? (
+            <a href="#strengths" class="js-scroll">
+              Our strengths
+            </a>
+          ) : (
+            <A href="/#strengths">Our strengths</A>
           )}
           {loc.pathname == "/" ? (
             <a href="#application" class="js-scroll">
@@ -45,15 +58,13 @@ function Burger({ setIsOpen }: any) {
             <A href="/#application">Contact the manager</A>
           )}
           {loc.pathname == "/" ? (
-            <a href="#landing" class="js-scroll">
-              landing
+            <a href="#marketing" class="js-scroll">
+              Marketing
             </a>
           ) : (
-            <A href="/#landing">Contact the manager</A>
+            <A href="/#marketing">Marketing</A>
           )}
-
           {/* right */}
-          <A href="/Marketing">Marketing</A>
           <A href="/GaponovAlexey">Owner</A>
         </div>
         {/* ico */}

@@ -86,6 +86,9 @@
     }
     .skills_element {
       @apply sm:pt-10  pt-20  grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
+      li {
+        @apply m-5;
+      }
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;

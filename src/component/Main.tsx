@@ -2,6 +2,7 @@ import { createEffect, Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./page/Application";
 import LandingUse from "./page/LandingUse";
+import Marketing from "./page/Marketing";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
@@ -12,10 +13,11 @@ const Main = () => {
       <MainPageOne />
       <PageWhite />
       <LandingUse />
-      <MainPageTwo />
+      {/* <MainPageTwo /> */}
       <MainPageFour />
       <Application />
-      <MainPageFive />
+      <Marketing />
+      {/* <MainPageFive /> */}
     </div>
   );
 };
@@ -24,7 +26,7 @@ const Main = () => {
 const MainPageOne = () => {
   return (
     <section class={s.container_main}>
-      <div class="">
+      <div id='home'>
         <h3>The development company</h3>
         <h1>Sitesess.ca</h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
@@ -61,20 +63,20 @@ const MainPageTwo = () => {
         <h2>Your website is costing you customers</h2>
         <h3>We can make you</h3>
         <ul>
-          <a href="#landing">landing</a>
+          <a href="#Landing_block">landing</a>
           <a href="#webServices">Web Services</a>
-          <a href="#marketing">Digital</a>
+          <a href="#Marketing_Block">Digital</a>
         </ul>
         <div class={s.services}>
-          <Switch fallback={<Landing />}>
+          <Switch fallback={<Landing_block />}>
             <Match when={matches("landing")}>
-              <Landing />
+              <Landing_block />
             </Match>
             <Match when={matches("webServices")}>
               <WebServices />
             </Match>
-            <Match when={matches("marketing")}>
-              <Marketing />
+            <Match when={matches("Marketing_Block")}>
+              <Marketing_Block />
             </Match>
           </Switch>
         </div>
@@ -83,7 +85,7 @@ const MainPageTwo = () => {
   );
 };
 
-const Landing = () => {
+const Landing_block = () => {
   SlowScroll()
   return (
     <div class={s.two_text_services}>
@@ -136,7 +138,7 @@ const WebServices = () => {
   );
 };
 
-const Marketing = () => {
+const Marketing_Block = () => {
   SlowScroll()
   return (
     <div class={s.two_text_services}>
@@ -165,7 +167,7 @@ const Marketing = () => {
 //4
 const MainPageFour = () => {
   return (
-    <div class={s.container_main_four}>
+    <div id='strengths' class={s.container_main_four}>
       <div class={s.img}>
         <div class={s.skills}>
           <div>

@@ -8,7 +8,7 @@ const matches = createRouteHandler();
 const Marketing = () => {
   return (
     <>
-      <div class={s.main_marketing}>
+      <div id="marketing" class={s.main_marketing}>
         <div class={s.marketing_page}>
           <div class={s.marketing_info}>
             <h2>Your website can attract new customers through Google</h2>
