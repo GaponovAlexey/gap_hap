@@ -118,8 +118,6 @@ const WebServices = () => (
     </p>
     <p>We will advise you and find the best solution for you</p>
     <p class={s.but}>
-      {/* <CustomA name="Detail info" path="Services" /> */}
-      {/* <CustomA name="Contact manager" path="Services" /> */}
       <a href="#application" class="js-scroll">Connect project manager</a>
     </p>
   </div>
