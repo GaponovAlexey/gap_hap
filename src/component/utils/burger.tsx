@@ -1,7 +1,6 @@
 import { A, useNavigate } from "@solidjs/router";
 import { createEffect } from "solid-js";
 import s from "../../scss/layout.module.scss";
-import '../utils/SlowScroll'
 
 function Burger({ setIsOpen }: any) {
   // Scroll to anchors
