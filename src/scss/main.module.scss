@@ -21,9 +21,9 @@
   background: url("../assets/bg2.jpg") center / cover;
 }
 .main_white {
-  @apply h-full py-20 grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
+  @apply h-full py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
   h3 {
-    @apply sm:text-sm text-[1.30rem] text-gray-900  sm:pb-8  pb-24 sm:px-[4.7rem] px-10 leading-relaxed tracking-widest;
+    @apply sm:text-sm text-[1.30rem] text-gray-900  sm:pb-8 pt-14  pb-24 sm:px-[4.7rem] px-10 leading-relaxed ;
   }
   div {
     background: url("../assets/h1.png") no-repeat center / contain;

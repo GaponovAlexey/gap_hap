@@ -94,7 +94,6 @@ const Application = () => {
             onInput={() => setCheck(!check())}
           />
           <span class="sl:text-sm">
-            {" "}
             "I have read and agree to the Privacy Policy
           </span>
           <br />

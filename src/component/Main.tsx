@@ -1,6 +1,7 @@
 import { createEffect, Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./page/Application";
+import AppliMap from "./page/AppliMap";
 import LandingUse from "./page/LandingUse";
 import Marketing from "./page/Marketing";
 import { createRouteHandler } from "./utils/matches";
@@ -16,6 +17,7 @@ const Main = () => {
       {/* <MainPageTwo /> */}
       <MainPageFour />
       <Application />
+      <AppliMap />
       <Marketing />
       {/* <MainPageFive /> */}
     </div>
@@ -47,7 +49,8 @@ const PageWhite = () => {
     <div class={s.main_white}>
       <h3>
         But, sometimes it may feel like you are doing it alone. Good news,
-        you’re not! we are here to help you with all those things you may not be
+        you’re not! <br/>
+        We are here to help you with all those things you may not be
         able to do yourself, such as web development and marketing
       </h3>
       <div />
