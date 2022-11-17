@@ -200,36 +200,39 @@
 }
 
 .landing_main {
-  @apply min-h-screen text-white bg-white dark:bg-[#111111];
+  @apply min-h-screen text-white bg-white ;
+  background: url("../assets/yes/world.jpg") no-repeat 0% center / cover;
   .landing_top {
     @apply h-full;
   }
   .landing_use {
-    @apply text-gray-400;
+    /* @apply ; */
     div {
       @apply px-5 py-14 mx-auto;
     }
     .landing_use_top {
-      @apply flex flex-col text-center w-full;
+      @apply flex flex-col text-center w-full ;
       h2 {
-        @apply text-xl text-indigo-400 tracking-widest font-medium  mb-1;
+        -webkit-box-shadow: 0px 400px 100px 500px rgba(0,0,0,0.50);
+        @apply text-2xl text-indigo-400 tracking-widest font-medium  mb-1 p-4 bg-[#000000]  rounded-sm ;
       }
       h1 {
-        @apply sm:text-3xl text-2xl  mb-4 text-white;
+        @apply sm:text-xl text-2xl  mb-4 pt-5 text-white  bg-[rgba(18,26,27,0.1)] shadow-sm rounded-sm;
       }
       p {
-        @apply lg:w-2/3 mx-auto leading-relaxed;
+        @apply lg:w-3/4 mx-auto leading-relaxed text-xl rounded-sm sm:text-sm inline ;
       }
     }
     .landing_use_bottom {
       @apply flex flex-wrap;
       div {
-        @apply lg:w-1/2 md:w-full px-8 py-4  sm:border-l-2 md:border-l-2 border-gray-800;
+        @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 md:border-l-2 border-gray-800;
         h2 {
-          @apply sm:text-xl text-white text-[16px] mb-2;
+          -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+          @apply sm:text-sm  text-indigo-300 shadow-md  text-[16px]  mb-2;
         }
         p {
-          @apply sm:text-xl leading-relaxed text-base mb-4;
+          @apply sm:text-sm leading-relaxed  text-base mb-4;
         }
       }
     }
