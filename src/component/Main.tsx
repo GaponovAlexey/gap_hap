@@ -120,7 +120,7 @@ const WebServices = () => (
     <p class={s.but}>
       {/* <CustomA name="Detail info" path="Services" /> */}
       {/* <CustomA name="Contact manager" path="Services" /> */}
-      <a href="#application">Connect project manager</a>
+      <a href="#application" class="js-scroll">Connect project manager</a>
     </p>
   </div>
 );
@@ -141,7 +141,7 @@ const Marketing = () => (
       don’t want to hear about products and services that don’t interest them.
     </p>
     <p class={s.but}>
-      <a href="#application">Connect project manager</a>
+      <a href="#application" class="js-scroll">Connect project manager</a>
     </p>
   </div>
 );
