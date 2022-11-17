@@ -7,9 +7,6 @@ function Burger({ open, setIsOpen }: any) {
 
   createEffect(() => {
     const smoothScroll = function (targetEl: any, duration: any) {
-      console.log("targetEl", targetEl);
-      console.log("duration", duration);
-
       let target = document.querySelector(targetEl);
       let targetPosition = target.getBoundingClientRect().top;
       let startPosition = window.pageYOffset;
