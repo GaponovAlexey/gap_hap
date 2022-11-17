@@ -1,13 +1,17 @@
 import { A, useNavigate } from "@solidjs/router";
+import { createEffect } from "solid-js";
 import s from "../../scss/layout.module.scss";
 
 function Burger({ open, setIsOpen }: any) {
-  (function () {
+  // Scroll to anchors
+
+  createEffect(() => {
     const smoothScroll = function (targetEl: any, duration: any) {
-      const headerElHeight =
-        document.querySelector<any>(".header").clientHeight;
+      console.log("targetEl", targetEl);
+      console.log("duration", duration);
+
       let target = document.querySelector(targetEl);
-      let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+      let targetPosition = target.getBoundingClientRect().top;
       let startPosition = window.pageYOffset;
       let startTime = null as any;
 
@@ -30,7 +34,7 @@ function Burger({ open, setIsOpen }: any) {
 
     const scrollTo = function () {
       const links = document.querySelectorAll(".js-scroll");
-      links.forEach((each: any) => {
+      links.forEach((each) => {
         each.addEventListener("click", function () {
           const currentTarget = this.getAttribute("href");
           smoothScroll(currentTarget, 1000);
@@ -38,13 +42,13 @@ function Burger({ open, setIsOpen }: any) {
       });
     };
     scrollTo();
-  })();
+  });
 
   return (
     <div class={s.burger_main}>
       <section class={s.burger_wrapper}>
         {/* ico */}
-        <div class=" "  onClick={() => setIsOpen(false)} id="nav-icon1">
+        <div onClick={() => setIsOpen(false)} id="nav-icon1">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -62,8 +66,12 @@ function Burger({ open, setIsOpen }: any) {
         {/* ico */}
         <div onClick={() => setIsOpen(false)} class={s.burger_routs}>
           <A href="/">Home</A>
-          <a href="/#products">Our Products</a>
-          <a href="/#application">Contact the manager</a>
+          <a href="#products" class="js-scroll">
+            Our Products
+          </a>
+          <a href="#application" class="js-scroll">
+            Contact the manager
+          </a>
           <A href="/landing">landing</A>
           <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
