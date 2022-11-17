@@ -1,46 +1,11 @@
 import { A, useNavigate } from "@solidjs/router";
 import { createEffect } from "solid-js";
 import s from "../../scss/layout.module.scss";
+import '../utils/SlowScroll'
 
-function Burger({ open, setIsOpen }: any) {
+function Burger({ setIsOpen }: any) {
   // Scroll to anchors
-
-  createEffect(() => {
-    const smoothScroll = function (targetEl: any, duration: any) {
-      let target = document.querySelector(targetEl);
-      let targetPosition = target.getBoundingClientRect().top;
-      let startPosition = window.pageYOffset;
-      let startTime = null as any;
-
-      const ease = function (t: any, b: any, c: any, d: any) {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      };
-
-      const animation = function (currentTime: any) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, targetPosition, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      };
-      requestAnimationFrame(animation);
-    };
-
-    const scrollTo = function () {
-      const links = document.querySelectorAll(".js-scroll");
-      links.forEach((each) => {
-        each.addEventListener("click", function () {
-          const currentTarget = this.getAttribute("href");
-          smoothScroll(currentTarget, 1000);
-        });
-      });
-    };
-    scrollTo();
-  });
-
+  SlowScroll()
   return (
     <div class={s.burger_main}>
       <section class={s.burger_wrapper}>
@@ -83,5 +48,46 @@ function Burger({ open, setIsOpen }: any) {
     </div>
   );
 }
+
+
+
+
+const SlowScroll = () => (
+  createEffect(() => {
+    const smoothScroll = function (targetEl: any, duration: any) {
+      let target = document.querySelector(targetEl);
+      let targetPosition = target.getBoundingClientRect().top;
+      let startPosition = window.pageYOffset;
+      let startTime = null as any;
+  
+      const ease = function (t: any, b: any, c: any, d: any) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+  
+      const animation = function (currentTime: any) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      };
+      requestAnimationFrame(animation);
+    };
+  
+    const scrollTo = function () {
+      const links = document.querySelectorAll(".js-scroll");
+      links.forEach((each) => {
+        each.addEventListener("click", function () {
+          const currentTarget = this.getAttribute("href");
+          smoothScroll(currentTarget, 1000);
+        });
+      });
+    };
+    scrollTo()
+  })
+)
 
 export default Burger;
