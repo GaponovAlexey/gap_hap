@@ -1,8 +1,9 @@
-import s from "../../../scss/landing.module.scss";
+import s from "../../scss/main.module.scss";
+
 const LandingUse = () => {
   return (
-    <section class={s.landing_use}>
-      <div>
+    <section class={s.landing_main}>
+      <div class={s.landing_use}>
         <div class={s.landing_use_top}>
           <h2>Why you need a website for your small business</h2>
           <h1>A website makes you look professional</h1>

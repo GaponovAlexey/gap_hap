@@ -1,6 +1,7 @@
 import { createEffect, Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
-import Application from "./Aplication/Application";
+import Application from "./page/Application";
+import LandingUse from "./page/LandingUse";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
@@ -10,7 +11,7 @@ const Main = () => {
     <div>
       <MainPageOne />
       <PageWhite />
-      {/* <PageWorld /> */}
+      <LandingUse />
       <MainPageTwo />
       <MainPageFour />
       <Application />
