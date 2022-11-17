@@ -44,6 +44,15 @@ function Burger({ setIsOpen }: any) {
           ) : (
             <A href="/#application">Contact the manager</A>
           )}
+          {loc.pathname == "/" ? (
+            <a href="#landing" class="js-scroll">
+              landing
+            </a>
+          ) : (
+            <A href="/#landing">Contact the manager</A>
+          )}
+
+          {/* right */}
           <A href="/Marketing">Marketing</A>
           <A href="/GaponovAlexey">Owner</A>
         </div>

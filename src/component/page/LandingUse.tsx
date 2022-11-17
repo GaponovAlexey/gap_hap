@@ -2,7 +2,7 @@ import s from "../../scss/main.module.scss";
 
 const LandingUse = () => {
   return (
-    <section class={s.landing_main}>
+    <section id='landing' class={s.landing_main}>
       <div class={s.landing_use}>
         <div class={s.landing_use_top}>
           <h2>Why you need a website for your small business</h2>
