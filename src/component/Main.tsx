@@ -1,10 +1,11 @@
-import { Match, Switch } from "solid-js";
+import { createEffect, Match, Switch } from "solid-js";
 import s from "../scss/main.module.scss";
 import Application from "./Aplication/Application";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
 const Main = () => {
+  SlowScroll()
   return (
     <div>
       <MainPageOne />
@@ -28,7 +29,7 @@ const MainPageOne = () => {
         <h2>We Know You Are Passionate About Your Small Business</h2>
         <h4>We help businesses turn ideas into effective products</h4>
         <div class="text-center pt-10 hover:scroll-auto">
-          <a href="#application">Connect project manager</a>
+          <a href="#application" class="js-scroll">Connect project manager</a>
         </div>
       </div>
       <div class={s.main_img}></div>
@@ -97,7 +98,7 @@ const Landing = () => (
     </p>
     <p class={s.but}>
       {/* <CustomA name="Contact manager" path="landing" /> */}
-      <a href="#application">Connect project manager</a>
+      <a href="#application" class="js-scroll">Connect project manager</a>
     </p>
   </div>
 );
@@ -202,4 +203,42 @@ const MainPageFive = () => {
     </div>
   );
 };
+
+
+const SlowScroll = () =>
+  createEffect(() => {
+    const smoothScroll = function (targetEl: any, duration: any) {
+      let target = document.querySelector(targetEl);
+      let targetPosition = target.getBoundingClientRect().top;
+      let startPosition = window.pageYOffset;
+      let startTime = null as any;
+
+      const ease = function (t: any, b: any, c: any, d: any) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      const animation = function (currentTime: any) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      };
+      requestAnimationFrame(animation);
+    };
+
+    const scrollTo = function () {
+      const links = document.querySelectorAll(".js-scroll");
+      links.forEach((each) => {
+        each.addEventListener("click", function () {
+          const currentTarget = this.getAttribute("href");
+          smoothScroll(currentTarget, 1000);
+        });
+      });
+    };
+    scrollTo();
+  });
 export default Main;
