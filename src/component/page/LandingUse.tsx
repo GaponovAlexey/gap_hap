@@ -5,7 +5,7 @@ const LandingUse = () => {
     <section id='landing' class={s.landing_main}>
       <div class={s.landing_use}>
         <div class={s.landing_use_top}>
-          <h2>Why you need a website for your small business</h2>
+          <h2>Why you need a website for your business</h2>
           <h1>A website makes you look professional</h1>
           <p>
             84% of today’s consumers think a website makes your business more

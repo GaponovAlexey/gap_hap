@@ -1,25 +1,15 @@
-import {
-  addDoc,
-  collection,
-  deleteDoc,
-  doc,
-  getDocs,
-  updateDoc,
-} from "firebase/firestore";
-import { createEffect, createSignal } from "solid-js";
+import { addDoc, collection } from "firebase/firestore";
+import { createSignal } from "solid-js";
 import { db } from "../../../firebase";
-import s from "../../scss/main.module.scss";
 import CustomBut from "../utils/CustomBut";
 
 const AppliMap = () => {
-  const [state, setState] = createSignal<any>();
   const usersColRef = collection(db, "users");
   const [name, setName] = createSignal<string>("");
   const [company, setCompany] = createSignal<string>("");
   const [number, setNumber] = createSignal<any | null>(null);
   const [email, setEmail] = createSignal<string>("");
   const [message, setMessage] = createSignal<string>("");
-  // const [check, setCheck] = createSignal<any>(true);
 
   const add = async (e: any) => {
     e.preventDefault();
@@ -37,14 +27,14 @@ const AppliMap = () => {
     setMessage("");
   };
   return (
-    <div>
-      <section id='application' class="text-gray-600 body-font relative">
+    <div class="relative z-4" >
+      <section id="application" class="text-gray-600 body-font ">
         <div class="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
             height="100%"
             loading="lazy"
-            // marginwidth="0"
+            // marginwidth="100"
             // title="map"
             scrolling="no"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20588.168242971704!2d-97.094436!3d49.8326668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea76508470dde5%3A0x5c70e599990bc52e!2s206%20Sterling%20Ave%2C%20Winnipeg%2C%20MB%20R2M%202R7!5e0!3m2!1sru!2sca!4v1668665016949!5m2!1sru!2sca"
@@ -57,9 +47,9 @@ const AppliMap = () => {
             class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 sm:mt-0 relative z-10 shadow-md"
           >
             <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-            Fll out the form and we will contact you
+              Fll out the form and we will contact you
             </h2>
-            
+
             <div class="relative mb-4">
               <label for="email" class="leading-7 text-sm text-gray-600">
                 Name *
@@ -112,8 +102,8 @@ const AppliMap = () => {
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button class='inline-block'  >
-              <CustomBut name="Connect us"  />
+            <button class="inline-block">
+              <CustomBut name="Connect us" />
             </button>
             <p class="text-xs text-gray-500 mt-3">
               We will contact you shortly

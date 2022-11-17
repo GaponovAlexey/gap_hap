@@ -10,7 +10,7 @@ const matches = createRouteHandler();
 const Main = () => {
   SlowScroll();
   return (
-    <div>
+    <div >
       <MainPageOne />
       <PageWhite />
       <LandingUse />
