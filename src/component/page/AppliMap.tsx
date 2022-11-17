@@ -23,8 +23,6 @@ const AppliMap = () => {
 
   const add = async (e: any) => {
     e.preventDefault();
-    console.log("sendadd", name(), company(), number(), email(), message())
-    
     await addDoc(usersColRef, {
       name: name(),
       company: company(),
@@ -40,7 +38,7 @@ const AppliMap = () => {
   };
   return (
     <div>
-      <section class="text-gray-600 body-font relative">
+      <section id='application' class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
@@ -59,11 +57,9 @@ const AppliMap = () => {
             class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 sm:mt-0 relative z-10 shadow-md"
           >
             <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-              Feedback
+            Fll out the form and we will contact you
             </h2>
-            <p class="leading-relaxed mb-5 text-gray-600">
-              Fll out the form and we will contact you
-            </p>
+            
             <div class="relative mb-4">
               <label for="email" class="leading-7 text-sm text-gray-600">
                 Name *
@@ -116,8 +112,8 @@ const AppliMap = () => {
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button >
-              <CustomBut name="Connect us" />
+            <button class='inline-block'  >
+              <CustomBut name="Connect us"  />
             </button>
             <p class="text-xs text-gray-500 mt-3">
               We will contact you shortly

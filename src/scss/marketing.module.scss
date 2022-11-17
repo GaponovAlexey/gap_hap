@@ -12,7 +12,7 @@
       }
     }
     .marketing_top_page {
-      @apply transition-all pt-20 grid grid-cols-3 sm:grid-cols-1 text-center;
+      @apply transition-all sm:pt-5 pt-20 grid grid-cols-3 sm:grid-cols-1 text-center;
       h3 {
         @apply sm:pt-10 text-3xl;
       }
@@ -35,14 +35,11 @@
     }
   }
   .marketing_map {
-    @apply min-h-screen;
-    background: no-repeat url("../assets/svg/m2.svg") center / contain;
+    @apply min-h-full sm:pt-32 bg-red-200 pt-[20rem];
+    background: no-repeat url("../assets/svg/m2.svg") 50%  / contain;
 
     .marketing_bot_content {
-      @apply flex justify-center;
-      p {
-        @apply text-2xl pt-32 font-bold text-sky-500;
-      }
+      @apply flex justify-center pt-20;
     }
   }
 }
