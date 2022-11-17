@@ -12,7 +12,7 @@ function Burger({ setIsOpen }: any) {
     <div class={s.burger_main}>
       <section class={s.burger_wrapper}>
         {/* ico */}
-        <div onClick={() => setIsOpen(false)} id="nav-icon1">
+        {/* <div onClick={() => setIsOpen(false)} id="nav-icon1">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -26,7 +26,7 @@ function Burger({ setIsOpen }: any) {
               d="M6 18 18 6M6 6l12 12"
             />
           </svg>
-        </div>
+        </div> */}
         {/* ico */}
         <div onClick={() => setIsOpen(false)} class={s.burger_routs}>
           {loc.pathname == "/" ? (

@@ -9,7 +9,7 @@
   .burger_wrapper {
     @apply w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform;
     .burger_routs {
-      @apply text-right  text-3xl  px-10  max-w-lg pb-10 flex flex-col;
+      @apply text-right pt-20 text-3xl  px-10  max-w-lg pb-10 flex flex-col;
       A {
         @apply pt-5 ;
       }
