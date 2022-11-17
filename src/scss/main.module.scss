@@ -1,7 +1,7 @@
 .container_main {
-  @apply min-h-screen ;
+  @apply min-h-screen;
   div {
-    @apply px-10 ;
+    @apply px-10;
     a {
       @apply sm:block delay-300 w-auto bg-transparent hover:bg-[#313F4F] text-black font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded;
     }
@@ -9,13 +9,13 @@
       @apply pt-52 sm:pt-44 text-center;
     }
     h1 {
-      @apply   text-center tracking-widest font-bold sm:text-3xl text-[32px];
+      @apply text-center tracking-widest font-bold sm:text-3xl text-[32px];
     }
     h2 {
       @apply border-b-2 text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
     }
     h4 {
-      @apply text-center text-gray-900 font-extrabold ;
+      @apply text-center text-gray-900 font-extrabold;
     }
   }
   background: url("../assets/bg2.jpg") center / cover;
@@ -23,7 +23,7 @@
 .main_white {
   @apply h-full py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
   h3 {
-    @apply sm:text-sm text-[1.30rem] text-gray-900  sm:pb-8 pt-14  pb-24 sm:px-[4.7rem] px-10 leading-relaxed ;
+    @apply sm:text-sm text-[1.30rem] text-gray-900  sm:pb-8 pt-14  pb-24 sm:px-[4.7rem] px-10 leading-relaxed;
   }
   div {
     background: url("../assets/h1.png") no-repeat center / contain;
@@ -167,43 +167,25 @@
   }
 }
 
-.applications {
-  @apply min-h-full grid grid-cols-2 sm:grid-cols-1;
-  .text_logo {
-    @apply mt-32 text-center mb-10;
-    h2 {
-      @apply text-2xl text-indigo-400 text-center tracking-widest;
-    }
-    div {
-      @apply pt-4 text-gray-500;
-    }
-  }
-  span {
-    @apply text-xs text-gray-400;
-  }
-  .ap_checkbox {
-    @apply ml-2 mt-8 mb-4;
-  }
-  .ap_form {
-    @apply px-2 ml-4 mb-32  block;
-    div {
-      @apply flex flex-wrap;
-      input {
-        @apply h-10  mr-4 placeholder:pl-4 outline-none border-b-2 placeholder:text-gray-400;
-      }
-    }
-    .ap_question {
-      @apply mt-8 w-full h-10 border-b-2 flex-wrap outline-none placeholder:pl-4 placeholder:text-gray-400;
+.ap_checkbox {
+  @apply ml-2 mt-8 mb-4 block;
+}
+.ap_form {
+  @apply px-2 ml-4 mb-32  block;
+  div {
+    @apply flex flex-wrap;
+    input {
+      @apply h-10  mr-4 placeholder:pl-4 outline-none border-b-2 placeholder:text-gray-400;
     }
   }
-  .application_img {
-    /* @apply ; */
-    background: url("../assets/yes/full.webp") no-repeat 20% center / cover;
+  .ap_question {
+    @apply mt-8 w-full h-10 border-b-2 flex-wrap outline-none placeholder:pl-4 placeholder:text-gray-400;
   }
 }
 
+
 .landing_main {
-  @apply min-h-screen text-white bg-white ;
+  @apply min-h-screen text-white bg-white;
   background: url("../assets/yes/world.jpg") no-repeat 0% center / cover;
   .landing_top {
     @apply h-full;
@@ -213,16 +195,16 @@
       @apply px-5 py-14 mx-auto;
     }
     .landing_use_top {
-      @apply flex flex-col text-center w-full ;
+      @apply flex flex-col text-center w-full;
       h2 {
-        -webkit-box-shadow: 0px 400px 100px 500px rgba(0,0,0,0.50);
-        @apply text-2xl text-indigo-400 tracking-widest font-medium  mb-1 p-4 bg-[#000000]  rounded-sm ;
+        -webkit-box-shadow: 0px 400px 100px 500px rgba(0, 0, 0, 0.5);
+        @apply text-2xl text-indigo-400 tracking-widest font-medium  mb-1 p-4 bg-[#000000]  rounded-sm;
       }
       h1 {
         @apply sm:text-xl text-2xl  mb-4 pt-5 text-white  bg-[rgba(18,26,27,0.1)] shadow-sm rounded-sm;
       }
       p {
-        @apply lg:w-3/4 mx-auto leading-relaxed text-xl rounded-sm sm:text-sm inline ;
+        @apply lg:w-3/4 mx-auto leading-relaxed text-xl rounded-sm sm:text-sm inline;
       }
     }
     .landing_use_bottom {
@@ -230,7 +212,7 @@
       div {
         @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 md:border-l-2 border-gray-800;
         h2 {
-          -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+          -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
           @apply sm:text-sm  text-indigo-300 shadow-md  text-[16px]  mb-2;
         }
         p {

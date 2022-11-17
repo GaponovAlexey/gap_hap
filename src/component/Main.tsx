@@ -16,7 +16,7 @@ const Main = () => {
       <LandingUse />
       {/* <MainPageTwo /> */}
       <MainPageFour />
-      <Application />
+      {/* <Application /> */}
       <AppliMap />
       <Marketing />
       {/* <MainPageFive /> */}

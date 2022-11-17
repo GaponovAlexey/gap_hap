@@ -97,7 +97,7 @@ const Application = () => {
             "I have read and agree to the Privacy Policy
           </span>
           <br />
-          <button class={`${check() && `opacity-50`}`} disabled={check()}>
+          <button onClick={add} class={`${check() && `opacity-50`}`} disabled={check()}>
             <CustomBut name="send application" />
           </button>
         </form>
