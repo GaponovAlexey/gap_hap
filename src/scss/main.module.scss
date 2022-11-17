@@ -200,7 +200,7 @@
 }
 
 .landing_main {
-  @apply min-h-screen text-white bg-[#111111];
+  @apply min-h-screen text-white bg-white dark:bg-[#111111];
   .landing_top {
     @apply h-full;
   }

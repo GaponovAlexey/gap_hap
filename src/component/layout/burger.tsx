@@ -1,4 +1,4 @@
-import { A, useLocation, useNavigate } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
 import { createEffect } from "solid-js";
 import s from "../../scss/layout.module.scss";
 
@@ -44,9 +44,6 @@ function Burger({ setIsOpen }: any) {
           ) : (
             <A href="/#application">Contact the manager</A>
           )}
-
-          <A href="/landing">landing</A>
-          <A href="/Services">Services</A>
           <A href="/Marketing">Marketing</A>
           <A href="/GaponovAlexey">Owner</A>
         </div>

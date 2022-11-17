@@ -8,8 +8,5 @@ module.exports = {
       lg: { min: "1024px", max: "4600px" },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
-  variants: {
-    scrollbar: ["rounded"],
-  },
+  darkMode: 'class'
 };

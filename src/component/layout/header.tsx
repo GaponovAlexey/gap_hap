@@ -2,7 +2,7 @@ import { destroyCookie } from "nookies";
 import { Component, createSignal, Show } from "solid-js";
 import { useContextUser } from "../../context";
 import s from "../../scss/layout.module.scss";
-import Burger from "../utils/burger";
+import Burger from "./burger";
 
 const Header: Component = () => {
   const [open, setOpen] = createSignal(false);
