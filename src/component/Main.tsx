@@ -5,7 +5,7 @@ import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
 const Main = () => {
-  SlowScroll()
+  SlowScroll();
   return (
     <div>
       <MainPageOne />
@@ -29,7 +29,9 @@ const MainPageOne = () => {
         <h2>We Know You Are Passionate About Your Small Business</h2>
         <h4>We help businesses turn ideas into effective products</h4>
         <div class="text-center pt-10 hover:scroll-auto">
-          <a href="#application" class="js-scroll">Connect project manager</a>
+          <a href="#application" class="js-scroll">
+            Connect project manager
+          </a>
         </div>
       </div>
       <div class={s.main_img}></div>
@@ -39,7 +41,7 @@ const MainPageOne = () => {
 //2
 const PageWhite = () => {
   return (
-    <div  class={s.main_white}>
+    <div class={s.main_white}>
       <h3>
         But, sometimes it may feel like you are doing it alone. Good news,
         you’re not! we are here to help you with all those things you may not be
@@ -52,7 +54,7 @@ const PageWhite = () => {
 
 const MainPageTwo = () => {
   return (
-    <div id='products' class={s.container_main_two}>
+    <div id="products" class={s.container_main_two}>
       <div class={s.img} />
       <span>
         <h2>Your website is costing you customers</h2>
@@ -80,70 +82,85 @@ const MainPageTwo = () => {
   );
 };
 
-const Landing = () => (
-  <div class={s.two_text_services}>
-    <p>
-      Landing pages keep visitors focused on the specific thing you want them to
-      do, getting you better results with the same campaign budget.
-    </p>
-    <p>
-      Unlike web pages, which typically have many goals and encourage
-      exploration, landing pages are designed with a single focus or goal, known
-      as a call to action (or CTA, for short)
-    </p>
-    <p>
-      It’s this focus that makes landing pages the best option for increasing
-      the conversion rates of your marketing campaigns and lowering your cost of
-      acquiring a lead or sale.
-    </p>
-    <p class={s.but}>
-      {/* <CustomA name="Contact manager" path="landing" /> */}
-      <a href="#application" class="js-scroll">Connect project manager</a>
-    </p>
-  </div>
-);
+const Landing = () => {
+  SlowScroll()
+  return (
+    <div class={s.two_text_services}>
+      <p>
+        Landing pages keep visitors focused on the specific thing you want them
+        to do, getting you better results with the same campaign budget.
+      </p>
+      <p>
+        Unlike web pages, which typically have many goals and encourage
+        exploration, landing pages are designed with a single focus or goal,
+        known as a call to action (or CTA, for short)
+      </p>
+      <p>
+        It’s this focus that makes landing pages the best option for increasing
+        the conversion rates of your marketing campaigns and lowering your cost
+        of acquiring a lead or sale.
+      </p>
+      <p class={s.but}>
+        {/* <CustomA name="Contact manager" path="landing" /> */}
+        <a href="#application" class="js-scroll">
+          Connect project manager
+        </a>
+      </p>
+    </div>
+  );
+};
 
-const WebServices = () => (
-  <div class={s.two_text_services}>
-    <p>
-      A Web service is any software, application or cloud technology system
-      built for interoperable machine-to-machine or application-to-application
-      interaction over a network. They allow different applications to
-      seamlessly communicate and share data with each other.
-    </p>
-    <p>
-      Web services provide a common platform that allows multiple applications
-      built on various programming languages to have the ability to communicate
-      with each other.
-    </p>
-    <p>We will advise you and find the best solution for you</p>
-    <p class={s.but}>
-      <a href="#application" class="js-scroll">Connect project manager</a>
-    </p>
-  </div>
-);
+const WebServices = () => {
+  SlowScroll()
+  return (
+    <div class={s.two_text_services}>
+      <p>
+        A Web service is any software, application or cloud technology system
+        built for interoperable machine-to-machine or application-to-application
+        interaction over a network. They allow different applications to
+        seamlessly communicate and share data with each other.
+      </p>
+      <p>
+        Web services provide a common platform that allows multiple applications
+        built on various programming languages to have the ability to
+        communicate with each other.
+      </p>
+      <p>We will advise you and find the best solution for you</p>
+      <p class={s.but}>
+        <a href="#application" class="js-scroll">
+          Connect project manager
+        </a>
+      </p>
+    </div>
+  );
+};
 
-const Marketing = () => (
-  <div class={s.two_text_services}>
-    <p>
-      Digital marketing is the promotion of a company and its products or
-      services through online tools that generate leads, drive traffic, and
-      boost sales.
-    </p>
-    <p>
-      Now, businesses can target their audience with pinpoint accuracy and
-      provide useful information that resonates.
-    </p>
-    <p>
-      This is perfect because that’s exactly what today’s consumers want. People
-      don’t want to hear about products and services that don’t interest them.
-    </p>
-    <p class={s.but}>
-      <a href="#application" class="js-scroll">Connect project manager</a>
-    </p>
-  </div>
-);
-
+const Marketing = () => {
+  SlowScroll()
+  return (
+    <div class={s.two_text_services}>
+      <p>
+        Digital marketing is the promotion of a company and its products or
+        services through online tools that generate leads, drive traffic, and
+        boost sales.
+      </p>
+      <p>
+        Now, businesses can target their audience with pinpoint accuracy and
+        provide useful information that resonates.
+      </p>
+      <p>
+        This is perfect because that’s exactly what today’s consumers want.
+        People don’t want to hear about products and services that don’t
+        interest them.
+      </p>
+      <p class={s.but}>
+        <a href="#application" class="js-scroll">
+          Connect project manager
+        </a>
+      </p>
+    </div>
+  );
+};
 //4
 const MainPageFour = () => {
   return (
@@ -201,7 +218,6 @@ const MainPageFive = () => {
     </div>
   );
 };
-
 
 const SlowScroll = () =>
   createEffect(() => {
