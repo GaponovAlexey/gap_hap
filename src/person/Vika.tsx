@@ -7,7 +7,7 @@ const Viktoria = () => {
         <div class={s.top_block}>
           <div>
             <h1>Viktoria Karpova</h1>
-            <h2>Design and Client Relations Manager</h2>
+            <h2>Design and Client Relations Manager at Sitesess.ca</h2>
             <h3>
               Where we develop technologies that empower for business and
               celebrity

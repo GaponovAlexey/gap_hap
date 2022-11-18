@@ -111,7 +111,6 @@ const Marketing = () => {
         <div class={s.marketing_map}>
           <div class={s.marketing_bot_content}>
           </div>
-          <img />
         </div>
       </div>
     </>
