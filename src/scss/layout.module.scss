@@ -5,9 +5,9 @@
 }
 
 .burger_main {
-  @apply fixed -z-20  overflow-hidden bg-gray-900 bg-opacity-80 inset-0  ease-in-out;
+  @apply fixed -z-20 overflow-hidden bg-gray-900 bg-opacity-80 inset-0  ease-in-out;
   .burger_wrapper {
-    @apply w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-500 transform;
+    @apply w-screen  max-w-lg right-0 absolute bg-white h-full shadow-xl duration-[4000ms] transform;
     .burger_routs {
       @apply text-right pt-20 text-3xl  px-10  max-w-lg pb-10 flex flex-col;
       A {

@@ -11,23 +11,6 @@ function Burger({ setIsOpen }: any) {
   return (
     <div class={s.burger_main}>
       <section class={s.burger_wrapper}>
-        {/* ico */}
-        {/* <div onClick={() => setIsOpen(false)} id="nav-icon1">
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2.5"
-            stroke="#000"
-            class="w-12 h-12 "
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18 18 6M6 6l12 12"
-            />
-          </svg>
-        </div> */}
-        {/* ico */}
         <div onClick={() => setIsOpen(false)} class={s.burger_routs}>
           {loc.pathname == "/" ? (
             <a href="#home" class="js-scroll">
@@ -65,7 +48,7 @@ function Burger({ setIsOpen }: any) {
             <A href="/#marketing">Marketing</A>
           )}
           {/* right */}
-          <A href="/GaponovAlexey">CEO</A>
+          <A href="/team">Team</A>
         </div>
         {/* ico */}
       </section>

@@ -8,7 +8,7 @@
         @apply pb-10 text-lg sm:text-xl text-indigo-400 text-center;
       }
       p {
-        @apply lg:w-2/3 mx-auto leading-relaxed text-base;
+        @apply lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
       }
     }
     .marketing_top_page {
