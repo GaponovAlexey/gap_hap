@@ -4,7 +4,7 @@
 
 body {
   font-display: auto;
-  font-family: JetBrains Mono;
+  font-family: JetBrains Mono,monospace,monospace;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
