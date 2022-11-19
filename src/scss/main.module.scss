@@ -16,7 +16,7 @@
       @apply text-center text-gray-900 font-extrabold;
     }
   }
-  background: url("../assets/bg2.jpg") center / cover;
+  background: url("../assets/bg2.jpg")  center / cover;
 }
 .main_white {
   @apply h-full py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
@@ -82,7 +82,7 @@
     }
   }
   .img {
-    background: url("../assets/yes/lamps.jpg") 0% / cover;
+    background: url("../assets/yes/lamps-min.webp") 0% / cover;
   }
 }
 
