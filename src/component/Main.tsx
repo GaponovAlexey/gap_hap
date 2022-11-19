@@ -1,9 +1,9 @@
-import { createEffect } from "solid-js";
+import { createEffect, lazy } from "solid-js";
 import s from "../scss/main.module.scss";
-import AppliMap from "./page/AppliMap";
 import LandingUse from "./page/LandingUse";
 import Marketing from "./page/Marketing";
 import CustomBut from "./utils/CustomBut";
+const AppliMap = lazy(() => import("./page/AppliMap"));
 
 const Main = () => {
   SlowScroll();
