@@ -2,18 +2,19 @@ import s from "../scss/personal.module.scss";
 
 const Viktoria = () => {
   return (
-    <div class={s.personal}>
+    <div class={s.personal_v}>
       <div class={s.wrapper}>
         <div class={s.top_block}>
           <div>
+            <div class={s.top_img}></div>
             <h1>Viktoria Karpova</h1>
-            <h2>Design and Client Relations Manager at Sitesess.ca</h2>
+            <h2>SEO Product Manager at Sitesess.ca</h2>
             <h3>
-              Where we develop technologies that empower for business and
-              celebrity
+              Project Management understanding, with people skills and business
+              administration experiences, communication, and great negotiation
+              techniques.
             </h3>
           </div>
-          <div class={s.top_img}></div>
         </div>
       </div>
     </div>
