@@ -33,8 +33,8 @@ const AppliMap = () => {
           <iframe
             width="100%"
             height="100%"
-            loading="lazy"
-            marginwidth="0"
+            class="lazy"
+            // marginwidth="0"
             title="map"
             scrolling="no"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20588.168242971704!2d-97.094436!3d49.8326668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea76508470dde5%3A0x5c70e599990bc52e!2s206%20Sterling%20Ave%2C%20Winnipeg%2C%20MB%20R2M%202R7!5e0!3m2!1sru!2sca!4v1668665016949!5m2!1sru!2sca"
