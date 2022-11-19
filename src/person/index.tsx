@@ -6,8 +6,8 @@ const MainTeam = () => {
     <div class="bg-[#111111]" >
       <h1 class="text-center text-indigo-400 text-3xl pt-14">Team</h1>
       <div class="grid grid-cols-2 sm:grid-cols-1 pb-32 ">
-        <Gapon />
         <Viktoria />
+        <Gapon />
       </div>
     </div>
   );
