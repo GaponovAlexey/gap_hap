@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  font-display: auto;
   font-family: JetBrains Mono;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

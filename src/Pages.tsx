@@ -7,13 +7,9 @@ import Marketing from "./component/page/Marketing";
 import MainTeam from "./person";
 import Gapon from "./person/Gapon";
 
-interface CounterData {
-  count: number;
-}
+
 export const Pages = () => {
-  const data = (): CounterData => {
-    return { count: 4 };
-  };
+  
   return (
     <Routes>
       <Route path={"/"} element={Main} />
