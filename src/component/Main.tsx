@@ -4,13 +4,14 @@ import Application from "./page/Application";
 import AppliMap from "./page/AppliMap";
 import LandingUse from "./page/LandingUse";
 import Marketing from "./page/Marketing";
+import CustomBut from "./utils/CustomBut";
 import { createRouteHandler } from "./utils/matches";
 
 const matches = createRouteHandler();
 const Main = () => {
   SlowScroll();
   return (
-    <div >
+    <div>
       <MainPageOne />
       <PageWhite />
       <LandingUse />
@@ -28,14 +29,14 @@ const Main = () => {
 const MainPageOne = () => {
   return (
     <section class={s.container_main}>
-      <div id='home'>
+      <div id="home">
         <h3>The development company</h3>
         <h1>Sitesess.ca</h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
         <h4>We help businesses turn ideas into effective products</h4>
         <div class="text-center pt-10 hover:scroll-auto">
-          <a href="#application" class="js-scroll">
-            Connect project manager
+          <a href="#application"  class="js-scroll ">
+            <CustomBut name="Connect us"  />
           </a>
         </div>
       </div>
@@ -49,9 +50,9 @@ const PageWhite = () => {
     <div class={s.main_white}>
       <h3>
         But, sometimes it may feel like you are doing it alone. Good news,
-        you’re not! <br/>
-        We are here to help you with all those things you may not be
-        able to do yourself, such as web development and marketing
+        you’re not! <br />
+        We are here to help you with all those things you may not be able to do
+        yourself, such as web development and marketing
       </h3>
       <div />
     </div>
@@ -89,7 +90,7 @@ const MainPageTwo = () => {
 };
 
 const Landing_block = () => {
-  SlowScroll()
+  SlowScroll();
   return (
     <div class={s.two_text_services}>
       <p>
@@ -117,7 +118,7 @@ const Landing_block = () => {
 };
 
 const WebServices = () => {
-  SlowScroll()
+  SlowScroll();
   return (
     <div class={s.two_text_services}>
       <p>
@@ -142,7 +143,7 @@ const WebServices = () => {
 };
 
 const Marketing_Block = () => {
-  SlowScroll()
+  SlowScroll();
   return (
     <div class={s.two_text_services}>
       <p>
@@ -170,7 +171,7 @@ const Marketing_Block = () => {
 //4
 const MainPageFour = () => {
   return (
-    <div id='strengths' class={s.container_main_four}>
+    <div id="strengths" class={s.container_main_four}>
       <div class={s.img}>
         <div class={s.skills}>
           <div>
