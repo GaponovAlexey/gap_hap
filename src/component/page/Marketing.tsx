@@ -2,7 +2,6 @@ import { Match, Switch } from "solid-js";
 import s from "../../scss/main.module.scss";
 import { createRouteHandler } from "../utils/matches";
 
-//matches router
 const matches = createRouteHandler();
 
 const Marketing = () => {
