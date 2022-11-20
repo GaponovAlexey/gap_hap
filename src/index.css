@@ -5,6 +5,8 @@
 body {
   font-display: auto;
   font-family: JetBrains Mono,monospace,monospace;
+  src: local('JetBrains Mono'), local('JetBrains Mono'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
