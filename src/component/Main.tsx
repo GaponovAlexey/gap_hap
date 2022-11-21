@@ -44,6 +44,7 @@ const MainPageOne = () => {
     </section>
   );
 };
+
 //2
 const PageWhite = () => {
   return (
