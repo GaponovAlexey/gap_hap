@@ -46,6 +46,8 @@ const MainPageOne = () => {
   );
 };
 
+
+
 //2
 const PageWhite = () => {
   return (
