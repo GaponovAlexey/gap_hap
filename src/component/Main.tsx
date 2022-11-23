@@ -12,24 +12,24 @@ const Marketing = lazy(() => import("./page/Marketing"));
 const OurStrengths = lazy(() => import("./page/OurStrengths"));
 
 const Main = () => {
-  
+
   SlowScroll();
   return (
-    <div>
+    <>
       <MainPageOne />
       <PageWhite />
       <LandingUse />
       <OurStrengths />
       <AppliMap />
       <Marketing />
-    </div>
+    </>
   );
 };
 
 //one
 const MainPageOne = () => {
   return (
-    <section class={s.container_main}>
+    <div class={s.container_main}>
       <div id="home">
         <h3>The development company</h3>
         <h1>Sitesess.ca</h1>
@@ -42,7 +42,7 @@ const MainPageOne = () => {
         </div>
       </div>
       <div class={s.main_img}></div>
-    </section>
+    </div>
   );
 };
 
