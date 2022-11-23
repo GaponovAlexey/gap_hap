@@ -12,6 +12,7 @@ const Marketing = lazy(() => import("./page/Marketing"));
 const OurStrengths = lazy(() => import("./page/OurStrengths"));
 
 const Main = () => {
+  
   SlowScroll();
   return (
     <div>
@@ -44,8 +45,6 @@ const MainPageOne = () => {
     </section>
   );
 };
-
-
 
 //2
 const PageWhite = () => {
