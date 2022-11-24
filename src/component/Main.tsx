@@ -13,6 +13,7 @@ const OurStrengths = lazy(() => import("./page/OurStrengths"));
 
 const Main = () => {
 
+  
   SlowScroll();
   return (
     <>
