@@ -28,9 +28,15 @@ const Marketing = () => {
               <h3>
                 <span class="text-orange-400">#</span>Paid Search
               </h3>
-              <ul >
-                <li class="w-4/5 mx-auto" >
-                  <a class="hover:bg-blue-600 transition-all duration-200 delay-200 " href="#FacebookAds"> Facebook Ads</a>
+              <ul>
+                <li class="w-4/5 mx-auto">
+                  <a
+                    class="hover:bg-blue-600 transition-all duration-200 delay-200 "
+                    href="#FacebookAds"
+                  >
+                    {" "}
+                    Facebook Ads
+                  </a>
                 </li>
                 <li>
                   <a href="#BindAds">Bind Ads</a>
@@ -78,7 +84,7 @@ const Marketing = () => {
               fallback={<p class={s.list_services}>Hello who you need</p>}
             >
               <Match when={matches("FacebookAds")}>
-                <div class={s.list_services}>Facebook Ads</div>
+                <div class={s.list_services}><Facebook /></div>
               </Match>
               <Match when={matches("BindAds")}>
                 <div class={s.list_services}>Bind Ads</div>
@@ -108,11 +114,25 @@ const Marketing = () => {
           </div>
         </div>
         <div class={s.marketing_map}>
-          <div class={s.marketing_bot_content}>
-          </div>
+          <div class={s.marketing_bot_content}></div>
         </div>
       </div>
     </>
+  );
+};
+
+const Facebook = () => {
+  return (
+    <div>
+      The campaign strength score is calculated from various factors including
+      your campaign and ad settings, current campaign performance and analysis
+      of performance potential for each recommendation that is relevant for your
+      campaign. Campaign strength and its accompanying recommendations can
+      change due to trends in the ads ecosystem and edits to your campaign
+      setup.
+      <br/>
+      We help you with it.
+    </div>
   );
 };
 
