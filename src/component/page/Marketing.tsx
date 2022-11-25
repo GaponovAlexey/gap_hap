@@ -34,7 +34,6 @@ const Marketing = () => {
                     class="hover:bg-blue-600 transition-all duration-200 delay-200 "
                     href="#FacebookAds"
                   >
-                    {" "}
                     Facebook Ads
                   </a>
                 </li>
@@ -84,7 +83,9 @@ const Marketing = () => {
               fallback={<p class={s.list_services}>Hello who you need</p>}
             >
               <Match when={matches("FacebookAds")}>
-                <div class={s.list_services}><Facebook /></div>
+                <div class={s.list_services}>
+                  <Facebook />
+                </div>
               </Match>
               <Match when={matches("BindAds")}>
                 <div class={s.list_services}>Bind Ads</div>
@@ -130,7 +131,7 @@ const Facebook = () => {
       campaign. Campaign strength and its accompanying recommendations can
       change due to trends in the ads ecosystem and edits to your campaign
       setup.
-      <br/>
+      <br />
       We help you with it.
     </div>
   );
