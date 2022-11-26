@@ -1,6 +1,8 @@
 import { createEffect, lazy } from "solid-js";
 import s from "../scss/main.module.scss";
 import CustomBut from "./utils/CustomBut";
+import { Component } from "solid-js";
+import { Motion } from "@motionone/solid";
 
 //lazy
 const AppliMap = lazy(async () => {
@@ -28,12 +30,12 @@ const Main = () => {
 };
 
 //one
-const MainPageOne = () => {
+const MainPageOne: Component = () => {
   return (
     <div class={s.container_main}>
       <div id="home">
         <h3>The development company</h3>
-        <h1>Sitesess.ca</h1>
+        <Motion.h1  animate={{ rotate: 2 }}>Sitesess.ca</Motion.h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
         <h4>We help businesses turn ideas into effective products</h4>
         <div class="text-center pt-10 hover:scroll-auto">
