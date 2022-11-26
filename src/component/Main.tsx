@@ -18,6 +18,7 @@ import OurStrengths from "./page/OurStrengths";
 
 const Main = () => {
   console.log("init")
+
   
   return (
     <>
