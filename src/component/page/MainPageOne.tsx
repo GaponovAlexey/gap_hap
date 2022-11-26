@@ -16,7 +16,7 @@ const MainPageOne: Component = () => {
           Sitesess.ca
         </Motion.h1>
         <h2>We Know You Are Passionate About Your Small Business</h2>
-        <h4>We help businesses turn ideas into effective products</h4>
+        <h1>We help businesses turn ideas into effective products</h1>
         <div class="text-center pt-10 hover:scroll-auto">
           <a href="#application" class="js-scroll ">
             <CustomBut name="Connect us" />
