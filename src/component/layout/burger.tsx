@@ -61,20 +61,20 @@ function Burger({ setIsOpen }: any) {
 
 const SlowScroll = () =>
   createEffect(() => {
-    const smoothScroll = function (targetEl: any, duration: any) {
+    const smoothScroll = function (targetEl: any, duration: number) {
       let target = document.querySelector(targetEl);
       let targetPosition = target.getBoundingClientRect().top;
       let startPosition = window.pageYOffset;
       let startTime = null as any;
 
-      const ease = function (t: any, b: any, c: any, d: any) {
+      const ease = function (t: number, b: number, c: number, d: number) {
         t /= d / 2;
         if (t < 1) return (c / 2) * t * t + b;
         t--;
         return (-c / 2) * (t * (t - 2) - 1) + b;
       };
 
-      const animation = function (currentTime: any) {
+      const animation = function (currentTime: number) {
         if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const run = ease(timeElapsed, startPosition, targetPosition, duration);
@@ -87,7 +87,7 @@ const SlowScroll = () =>
     const scrollTo = function () {
       const links = document.querySelectorAll(".js-scroll");
       links.forEach((each) => {
-        each.addEventListener("click", function () {
+        each.addEventListener<any>("click", function () {
           const currentTarget = this.getAttribute("href");
           smoothScroll(currentTarget, 1000);
         });
