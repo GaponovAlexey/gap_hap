@@ -2,8 +2,10 @@ import { Component } from "solid-js";
 import { Motion } from "@motionone/solid";
 import CustomBut from "../utils/CustomBut";
 import s from "../../scss/main.module.scss";
+import { SlowScroll } from "../utils/SlowScroll";
 
 const MainPageOne: Component = () => {
+  SlowScroll()
   return (
     <div class={s.container_main}>
       <div id="home">

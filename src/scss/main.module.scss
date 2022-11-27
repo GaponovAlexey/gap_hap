@@ -152,7 +152,7 @@
     .info_marketing_services {
       @apply px-12   lg:w-3/4 mx-auto sm:text-sm leading-relaxed;
       .list_services {
-        @apply text-center mt-10;
+        @apply max-w-[800px] mx-auto text-center mt-10;
       }
     }
   }
