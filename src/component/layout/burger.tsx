@@ -4,7 +4,7 @@ import { SlowScroll } from "../utils/SlowScroll";
 
 function Burger({ setIsOpen }: any) {
   const loc = useLocation();
-  
+
   // Scroll to anchors
   SlowScroll();
   return (
@@ -58,7 +58,5 @@ function Burger({ setIsOpen }: any) {
     </div>
   );
 }
-
-
 
 export default Burger;

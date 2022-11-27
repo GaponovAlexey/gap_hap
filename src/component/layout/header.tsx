@@ -7,8 +7,6 @@ const Header: Component = () => {
   const [open, setOpen] = createSignal(false);
   const Show_ = Show as any; // cast as any
 
-  
-
   return (
     <div class={s.header_main}>
       <span class={s.burger}>
