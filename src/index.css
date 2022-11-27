@@ -4,15 +4,15 @@
 
 body {
   font-display: auto;
-  font-family: JetBrains Mono, monospace, monospace;
+  font-family: JetBrains Mono, monospace, monospace, sans-serif;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: JetBrains Mono, monospace, monospace;
-}
+/* code {
+  font-family: JetBrains Mono, monospace, monospace, sans-serif;
+} */
 
 //
 * {
