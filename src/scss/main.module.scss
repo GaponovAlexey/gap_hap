@@ -2,7 +2,7 @@
   @apply min-h-screen;
   div {
     @apply px-10;
-    
+
     h3 {
       @apply pt-52 sm:pt-44 text-center;
     }
@@ -17,7 +17,7 @@
     }
   }
   /* background: url("../assets/yes/bg2.webp")  center / cover; */
-  background: url("../assets/bg2.jpg")  center / cover;
+  background: url("../assets/bg2.jpg") center / cover;
 }
 .main_white {
   @apply h-full py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2 bg-[#111111];
@@ -28,9 +28,6 @@
     background: url("../assets/h1.png") no-repeat center / contain;
   }
 }
-
-
-
 
 .container_main_four {
   /* @apply min-h-screen; */
@@ -87,8 +84,6 @@
   }
 }
 
-
-
 .landing_main {
   @apply min-h-screen text-white bg-[#111111];
   .landing_top {
@@ -135,7 +130,7 @@
         @apply pb-10 text-2xl  sm:text-xl text-indigo-400 text-center;
       }
       p {
-        @apply lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
+        @apply  lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
       }
     }
     .marketing_top_page {
@@ -155,7 +150,7 @@
       @apply w-full;
     }
     .info_marketing_services {
-      @apply px-12 text-xl text-green-300 lg:w-3/4 mx-auto sm:text-sm leading-relaxed ;
+      @apply px-12 text-xl text-green-300 lg:w-3/4 mx-auto sm:text-sm leading-relaxed;
       .list_services {
         @apply text-center mt-10;
       }
@@ -163,11 +158,10 @@
   }
   .marketing_map {
     @apply min-h-full sm:pt-32 bg-red-200 pt-[20rem];
-    background: no-repeat url("../assets/svg/m2.svg") 50%  / contain;
+    background: no-repeat url("../assets/svg/m2.svg") 50% / contain;
 
     .marketing_bot_content {
       @apply flex justify-center pt-20;
     }
   }
 }
-

@@ -13,7 +13,7 @@ const Marketing = () => {
             <h2>Your website can attract new customers through Google</h2>
             <p>
               You may be happy with the current size of your business, but every
-              company experiences customer turnover.> <br/> To encourage continued
+              company experiences customer turnover. To encourage continued
               success, you need to attract new customers, and one of the best
               ways to do it is by making yourself more visible on Google. Social
               media networks are indexed on Google, and social media posts can
@@ -54,7 +54,7 @@ const Marketing = () => {
                   <a href="#TechnicalSEO">Technical SEO</a>
                 </li>
                 <li>
-                  <a href="#Links">Link building</a>
+                  <a href="#Links">Website Analytics</a>
                 </li>
               </ul>
             </section>
@@ -78,7 +78,7 @@ const Marketing = () => {
                 <div class={s.list_services}>Technical SEO</div>
               </Match>
               <Match when={matches("Links")}>
-                <div class={s.list_services}>Links</div>
+                <div class={s.list_services}>Website Analytics</div>
               </Match>
             </Switch>
           </div>
