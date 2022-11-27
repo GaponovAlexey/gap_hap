@@ -1,33 +1,18 @@
 import {
   addDoc,
-  collection,
-  deleteDoc,
-  doc,
-  getDocs,
-  updateDoc,
+  collection
 } from "firebase/firestore";
-import { createEffect, createSignal } from "solid-js";
+import { createSignal } from "solid-js";
 import { db } from "../../../firebase";
 import s from "../../scss/main.module.scss";
 import CustomBut from "../utils/CustomBut";
 
 const Application = () => {
-  const [state, setState] = createSignal<any>();
   const usersColRef = collection(db, "users");
   const [name, setName] = createSignal<string>("");
   const [numbers, setNumber] = createSignal<any | null>(null);
   const [message, setMessage] = createSignal<string>("");
-  const [check, setCheck] = createSignal<any>(true);
-
-  //GET
-  createEffect(() => {
-    const getUsers = async () => {
-      const data = await getDocs(usersColRef);
-      setState(data.docs.map((e: any) => ({ ...e.data(), id: e.id })));
-    };
-    getUsers();
-  }, [setState]);
-
+  
   //POST
   const add = async (e: any) => {
     e.preventDefault();
@@ -41,16 +26,7 @@ const Application = () => {
     setMessage("");
   };
 
-  //PUT
-  const update = async (name: any, id: any) => {
-    const userDoc = doc(db, "users", id);
-    await updateDoc(userDoc, { name: name });
-  };
-  //DELETE
-  const deleteName = async (id: any) => {
-    const userDoc = doc(db, "users", id);
-    await deleteDoc(userDoc);
-  };
+
 
   return (
     <div id="application" class={s.applications}>
@@ -90,14 +66,12 @@ const Application = () => {
             type="checkbox"
             placeholder=""
             name="da"
-            value={check()}
-            onInput={() => setCheck(!check())}
           />
           <span class="sl:text-sm">
             "I have read and agree to the Privacy Policy
           </span>
           <br />
-          <button onClick={add} class={`${check() && `opacity-50`}`} disabled={check()}>
+          <button onClick={add}  >
             <CustomBut name="send application" />
           </button>
         </form>
