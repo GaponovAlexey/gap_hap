@@ -61,7 +61,13 @@ const Marketing = () => {
           </div>
           <div class={s.info_marketing_services}>
             <Switch
-              fallback={<p class={s.list_services}>Hello who you need</p>}
+              fallback={
+                <p class={s.list_services}>
+                  Hello, you can order advertising on Google Facebook for your
+                  business or product. We can do website analytics or SEO
+                  promotion for you
+                </p>
+              }
             >
               <Match when={matches("FacebookAds")}>
                 <div class={s.list_services}>
@@ -84,7 +90,9 @@ const Marketing = () => {
                 </div>
               </Match>
               <Match when={matches("Links")}>
-                <div class={s.list_services}><WebsiteAnalytics  /></div>
+                <div class={s.list_services}>
+                  <WebsiteAnalytics />
+                </div>
               </Match>
             </Switch>
           </div>

@@ -7,7 +7,9 @@ const MainPageOne: Component = () => {
   return (
     <div class={s.container_main}>
       <div id="home">
-        <h3>The development company</h3>
+        <Motion.h3
+        
+        >The development company</Motion.h3>
         <Motion.h1
           initial={{ y: -400 }}
           animate={{ y: 0 }}
