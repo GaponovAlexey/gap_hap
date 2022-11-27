@@ -4,8 +4,7 @@ import s from "../../scss/layout.module.scss";
 
 function Burger({ setIsOpen }: any) {
   const loc = useLocation();
-  console.log("loc", loc.pathname);
-
+  
   // Scroll to anchors
   SlowScroll();
   return (
