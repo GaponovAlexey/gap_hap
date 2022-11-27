@@ -1,5 +1,6 @@
 import { lazy } from "solid-js";
 import s from "../scss/main.module.scss";
+import AppliMap from "./page/AppliMap";
 import LandingUse from "./page/LandingUse";
 import MainPageOne from "./page/MainPageOne";
 import Marketing from "./page/Marketing";
@@ -7,10 +8,10 @@ import OurStrengths from "./page/OurStrengths";
 
 
 //lazy
-const AppliMap = lazy(async () => {
-  await new Promise((r) => setTimeout(r, 500));
-  return import("./page/AppliMap");
-});
+// const AppliMap = lazy(async () => {
+//   await new Promise((r) => setTimeout(r, 500));
+//   return import("./page/AppliMap");
+// });
 // const LandingUse = lazy(() => import("./page/LandingUse"));
 // const Marketing = lazy(() => import("./page/Marketing"));
 // const OurStrengths = lazy(() => import("./page/OurStrengths"));
