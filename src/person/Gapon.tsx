@@ -10,7 +10,7 @@ const Gapon = () => {
             <h1>Alexey Gaponov</h1>
             <h2>Main developer at Sitesess.ca</h2>
             <h3>
-              Full-Stack developer with over two years of experience in web
+              Full-Stack developer with over years of experience in web
               applications development. Have expertise in building applications
               from scratch. Developed applications for different fields such as
               e-commerce, medicine, retail, marketing, statistics, data
