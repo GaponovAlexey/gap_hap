@@ -47,7 +47,7 @@ function Burger({ setIsOpen }: any) {
             <A href="/#marketing">Marketing</A>
           )}
           {/* right */}
-          <A href="/team">Team</A>
+          {/* <A href="/team">Team</A> */}
         </div>
         {/* ico */}
       </section>

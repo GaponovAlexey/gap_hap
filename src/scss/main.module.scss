@@ -37,45 +37,45 @@
       @apply text-center text-2xl font-bold sm:pt-14 pt-14;
     }
     .skills_element {
-      @apply sm:pt-10  pt-20  grid sm:grid-cols-2  grid-cols-3 cursor-pointer text-xs;
+      @apply sm:pt-10  pt-20  grid sm:grid-cols-2  grid-cols-3  text-xs;
       li {
         @apply m-5;
       }
     }
     .one {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/1.svg") no-repeat center 1%;
     }
     .two {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/2.svg") no-repeat center 1%;
     }
     .three {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/3.svg") no-repeat center 1%;
     }
     .four {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/4.svg") no-repeat center 1%;
     }
     .five {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/5.svg") no-repeat center 1%;
     }
     .six {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/6.svg") no-repeat center 1%;
     }
     .seven {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/7.svg") no-repeat center 1%;
     }
     .eight {
-      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center pt-20 p-2;
       background: url("../assets/svg/8.svg") no-repeat center 1%;
     }
     .nine {
-      @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2;
       background: url("../assets/svg/9.svg") no-repeat center 0%;
     }
   }
@@ -130,7 +130,7 @@
         @apply pb-10 text-2xl  sm:text-xl text-indigo-400 text-center;
       }
       p {
-        @apply  lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
+        @apply lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
       }
     }
     .marketing_top_page {
