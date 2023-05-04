@@ -1,14 +1,12 @@
-import { Component } from "solid-js";
-import Layout from "./component/layout";
-import Pages from "./Pages";
+import { Component } from "solid-js"
+import Layout from "./component/layout"
+import Pages from "./Pages"
 const App: Component = () => {
   return (
-    <>
-      <Layout>
-        <Pages />
-      </Layout>
-    </>
-  );
-};
+    <Layout>
+      <Pages />
+    </Layout>
+  )
+}
 
-export default App;
+export default App

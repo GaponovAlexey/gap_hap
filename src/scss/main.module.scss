@@ -1,16 +1,16 @@
 .container_main {
   @apply min-h-screen;
   div {
-    @apply px-10;
+    // @apply px-5;
 
     h3 {
-      @apply pt-52 sm:pt-44 text-center;
+      @apply pt-[26rem] sm:pt-44 text-center;
     }
     h1 {
       @apply text-center tracking-widest font-bold sm:text-3xl text-[32px];
     }
     h2 {
-      @apply border-b-2 text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
+      @apply text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
     }
     h4 {
       @apply text-center text-gray-900 font-extrabold;
@@ -42,7 +42,7 @@
         @apply m-5;
       }
     }
-    
+
     .one {
       @apply text-center pt-20 p-2;
       background: url("../assets/svg/1.svg") no-repeat center 1%;

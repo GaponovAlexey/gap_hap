@@ -1,17 +1,15 @@
-import { Component } from "solid-js";
-import { Motion } from "@motionone/solid";
-import CustomBut from "../utils/CustomBut";
-import s from "../../scss/main.module.scss";
-import { SlowScroll } from "../utils/SlowScroll";
+import { Component } from "solid-js"
+import { Motion } from "@motionone/solid"
+import CustomBut from "../utils/CustomBut"
+import s from "../../scss/main.module.scss"
+import { SlowScroll } from "../utils/SlowScroll"
 
 const MainPageOne: Component = () => {
   SlowScroll()
   return (
     <div class={s.container_main}>
       <div id="home">
-        <Motion.h3
-        
-        >The development company</Motion.h3>
+        <Motion.h3>The development company</Motion.h3>
         <Motion.h1
           initial={{ y: -400 }}
           animate={{ y: 0 }}
@@ -29,7 +27,7 @@ const MainPageOne: Component = () => {
       </div>
       <div class={s.main_img}></div>
     </div>
-  );
-};
+  )
+}
 
-export default MainPageOne;
+export default MainPageOne
