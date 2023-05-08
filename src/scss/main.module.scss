@@ -1,8 +1,6 @@
 .container_main {
-  @apply min-h-screen;
+  @apply min-h-screen text-black;
   div {
-    // @apply px-5;
-
     h3 {
       @apply pt-[26rem] sm:pt-44 text-center;
     }
@@ -20,9 +18,9 @@
   background: url("../assets/bg2.jpg") center / cover;
 }
 .main_white {
-  @apply h-full py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2 bg-[#111111];
+  @apply h-screen py-20  grid sm:grid-cols-1 sm:grid-rows-2 grid-cols-2;
   h3 {
-    @apply sm:text-sm text-[1.30rem] text-white sm:pb-8 pt-14  pb-24 sm:px-[4.7rem] px-10 leading-relaxed;
+    @apply text-black sm:text-sm text-[1.20rem] sm:pb-8 pt-14  pb-24 sm:px-[4.7rem] px-10 leading-relaxed;
   }
   div {
     background: url("../assets/h1.png") no-repeat center / contain;
@@ -86,83 +84,28 @@
 }
 
 .landing_main {
-  @apply min-h-screen text-white bg-[#111111];
-  .landing_top {
-    @apply h-full;
-  }
-  .landing_use {
+  .landing_use_bottom {
+    @apply flex flex-wrap ;
     div {
-      @apply px-5 py-14 mx-auto;
-    }
-    .landing_use_top {
-      @apply flex flex-col text-center w-full;
+      @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 ;
       h2 {
-        @apply text-3xl leading-relaxed tracking-widest font-medium  mb-1 p-4 bg-[#111111]  rounded-sm;
-      }
-      h1 {
-        @apply sm:text-xl text-2xl  mb-4 pt-5 text-indigo-400  bg-[rgba(18,26,27,0.1)] shadow-sm rounded-sm;
+        @apply sm:text-sm text-indigo-300 shadow-md text-[16px] mb-2;
       }
       p {
-        @apply lg:w-3/4 mx-auto leading-relaxed text-xl rounded-sm sm:text-sm inline;
-      }
-    }
-    .landing_use_bottom {
-      @apply flex flex-wrap;
-      div {
-        @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 md:border-l-2 border-gray-800;
-        h2 {
-          @apply sm:text-sm  text-indigo-300 shadow-md  text-[16px]  mb-2;
-        }
-        p {
-          @apply sm:text-sm leading-relaxed  text-base mb-4;
-        }
+        @apply sm:text-sm leading-relaxed text-base mb-4 text-indigo-100 ;
       }
     }
   }
 }
 
 .main_marketing {
-  @apply min-h-screen bg-[#111111]  text-white;
-  .marketing_page {
-    @apply min-h-screen;
-    .marketing_info {
-      @apply pt-16 px-5 leading-relaxed;
-      h2 {
-        @apply pb-10 text-2xl  sm:text-xl text-indigo-400 text-center;
-      }
-      p {
-        @apply lg:w-2/3 mx-auto sm:text-sm leading-relaxed text-base;
-      }
-    }
-    .marketing_top_page {
-      @apply transition-all sm:pt-5 pt-20 grid grid-cols-2 sm:grid-cols-1 text-center;
-      h3 {
-        @apply sm:pt-10 text-3xl;
-      }
-    }
-    a {
-      @apply relative cursor-pointer;
-    }
-    a:after {
-      @apply block absolute left-0 right-0 w-0 h-[1px] bg-sky-400 content-[''] ease-in duration-300;
-    }
-    a:hover:after,
-    a:focus:after {
-      @apply w-full;
-    }
-    .info_marketing_services {
-      @apply px-12   lg:w-3/4 mx-auto sm:text-sm leading-relaxed;
-      .list_services {
-        @apply max-w-[800px] mx-auto text-center mt-10;
-      }
-    }
-  }
   .marketing_map {
-    @apply min-h-full sm:pt-32 bg-red-200 pt-[20rem];
+    @apply min-h-full sm:pt-32 bg-red-200 pt-[30rem];
     background: no-repeat url("../assets/svg/m2.svg") 50% / contain;
-
-    .marketing_bot_content {
-      @apply flex justify-center pt-20;
-    }
   }
+}
+
+.answerWrapper {
+  @apply grid grid-cols-2 h-screen;
+  background: url("../assets/yes/lamps-min.webp") 0% / cover;
 }
