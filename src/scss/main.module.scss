@@ -85,14 +85,14 @@
 
 .landing_main {
   .landing_use_bottom {
-    @apply flex flex-wrap ;
+    @apply flex flex-wrap;
     div {
-      @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 ;
+      @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2;
       h2 {
         @apply sm:text-sm text-indigo-300 shadow-md text-[16px] mb-2;
       }
       p {
-        @apply sm:text-sm leading-relaxed text-base mb-4 text-indigo-100 ;
+        @apply sm:text-sm leading-relaxed text-base mb-4 text-indigo-100;
       }
     }
   }

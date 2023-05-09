@@ -1,80 +1,86 @@
 import LandingUse from "./LandingUse"
 import s from "../../scss/main.module.scss"
+import { createSignal, Accessor } from "solid-js"
 
 const AnswerBlock = () => {
+
+
   return (
     <div class={s.answerWrapper}>
       <div>
-      import { Fragment, useState } from "react";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
- 
-function Icon({ id, open }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={`${
-        id === open ? "rotate-180" : ""
-      } h-5 w-5 transition-transform`}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-    </svg>
-  );
-}
- 
-export default function Example() {
-  const [open, setOpen] = useState(0);
- 
-  const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
-  };
- 
-  return (
-    <Fragment>
-      <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-        <AccordionHeader onClick={() => handleOpen(1)}>
-          What is Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-        <AccordionHeader onClick={() => handleOpen(2)}>
-          How to use Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-        <AccordionHeader onClick={() => handleOpen(3)}>
-          What can I do with Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-    </Fragment>
-  );
-}
-        <LandingUse />
+        <div class="hs-accordion-group">
+          <div class="hs-accordion active" id="hs-basic-heading-one">
+            <button
+              class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+              aria-controls="hs-basic-collapse-one"
+            >
+              <ElementSvg />
+              Accordion #1
+            </button>
+            <div
+              id="hs-basic-collapse-one"
+              class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-one"
+            >
+              <div class={accordions[0] ? "hiddn" : ""}>
+                <p class="text-gray-800 dark:text-gray-200">
+                  <em>This is the third item's accordion body.</em> It is hidden
+                  by default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element. These classes
+                  control the overall appearance, as well as the showing and
+                  hiding via CSS transitions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hs-accordion" id="hs-basic-heading-two">
+            <button
+              class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+              aria-controls="hs-basic-collapse-two"
+            >
+              <ElementSvg />
+              Accordion #2
+            </button>
+            <div
+              id="hs-basic-collapse-two"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-two"
+            >
+              <p class="text-gray-800 dark:text-gray-200">
+                <em>This is the third item's accordion body.</em> It is hidden
+                by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions.
+              </p>
+            </div>
+          </div>
+
+          <div class="hs-accordion" id="hs-basic-heading-three">
+            <button
+              class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+              aria-controls="hs-basic-collapse-three"
+            >
+              <ElementSvg />
+              Accordion #3
+            </button>
+            <div
+              id="hs-basic-collapse-three"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              aria-labelledby="hs-basic-heading-three"
+            >
+              <p class="text-gray-800 dark:text-gray-200">
+                <em>This is the third item's accordion body.</em> It is hidden
+                by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <LandingUse /> */}
       </div>
       <div>two</div>
     </div>
@@ -82,3 +88,46 @@ export default function Example() {
 }
 
 export default AnswerBlock
+
+const ElementSvg = () => {
+  return (
+    <>
+      <svg
+        class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.62421 7.86L13.6242 7.85999"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <path
+          d="M8.12421 13.36V2.35999"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      <svg
+        class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.62421 7.86L13.6242 7.85999"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </>
+  )
+}
